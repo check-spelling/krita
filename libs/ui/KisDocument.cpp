@@ -1431,7 +1431,7 @@ bool KisDocument::resourceSavingFilter(const QString &path, const QByteArray &mi
                         }
 
                         if (exportConfiguration) {
-                            // make sure the the name of the resource doesn't change
+                            // make sure the name of the resource doesn't change
                             exportConfiguration->setProperty("name", res->name());
                         }
 
