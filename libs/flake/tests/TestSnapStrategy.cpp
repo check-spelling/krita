@@ -672,7 +672,7 @@ void TestSnapStrategy::testProject()
 
     qreal resultingRealOne = toTestOne.project(lineStart, lineEnd, comparisonPoint);
     QCOMPARE(resultingRealOne, toCompWithOne);
-    //testing for for negative point values
+    //testing for negative point values
     ExtensionSnapStrategy toTestTwo;
     qreal toCompWithTwo = -4;
     QPointF lineStart_2(-2,-2);
