@@ -209,7 +209,7 @@ QString KisTiffPsdResourceRecord::idToString(KisTiffPsdResourceRecord::PSDResour
         return "0x0428 - (Photoshop CS) Pixel Aspect Ratio. 4 bytes (version = 1 or 2), 8 bytes double, x / y of a pixel. Version 2, attempting to correct "
                "values for NTSC and PAL, previously off by a factor of approx. 5%.";
     case LAYER_COMPS:
-        return "0x0429 - (Photoshop CS) Layer Comps. 4 bytes (descriptor version = 16), Descriptor (see See Descriptor structure)";
+        return "0x0429 - (Photoshop CS) Layer Comps. 4 bytes (descriptor version = 16), Descriptor (see Descriptor structure)";
     case ALTERNATE_DUOTONE:
         return "0x042A - (Photoshop CS) Alternate Duotone Colors. 2 bytes (version = 1), 2 bytes count, following is repeated for each count: [ Color: 2 bytes "
                "for space followed by 4 * 2 byte color component ], following this is another 2 byte count, usually 256, followed by Lab colors one byte each "
