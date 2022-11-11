@@ -542,7 +542,7 @@ bool PSDLayerMaskSection::write(QIODevice &io, KisNodeSP rootLayer, psd_compress
 
 void PSDLayerMaskSection::writePsdImpl(QIODevice &io, KisNodeSP rootLayer, psd_compression_type compressionType)
 {
-    dbgFile << "Writing layer layer section";
+    dbgFile << "Writing layer section";
 
     // Build the whole layer structure
     QList<FlattenedNode> nodes;
