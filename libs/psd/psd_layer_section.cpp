@@ -93,7 +93,7 @@ bool PSDLayerMaskSection::readLayerInfoImpl(QIODevice &io)
 
         if (layerInfoSectionSize > 0) {
             if (!psdread<byteOrder>(io, nLayers) || nLayers == 0) {
-                error = QString("Could not read read number of layers or no layers in image. %1").arg(nLayers);
+                error = QString("Could not read number of layers or no layers in image. %1").arg(nLayers);
                 return false;
             }
 
