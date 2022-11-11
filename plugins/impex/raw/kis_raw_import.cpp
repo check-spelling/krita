@@ -78,7 +78,7 @@ KisImportExportErrorCode KisRawImport::convert(KisDocument *document, QIODevice 
 
         QApplication::setOverrideCursor(Qt::WaitCursor);
         // Do the decoding
-        // TODO: it would probably be better done in a thread, while an other thread simulate that the application is still living (or even better if libkdcraw was giving us some progress report
+        // TODO: it would probably be better done in a thread, while another thread simulate that the application is still living (or even better if libkdcraw was giving us some progress report
         QByteArray imageData;
         RawDecodingSettings settings = rawDecodingSettings();
         settings.sixteenBitsImage =  true;
