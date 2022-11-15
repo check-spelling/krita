@@ -85,7 +85,7 @@ private:
 
 /**
  * A KisPaintingAssistant is an object that assist the drawing on the canvas.
- * With this class you can implement virtual equivalent to ruler or compas.
+ * With this class you can implement virtual equivalent to ruler or compass.
  */
 class KRITAUI_EXPORT KisPaintingAssistant
 {
