@@ -34,7 +34,7 @@ public:
 public Q_SLOTS:
 
     /**
-     * @brief Clears out scratchpad with color specfified set during setup
+     * @brief Clears out scratchpad with color specified set during setup
      */
     void clear();
 
