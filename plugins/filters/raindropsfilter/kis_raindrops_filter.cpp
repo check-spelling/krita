@@ -328,7 +328,7 @@ void KisRainDropsFilter::FreeBoolArray(bool** lpbArray, uint Columns) const
     free(lpbArray);
 }
 
-/* Function to create a bidimentional dynamic boolean array
+/* Function to create a bidimensional dynamic boolean array
  *
  * Columns           => Number of columns
  * Rows              => Number of rows
