@@ -346,7 +346,7 @@ bool KisRegion::isEmpty() const
 
 QRegion KisRegion::toQRegion() const
 {
-    // TODO: ustilize QRegion::setRects to make creation of QRegion much
+    // TODO: utilize QRegion::setRects to make creation of QRegion much
     //       faster. The only reason why we cannot use it "as is", is that our m_rects
     //       do not satisfy the second setRects()'s precondition: "All rectangles with
     //       a given top coordinate must have the same height". We can implement a
