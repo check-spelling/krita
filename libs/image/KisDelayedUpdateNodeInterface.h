@@ -21,7 +21,7 @@ public:
     virtual ~KisDelayedUpdateNodeInterface();
 
     /**
-     * @brief forceUpdateTimedNode forrces the node to regenerate its project. The update might
+     * @brief forceUpdateTimedNode forces the node to regenerate its project. The update might
      * be asynchronous, so you should call image->waitForDone() after that.
      */
     virtual void forceUpdateTimedNode() = 0;
