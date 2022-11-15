@@ -219,7 +219,7 @@ bool KisMemoryStorage::exportResource(const QString &url, QIODevice *device)
         d->resourcesNew[resourceType][resourceFilename];
 
     if (!storedResource.data) {
-        qWarning() << "Stored resource doesn't have a seriallized representation!";
+        qWarning() << "Stored resource doesn't have a serialized representation!";
         return false;
     }
 
