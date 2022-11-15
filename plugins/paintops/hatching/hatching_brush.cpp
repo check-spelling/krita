@@ -40,14 +40,14 @@ void HatchingBrush::init()
 {
 }
 
-void HatchingBrush::hatch(KisPaintDeviceSP dev, qreal x, qreal y, double width, double height, double givenangle, const KoColor &color, qreal additionalScale)
+void HatchingBrush::hatch(KisPaintDeviceSP dev, qreal x, qreal y, double width, double height, double givenAngle, const KoColor &color, qreal additionalScale)
 {
     m_painter.begin(dev);
     m_painter.setFillStyle(KisPainter::FillStyleForegroundColor);
     m_painter.setPaintColor(color);
     m_painter.setBackgroundColor(color);
 
-    angle = givenangle;
+    angle = givenAngle;
     double tempthickness = m_settings->thickness * m_settings->thicknesssensorvalue;
     thickness = qMax(1, qRound(additionalScale * tempthickness));
     separation = additionalScale *
