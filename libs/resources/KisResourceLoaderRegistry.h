@@ -63,7 +63,7 @@ public:
     /**
      * Sometimes the database needs updates without changing
      * the schema of the database. E.g. when we need to update
-     * the resources' metadata. In such cacse, fix up should
+     * the resources' metadata. In such case, fix up should
      * be created.
      */
     struct ResourceCacheFixup {
