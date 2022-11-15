@@ -312,7 +312,7 @@ template <typename T, typename E, typename F>
 }
 
 
-KRITAGLOBAL_EXPORT QDomElement findElementByAttibute(QDomNode parent,
+KRITAGLOBAL_EXPORT QDomElement findElementByAttribute(QDomNode parent,
                                                     const QString &tag,
                                                     const QString &attribute,
                                                     const QString &key);
