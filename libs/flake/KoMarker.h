@@ -56,7 +56,7 @@ public:
     void setReferenceSize(const QSizeF &size);
     QSizeF referenceSize() const;
 
-    bool hasAutoOtientation() const;
+    bool hasAutoOrientation() const;
     void setAutoOrientation(bool value);
 
     // measured in radians!
