@@ -300,7 +300,7 @@ class bk_max_flow {
        * augments path from s->t and updates residual graph
        * source(e, m_g) is the end of the path found in the source-tree
        * target(e, m_g) is the beginning of the path found in the sink-tree
-       * this phase generates orphans on satured edges, if the attached verts are
+       * this phase generates orphans on saturated edges, if the attached verts are
        * from different search-trees orphans are ordered in distance to
        * sink/source. first the farthest from the source are front_inserted into
        * the orphans list, and after that the sink-tree-orphans are
