@@ -46,7 +46,7 @@ public:
     QStringList filters(const QString &resourceType) const;
 
     /**
-     * @return a list of mimetypes that can be loaded for the given resourde type
+     * @return a list of mimetypes that can be loaded for the given resource type
      */
     QStringList mimeTypes(const QString &resourceType) const;
 
