@@ -566,7 +566,7 @@ cmsToneCurve *LcmsColorProfileContainer::transferFunction(TransferCharacteristic
 {
     cmsToneCurve *mainCurve;
 
-    // Values courtesey of Elle Stone
+    // Values courtesy of Elle Stone
     cmsFloat64Number srgb_parameters[5] =
     { 2.4, 1.0 / 1.055,  0.055 / 1.055, 1.0 / 12.92, 0.04045 };
     cmsFloat64Number rec709_parameters[5] =
