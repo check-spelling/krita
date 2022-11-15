@@ -738,8 +738,8 @@ bool KisInputManager::Private::handleCompressedTabletEvent(QEvent *event)
      * matcher's state at least against the basic modifiers, like
      * Shift, Control and Alt.
      */
-    QWidget *recievingWidget = dynamic_cast<QWidget*>(eventsReceiver);
-    if (recievingWidget && !recievingWidget->hasFocus()) {
+    QWidget *receivingWidget = dynamic_cast<QWidget*>(eventsReceiver);
+    if (receivingWidget && !receivingWidget->hasFocus()) {
         fixShortcutMatcherModifiersState();
     }
 
