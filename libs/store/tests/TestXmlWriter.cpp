@@ -15,7 +15,7 @@ class TestXmlWriter : public QObject
 {
     Q_OBJECT
 private Q_SLOTS:
-    void testDocytype();
+    void testDoctype();
     void testEmtpyElement();
     void testAttributes();
     void testIndent();
@@ -62,7 +62,7 @@ QString TestXmlWriter::content()
     return stringContent;
 }
 
-void TestXmlWriter::testDocytype()
+void TestXmlWriter::testDoctype()
 {
     setup("foo", "bar");
     QCOMPARE(content(), QString());
