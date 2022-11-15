@@ -267,7 +267,7 @@ void KisInputManager::Private::CanvasSwitcher::addCanvas(KisCanvas2 *canvas)
     if (!canvasResolver.contains(canvasWidget)) {
         canvasResolver.insert(canvasWidget, canvas);
     } else {
-        // just a sanity cheeck to find out if we are
+        // just a sanity cheek to find out if we are
         // trying to add two canvases concurrently.
         KIS_SAFE_ASSERT_RECOVER_NOOP(d->canvas == canvas);
     }
