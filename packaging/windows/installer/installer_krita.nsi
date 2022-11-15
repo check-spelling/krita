@@ -257,9 +257,9 @@ SectionEnd
 
 Section "$(SectionShellEx)" SEC_shellex
 	${If} ${RunningX64}
-		${Krita_RegisterComComonents} 64
+		${Krita_RegisterComComponents} 64
 	${EndIf}
-	${Krita_RegisterComComonents} 32
+	${Krita_RegisterComComponents} 32
 
 	${Krita_RegisterShellExtension}
 
@@ -343,9 +343,9 @@ Section "un.$(SectionShellEx)"
 		${Krita_UnregisterShellExtension}
 
 		${If} ${RunningX64}
-			${Krita_UnregisterComComonents} 64
+			${Krita_UnregisterComComponents} 64
 		${EndIf}
-		${Krita_UnregisterComComonents} 32
+		${Krita_UnregisterComComponents} 32
 	${EndIf}
 SectionEnd
 
