@@ -243,7 +243,7 @@ void KoColorProfile::colorantsForType(ColorPrimaries primaries, QVector<double> 
         break;
     case PRIMARIES_ITU_R_BT_709_5:
     default:
-        // Prequantisized colorants, courtesy of Elle Stone
+        // Prequantized colorants, courtesy of Elle Stone
         colorants = {0.3127, 0.3290};
         colorants.append({0.639998686, 0.330010138});
         colorants.append({0.300003784, 0.600003357});
