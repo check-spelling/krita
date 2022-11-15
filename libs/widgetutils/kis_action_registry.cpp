@@ -328,7 +328,7 @@ bool KisActionRegistry::propertizeAction(const QString &name, QAction * a)
         QString icon      = getChildContent(actionXml, "icon");
         QString text      = getChildContent_i18n("text");
         QString whatsthis = getChildContent_i18n("whatsThis");
-        // tooltip is set in updateShortcut() because shortcit gets appended to the tooltip
+        // tooltip is set in updateShortcut() because shortcut gets appended to the tooltip
         //QString toolTip   = getChildContent_i18n("toolTip");
         QString statusTip = getChildContent_i18n("statusTip");
         QString iconText  = getChildContent_i18n("iconText");
