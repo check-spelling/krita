@@ -351,7 +351,7 @@ QRegion KisRegion::toQRegion() const
     //       do not satisfy the second setRects()'s precondition: "All rectangles with
     //       a given top coordinate must have the same height". We can implement a
     //       simple algorithm for cropping m_rects, and it will be much faster than
-    //       constructing QRegion iterationally.
+    //       constructing QRegion iteratively.
 
     return std::accumulate(m_rects.constBegin(), m_rects.constEnd(), QRegion(), std::bit_or<QRegion>());
 }
