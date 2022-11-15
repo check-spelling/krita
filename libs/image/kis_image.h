@@ -661,7 +661,7 @@ public:
     void addComposition(KisLayerCompositionSP composition);
 
     /**
-     * Remove the layer compostion
+     * Remove the layer composition
      */
     void removeComposition(KisLayerCompositionSP composition);
 
