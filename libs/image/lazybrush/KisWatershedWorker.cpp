@@ -694,7 +694,7 @@ void KisWatershedWorker::Private::processQueue(qint32 _backgroundGroupId)
 
     }
 
-    // cleaup iterators
+    // cleanup iterators
     groupIt.clear();
     levelIt.clear();
     backgroundGroupId = 0;
