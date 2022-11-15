@@ -95,7 +95,7 @@ public:
         *tile = getTile(col, row, writable);
 
         bool unused;
-        *oldTile = m_mementoManager->getCommitedTile(col, row, unused);
+        *oldTile = m_mementoManager->getCommittedTile(col, row, unused);
 
         if (!*oldTile) {
             *oldTile = *tile;
@@ -122,7 +122,7 @@ public:
     }
 
     inline KisTileSP getOldTile(qint32 col, qint32 row, bool &existingTile) {
-        KisTileSP tile = m_mementoManager->getCommitedTile(col, row, existingTile);
+        KisTileSP tile = m_mementoManager->getCommittedTile(col, row, existingTile);
         return tile ? tile : getReadOnlyTileLazy(col, row, existingTile);
     }
 
