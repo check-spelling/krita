@@ -92,9 +92,9 @@ private:
     double computeMousePressure(double distance);
 
     /// simulate running out of saturation
-    void saturationDepletion(Bristle * bristle, KoColor &bristleColor, qreal pressure, qreal inkDeplation);
+    void saturationDepletion(Bristle * bristle, KoColor &bristleColor, qreal pressure, qreal inkDepletion);
     /// simulate running out of ink through opacity decreasing
-    void opacityDepletion(Bristle * bristle, KoColor &bristleColor, qreal pressure, qreal inkDeplation);
+    void opacityDepletion(Bristle * bristle, KoColor &bristleColor, qreal pressure, qreal inkDepletion);
     /// fetch actual ink status according depletion curve
     qreal fetchInkDepletion(Bristle * bristle, int inkDepletionSize);
 
