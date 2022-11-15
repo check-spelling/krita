@@ -250,7 +250,7 @@
     <text name="GPSProcessingMethod" />
     <text name="GPSAreaInformation" />
     <closedchoice name="GPSDifferential" >
-      <integer name="Without corrction">0</integer>
+      <integer name="Without correction">0</integer>
       <integer name="Correction applied">1</integer>
     </closedchoice>
   </properties>
