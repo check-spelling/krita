@@ -466,7 +466,7 @@ void KisToolFreehandHelper::paint(KisPaintInformation &info)
      * 3) 'Tail Aggressiveness' is used for controlling the end of the
      *    stroke
      *
-     * 4) The formila is a little bit different: 'Distance' parameter
+     * 4) The formula is a little bit different: 'Distance' parameter
      *    stands for $3 \Sigma$
      */
     if (m_d->smoothingOptions->smoothingType() == KisSmoothingOptions::WEIGHTED_SMOOTHING
