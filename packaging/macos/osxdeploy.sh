@@ -457,7 +457,7 @@ fix_python_framework() {
 
 # Checks for macdeployqt
 # If not present attempts to install
-# If it fails shows an informatve message
+# If it fails shows an informative message
 # (For now, macdeployqt is fundamental to deploy)
 macdeployqt_exists() {
     printf "Checking for macdeployqt...  "
