@@ -221,7 +221,7 @@ private:
 /**
  * @brief Filter that dilates a selection and that can stop dilating
  *        adaptively at areas of higher darkness or opacity. This is useful
- *        to grow selections used to fill lineart, since the growing will stop
+ *        to grow selections used to fill line art, since the growing will stop
  *        most likely inside the lines, without overflowing to the other side.
  */
 class KRITAIMAGE_EXPORT KisGrowUntilDarkestPixelSelectionFilter : public KisSelectionFilter
