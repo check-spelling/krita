@@ -31,7 +31,7 @@ KisCompositeOpOption::KisCompositeOpOption(bool createConfigWidget)
         ui.setupUi(widget);
         ui.bnEraser->setIcon(KisIconUtils::loadIcon("draw-eraser"));
 
-        m_label    = ui.lbChoosenMode;
+        m_label    = ui.lbChosenMode;
         m_list     = ui.list;
         m_bnEraser = ui.bnEraser;
 
