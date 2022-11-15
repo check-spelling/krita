@@ -216,7 +216,7 @@ public:
          * Firstly we need to disconnect the nodes from the image,
          * because some of the nodes (e.g. KisGroupLayer) may
          * request the image back via defaultBouds() and/or
-         * animationInyterface()
+         * animationInterface()
          */
         if (rootLayer->image() == q) {
             rootLayer->setImage(0);
