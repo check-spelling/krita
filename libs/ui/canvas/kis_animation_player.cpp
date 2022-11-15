@@ -155,12 +155,12 @@ KisAnimationPlayer::KisAnimationPlayer(KisCanvas2 *canvas)
     std::function<void (int)> callback(
         std::bind(&KisAnimationPlayer::slotSyncScrubbingAudio, this, _1));
 
-    const int defaultScrubbingUdpatesDelay = 40; /* 40 ms == 25 fps */
+    const int defaultScrubbingUpdatesDelay = 40; /* 40 ms == 25 fps */
 
     m_d->audioSyncScrubbingCompressor.reset(
-        new KisSignalCompressorWithParam<int>(defaultScrubbingUdpatesDelay, callback, KisSignalCompressor::FIRST_ACTIVE));
+        new KisSignalCompressorWithParam<int>(defaultScrubbingUpdatesDelay, callback, KisSignalCompressor::FIRST_ACTIVE));
 
-    m_d->stopAudioOnScrubbingCompressor.setDelay(defaultScrubbingUdpatesDelay);
+    m_d->stopAudioOnScrubbingCompressor.setDelay(defaultScrubbingUpdatesDelay);
     connect(&m_d->stopAudioOnScrubbingCompressor, SIGNAL(timeout()), SLOT(slotTryStopScrubbingAudio()));
 
     connect(m_d->canvas->image()->animationInterface(), SIGNAL(sigFramerateChanged()), SLOT(slotUpdateAudioChunkLength()));
@@ -286,15 +286,15 @@ void KisAnimationPlayer::slotUpdateAudioChunkLength()
     const int animationFramePeriod = qMax(1, 1000 / animation->framerate());
 
     KisConfig cfg(true);
-    int scrubbingAudioUdpatesDelay = cfg.scrubbingAudioUpdatesDelay();
+    int scrubbingAudioUpdatesDelay = cfg.scrubbingAudioUpdatesDelay();
 
-    if (scrubbingAudioUdpatesDelay < 0) {
+    if (scrubbingAudioUpdatesDelay < 0) {
 
-        scrubbingAudioUdpatesDelay = qMax(1, animationFramePeriod);
+        scrubbingAudioUpdatesDelay = qMax(1, animationFramePeriod);
     }
 
-    m_d->audioSyncScrubbingCompressor->setDelay(scrubbingAudioUdpatesDelay);
-    m_d->stopAudioOnScrubbingCompressor.setDelay(scrubbingAudioUdpatesDelay);
+    m_d->audioSyncScrubbingCompressor->setDelay(scrubbingAudioUpdatesDelay);
+    m_d->stopAudioOnScrubbingCompressor.setDelay(scrubbingAudioUpdatesDelay);
 
     m_d->audioOffsetTolerance = cfg.audioOffsetTolerance();
     if (m_d->audioOffsetTolerance < 0) {
