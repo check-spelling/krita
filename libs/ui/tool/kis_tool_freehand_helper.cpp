@@ -33,7 +33,7 @@
 
 #include "strokes/freehand_stroke.h"
 #include "strokes/KisFreehandStrokeInfo.h"
-#include "KisAsyncronousStrokeUpdateHelper.h"
+#include "KisAsynchronousStrokeUpdateHelper.h"
 #include "kis_canvas_resource_provider.h"
 #include <KisOptimizedBrushOutline.h>
 
@@ -59,7 +59,7 @@ struct KisToolFreehandHelper::Private
     KoCanvasResourceProvider *resourceManager;
     KisPaintingInformationBuilder *infoBuilder;
     KisStrokesFacade *strokesFacade;
-    KisAsyncronousStrokeUpdateHelper asyncUpdateHelper;
+    KisAsynchronousStrokeUpdateHelper asyncUpdateHelper;
 
     KUndo2MagicString transactionText;
 

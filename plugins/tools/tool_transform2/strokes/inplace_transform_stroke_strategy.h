@@ -18,7 +18,7 @@
 
 #include <transform_transaction_properties.h>
 
-#include "KisAsyncronousStrokeUpdateHelper.h"
+#include "KisAsynchronousStrokeUpdateHelper.h"
 #include <commands_new/KisUpdateCommandEx.h>
 
 class KisPostExecutionUndoAdapter;
@@ -69,7 +69,7 @@ private:
      * A special barrier update data that triggers regeneration of
      * all the processed nodes.
      */
-    struct BarrierUpdateData : public KisAsyncronousStrokeUpdateHelper::UpdateData
+    struct BarrierUpdateData : public KisAsynchronousStrokeUpdateHelper::UpdateData
     {
         BarrierUpdateData(bool forceUpdate);
         KisStrokeJobData* createLodClone(int levelOfDetail) override;

@@ -13,7 +13,7 @@
 #include "kis_paintop_settings.h"
 #include <strokes/freehand_stroke.h>
 #include <strokes/KisFreehandStrokeInfo.h>
-#include "KisAsyncronousStrokeUpdateHelper.h"
+#include "KisAsynchronousStrokeUpdateHelper.h"
 #include <kis_brush.h>
 #include <KisGlobalResourcesInterface.h>
 #include "kis_transaction.h"
@@ -336,7 +336,7 @@ void KisPresetLivePreviewView::setupAndPaintStroke()
                                                              QPointF(pointTwo.pos().x(),
                                                                      handleY),
                                                              pointTwo));
-            m_image->addJob(strokeId, new KisAsyncronousStrokeUpdateHelper::UpdateData(true));
+            m_image->addJob(strokeId, new KisAsynchronousStrokeUpdateHelper::UpdateData(true));
         }
 
     } else {
@@ -360,7 +360,7 @@ void KisPresetLivePreviewView::setupAndPaintStroke()
                                                          QPointF(m_canvasCenterPoint.x(),
                                                                  m_canvasCenterPoint.y()+this->height()),
                                                          m_curvePointPI2));
-        m_image->addJob(strokeId, new KisAsyncronousStrokeUpdateHelper::UpdateData(true));
+        m_image->addJob(strokeId, new KisAsynchronousStrokeUpdateHelper::UpdateData(true));
     }
     m_image->endStroke(strokeId);
 

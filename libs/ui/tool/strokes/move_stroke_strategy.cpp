@@ -456,8 +456,8 @@ void MoveStrokeStrategy::doStrokeCallback(KisStrokeJobData *data)
 
         doCanvasUpdate(barrierData->forceUpdate);
 
-    } else if (KisAsyncronousStrokeUpdateHelper::UpdateData *updateData =
-               dynamic_cast<KisAsyncronousStrokeUpdateHelper::UpdateData*>(data)) {
+    } else if (KisAsynchronousStrokeUpdateHelper::UpdateData *updateData =
+               dynamic_cast<KisAsynchronousStrokeUpdateHelper::UpdateData*>(data)) {
 
         tryPostUpdateJob(updateData->forceUpdate);
 
@@ -584,7 +584,7 @@ MoveStrokeStrategy::PickLayerData::PickLayerData(const MoveStrokeStrategy::PickL
 }
 
 MoveStrokeStrategy::BarrierUpdateData::BarrierUpdateData(bool _forceUpdate)
-    : KisAsyncronousStrokeUpdateHelper::UpdateData(_forceUpdate, BARRIER, EXCLUSIVE)
+    : KisAsynchronousStrokeUpdateHelper::UpdateData(_forceUpdate, BARRIER, EXCLUSIVE)
 {}
 
 KisStrokeJobData *MoveStrokeStrategy::BarrierUpdateData::createLodClone(int levelOfDetail) {
@@ -592,6 +592,6 @@ KisStrokeJobData *MoveStrokeStrategy::BarrierUpdateData::createLodClone(int leve
 }
 
 MoveStrokeStrategy::BarrierUpdateData::BarrierUpdateData(const MoveStrokeStrategy::BarrierUpdateData &rhs, int levelOfDetail)
-    : KisAsyncronousStrokeUpdateHelper::UpdateData(rhs, levelOfDetail)
+    : KisAsynchronousStrokeUpdateHelper::UpdateData(rhs, levelOfDetail)
 {
 }

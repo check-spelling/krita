@@ -315,7 +315,7 @@ private:
 
     QPainterPath m_cursorOutline;
 
-    KisAsyncronousStrokeUpdateHelper m_asyncUpdateHelper;
+    KisAsynchronousStrokeUpdateHelper m_asyncUpdateHelper;
 
 private Q_SLOTS:
     void slotTrackerChangedConfig(KisToolChangesTrackerDataSP status);
