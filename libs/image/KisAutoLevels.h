@@ -108,10 +108,10 @@ qreal KRITAIMAGE_EXPORT getGamma(qreal blackPoint,
  *                           points from
  * @param channelsHistograms list of histograms to compute the gammas from. This
  *                           is also used to know the number of output levels infos
- * @param shadowsClipping A normalized perentage that is used to know how many
+ * @param shadowsClipping A normalized percentage that is used to know how many
  *                        samples should be clipped on the shadows side of the
  *                        histogram by the input black point
- * @param highlightsClipping A normalized perentage that is used to know how
+ * @param highlightsClipping A normalized percentage that is used to know how
  *                           many samples should be clipped on the highlights
  *                           side of the histogram by the input white point
  * @param maximumInputBlackAndWhiteOffset A maximum value for the input black
@@ -145,10 +145,10 @@ QVector<KisLevelsCurve> KRITAIMAGE_EXPORT adjustMonochromaticContrast(ChannelHis
  *        and "outputWhitePoints"
  * @param channelsHistograms list of histograms to compute the gammas from. This
  *                           is also used to know the number of output levels infos
- * @param shadowsClipping A normalized perentage that is used to know how many
+ * @param shadowsClipping A normalized percentage that is used to know how many
  *                        samples should be clipped on the shadows side of the
  *                        histogram by the input black point
- * @param highlightsClipping A normalized perentage that is used to know how
+ * @param highlightsClipping A normalized percentage that is used to know how
  *                           many samples should be clipped on the highlights
  *                           side of the histogram by the input white point
  * @param maximumInputBlackAndWhiteOffset A maximum value for the input black
