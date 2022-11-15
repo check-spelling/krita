@@ -269,7 +269,7 @@ I also occasionally draw on Twitch: <a href="https://www.twitch.tv/ModerBjorn">M
 </ul>
 <h2>Download</h2>
 <h3>Windows</h3>
-<p>For the beta, you should only only use the portable zip files. Just open the zip file in Explorer and drag the folder somewhere convenient, then double-click on the krita icon in the folder. This will not impact an installed version of Krita, though it will share your settings and custom resources with your regular installed version of Krita. For reporting crashes, also get the debug symbols folder.</p>
+<p>For the beta, you should only use the portable zip files. Just open the zip file in Explorer and drag the folder somewhere convenient, then double-click on the krita icon in the folder. This will not impact an installed version of Krita, though it will share your settings and custom resources with your regular installed version of Krita. For reporting crashes, also get the debug symbols folder.</p>
 <ul>
 <li>Portable 64 bits Windows: <a href="https://download.kde.org/unstable/krita/4.2.7-beta1/krita-x64-4.2.7-beta1.zip">krita-x64-4.2.7-beta1.zip</a></li>
 <li><a href="https://download.kde.org/unstable/krita/4.2.7-beta1/krita-x64-4.2.7-beta1-dbg.zip">Debug symbols. (Unpack in the Krita installation folder)</a></li>
