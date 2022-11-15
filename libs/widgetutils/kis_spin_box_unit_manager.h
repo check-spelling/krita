@@ -151,7 +151,7 @@ protected:
     static const QStringList documentRelativeTimeUnitSymbols;
 
     void recomputeConversionFactor() const;
-    void recomputeConvesrionConstant() const;
+    void recomputeConversionConstant() const;
 
     //! \brief calling this method gives access to document relative units. Only subclasses that manage those units should call it.
     void grantDocumentRelativeUnits();

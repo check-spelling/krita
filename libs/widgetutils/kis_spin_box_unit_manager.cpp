@@ -281,7 +281,7 @@ qreal KisSpinBoxUnitManager::getReferenceValue(double apparentValue) const
     }
 
     if(!d->conversionConstantIsFixed) {
-        recomputeConvesrionConstant();
+        recomputeConversionConstant();
     }
 
     qreal v = (apparentValue - d->conversionConstant)/d->conversionFactor;
@@ -323,7 +323,7 @@ qreal KisSpinBoxUnitManager::getApparentValue(double refValue) const
     }
 
     if(!d->conversionConstantIsFixed) {
-        recomputeConvesrionConstant();
+        recomputeConversionConstant();
     }
 
     qreal v = refValue*d->conversionFactor + d->conversionConstant;
@@ -499,11 +499,11 @@ default_identifier_conv_fact:
 
     }
 
-    qreal conversFact = getConversionFactor(d->dim, newSymb);
-    qreal oldConversFact = d->conversionFactor;
+    qreal conversionFact = getConversionFactor(d->dim, newSymb);
+    qreal oldConversionFact = d->conversionFactor;
 
-    d->conversionFactor = conversFact;
-    emit conversionFactorChanged(d->conversionFactor, oldConversFact);
+    d->conversionFactor = conversionFact;
+    emit conversionFactorChanged(d->conversionFactor, oldConversionFact);
 
     d->unitSymbol = newSymb;
     emit unitChanged(newSymb);
@@ -593,7 +593,7 @@ void KisSpinBoxUnitManager::recomputeConversionFactor() const
     }
 }
 
-void KisSpinBoxUnitManager::recomputeConvesrionConstant() const
+void KisSpinBoxUnitManager::recomputeConversionConstant() const
 {
     if (d->conversionConstantIsFixed) {
         return;
