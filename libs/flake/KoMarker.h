@@ -70,7 +70,7 @@ public:
 
     /**
      * @brief paintAtOrigin paints the marker at the position \p pos.
-     *        Scales and rotates the masrker if needed.
+     *        Scales and rotates the marker if needed.
      */
     void paintAtPosition(QPainter *painter, const QPointF &pos, qreal strokeWidth, qreal nodeAngle);
 
