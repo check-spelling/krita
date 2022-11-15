@@ -380,7 +380,7 @@ void TestSnapStrategy::testLineGuideSnap()
     // QVERIFY(didSnapTwo);
 }
 
-void TestSnapStrategy::testOrhogonalDecoration()
+void TestSnapStrategy::testOrthogonalDecoration()
 {
     //Making sure the decoration is created but is empty
     OrthogonalSnapStrategy toTestTwo;
