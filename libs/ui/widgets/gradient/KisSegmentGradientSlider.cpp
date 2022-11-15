@@ -69,7 +69,7 @@ void KisSegmentGradientSlider::paintEvent(QPaintEvent*)
     if (m_gradient) {
         // Gradient
         KisGradientWidgetsUtils::paintGradientBox(painter, m_gradient, previewRect);
-        // Haldles
+        // Handles
         QList<KoGradientSegment*> segments = m_gradient->segments();
         painter.setRenderHint(QPainter::Antialiasing, true);
         const QRect handlesRect = this->handlesStripeRect();
