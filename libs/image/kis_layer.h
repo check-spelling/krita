@@ -169,7 +169,7 @@ public:
      *
      * This method is designed to be called only within KisImage::mergeLayerDown().
      *
-     * Decendands override this to create specific merged types when possible.
+     * Descendants override this to create specific merged types when possible.
      * The KisLayer one creates a KisPaintLayerSP via a bitBlt, and can work on all layer types.
      *
      * Descendants that perform their own version do NOT call KisLayer::createMergedLayer
