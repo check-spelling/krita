@@ -65,7 +65,7 @@ public:
     }
 
     /**
-     * Reguests a memento from the data manager. There is only one memento active
+     * Requests a memento from the data manager. There is only one memento active
      * at any given moment for a given paint device and all and any
      * write actions on the datamanager builds undo data into this memento
      * necessary to rollback the transaction.
