@@ -1510,9 +1510,9 @@ void KisPopupPalette::calculateRotationSnapAreas() {
 
 int KisPopupPalette::findPresetSlot(QPointF position) const
 {
-    QPointF adujustedPoint = position - QPointF(m_popupPaletteSize/2, m_popupPaletteSize/2);
+    QPointF adjustedPoint = position - QPointF(m_popupPaletteSize/2, m_popupPaletteSize/2);
     for (int i = 0; i < m_presetSlotCount; i++) {
-        if (createPathFromPresetIndex(i).contains(adujustedPoint)) {
+        if (createPathFromPresetIndex(i).contains(adjustedPoint)) {
             return i;
         }
     }
