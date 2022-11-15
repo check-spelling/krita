@@ -1036,7 +1036,7 @@ void KisAntiAliasSelectionFilter::process(KisPixelSelectionSP pixelSelection, co
             memset(scanlines[i], defaultPixel, bytesPerScanline);
         }
     }
-    // Bufffer that contains the current output scanline
+    // Buffer that contains the current output scanline
     QVector<quint8> antialiasedScanline(rect.width());
     // Main loop
     for (int y = 0; y < rect.height(); ++y)
