@@ -18,9 +18,9 @@ const QString SPRAYSHAPE_FIXED_ANGEL = "SprayShape/fixedAngle";
 const QString SPRAYSHAPE_RANDOM_ROTATION = "SprayShape/randomRotation";
 const QString SPRAYSHAPE_RANDOM_ROTATION_WEIGHT = "SprayShape/randomRotationWeight";
 const QString SPRAYSHAPE_FOLLOW_CURSOR = "SprayShape/followCursor";
-const QString SPRAYSHAPE_FOLLOW_CURSOR_WEIGHT = "SprayShape/followCursorWeigth";
+const QString SPRAYSHAPE_FOLLOW_CURSOR_WEIGHT = "SprayShape/followCursorWeight";
 const QString SPRAYSHAPE_DRAWING_ANGLE = "SprayShape/followDrawingAngle";
-const QString SPRAYSHAPE_DRAWING_ANGLE_WEIGHT = "SprayShape/followDrawingAngleWeigth";
+const QString SPRAYSHAPE_DRAWING_ANGLE_WEIGHT = "SprayShape/followDrawingAngleWeight";
 
 // My intention is to have the option dialog more general so that it can be share
 // hence the suffix ShapeDynamics
@@ -31,9 +31,9 @@ const QString SHAPE_DYNAMICS_FIXED_ANGEL = "ShapeDynamics/fixedAngle";
 const QString SHAPE_DYNAMICS_RANDOM_ROTATION = "ShapeDynamics/randomRotation";
 const QString SHAPE_DYNAMICS_RANDOM_ROTATION_WEIGHT = "ShapeDynamics/randomRotationWeight";
 const QString SHAPE_DYNAMICS_FOLLOW_CURSOR = "ShapeDynamics/followCursor";
-const QString SHAPE_DYNAMICS_FOLLOW_CURSOR_WEIGHT = "ShapeDynamics/followCursorWeigth";
+const QString SHAPE_DYNAMICS_FOLLOW_CURSOR_WEIGHT = "ShapeDynamics/followCursorWeight";
 const QString SHAPE_DYNAMICS_DRAWING_ANGLE = "ShapeDynamics/followDrawingAngle";
-const QString SHAPE_DYNAMICS_DRAWING_ANGLE_WEIGHT = "ShapeDynamics/followDrawingAngleWeigth";
+const QString SHAPE_DYNAMICS_DRAWING_ANGLE_WEIGHT = "ShapeDynamics/followDrawingAngleWeight";
 
 class KisShapeDynamicsOptionsWidget;
 
@@ -68,7 +68,7 @@ public:
     bool followDrawingAngle;
     quint16 fixedAngle;
     qreal randomRotationWeight;
-    qreal followCursorWeigth;
+    qreal followCursorWeight;
     qreal followDrawingAngleWeight;
 
 public:
@@ -84,7 +84,7 @@ public:
             followDrawingAngle = settings->getBool(SPRAYSHAPE_DRAWING_ANGLE);
             fixedAngle = settings->getInt(SPRAYSHAPE_FIXED_ANGEL);
             randomRotationWeight = settings->getDouble(SPRAYSHAPE_RANDOM_ROTATION_WEIGHT);
-            followCursorWeigth = settings->getDouble(SPRAYSHAPE_FOLLOW_CURSOR_WEIGHT);
+            followCursorWeight = settings->getDouble(SPRAYSHAPE_FOLLOW_CURSOR_WEIGHT);
             followDrawingAngleWeight = settings->getDouble(SPRAYSHAPE_DRAWING_ANGLE_WEIGHT);
             enabled = true;
         }
@@ -100,7 +100,7 @@ public:
             followDrawingAngle = settings->getBool(SHAPE_DYNAMICS_DRAWING_ANGLE);
             fixedAngle = settings->getInt(SHAPE_DYNAMICS_FIXED_ANGEL);
             randomRotationWeight = settings->getDouble(SHAPE_DYNAMICS_RANDOM_ROTATION_WEIGHT);
-            followCursorWeigth = settings->getDouble(SHAPE_DYNAMICS_FOLLOW_CURSOR_WEIGHT);
+            followCursorWeight = settings->getDouble(SHAPE_DYNAMICS_FOLLOW_CURSOR_WEIGHT);
             followDrawingAngleWeight = settings->getDouble(SHAPE_DYNAMICS_DRAWING_ANGLE_WEIGHT);
         }
     }

@@ -231,7 +231,7 @@ void SprayBrush::paintImpl(KisPaintDeviceSP dab, KisPaintDeviceSP source,
 
             if (m_shapeDynamicsProperties->followCursor) {
 
-                rotationZ = linearInterpolation(rotationZ, angle, m_shapeDynamicsProperties->followCursorWeigth);
+                rotationZ = linearInterpolation(rotationZ, angle, m_shapeDynamicsProperties->followCursorWeight);
             }
 
 
