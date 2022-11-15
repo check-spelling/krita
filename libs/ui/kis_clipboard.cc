@@ -496,7 +496,7 @@ KisPaintDeviceSP KisClipboard::clipFromBoardContents(
         Q_CHECK_PTR(clip);
         clip->convertFromQImage(qimage, profile);
 
-        // save the persion's selection to the configuration if the option is checked
+        // save the version's selection to the configuration if the option is checked
         if (saveColorSetting) {
             cfg.setPasteBehaviour(behaviour);
         }
