@@ -346,7 +346,7 @@ void KoFillConfigWidget::activate()
         loadCurrentFillFromResourceServer();
     }
 
-    updateWidgetComponentVisbility();
+    updateWidgetComponentVisibility();
 }
 
 void KoFillConfigWidget::deactivate()
@@ -468,7 +468,7 @@ void KoFillConfigWidget::styleButtonPressed(int buttonId)
         updateUiFromFillType(firstShape);
     }
 
-    updateWidgetComponentVisbility();
+    updateWidgetComponentVisibility();
 }
 
 KoShapeStrokeSP KoFillConfigWidget::createShapeStroke()
@@ -973,7 +973,7 @@ void KoFillConfigWidget::shapeChanged()
     // updates the UI
     d->group->button(d->selectedFillIndex)->setChecked(true);
 
-    updateWidgetComponentVisbility();
+    updateWidgetComponentVisibility();
     slotUpdateFillTitle();
 
     if (shouldUploadColorToResourceManager) {
@@ -1016,7 +1016,7 @@ void KoFillConfigWidget::updateUiFromFillType(KoShape *shape)
 }
 
 
-void KoFillConfigWidget::updateWidgetComponentVisbility()
+void KoFillConfigWidget::updateWidgetComponentVisibility()
 {
     // The UI is showing/hiding things like this because the 'stacked widget' isn't very flexible
     // and makes it difficult to put anything underneath it without a lot empty space
