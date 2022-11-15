@@ -329,7 +329,7 @@ KisViewManager::~KisViewManager()
     }
 
     cfg.writeEntry("baseLength", KisResourceItemChooserSync::instance()->baseLength());
-    cfg.writeEntry("CanvasOnlyActive", false); // We never restart in CavnasOnlyMode
+    cfg.writeEntry("CanvasOnlyActive", false); // We never restart in CanvasOnlyMode
     delete d;
 }
 
