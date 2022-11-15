@@ -82,7 +82,7 @@ public:
         return checkAgainstShortcutTypes & KisKKeySequenceWidget::LocalShortcuts;
     }
 
-    void controlModifierlessTimout()
+    void controlModifierlessTimeout()
     {
         if (nKey != 0 && !modifierKeys) {
             // No modifier key pressed currently. Start the timeout
@@ -669,7 +669,7 @@ void KKeySequenceButton::keyPressEvent(QKeyEvent *e)
     case Qt::Key_Meta:
     case Qt::Key_Super_L:
     case Qt::Key_Super_R:
-        d->controlModifierlessTimout();
+        d->controlModifierlessTimeout();
         d->updateShortcutDisplay();
         break;
     default:
@@ -706,7 +706,7 @@ void KKeySequenceButton::keyPressEvent(QKeyEvent *e)
                 d->doneRecording();
                 return;
             }
-            d->controlModifierlessTimout();
+            d->controlModifierlessTimeout();
             d->updateShortcutDisplay();
         }
     }
@@ -730,7 +730,7 @@ void KKeySequenceButton::keyReleaseEvent(QKeyEvent *e)
     //if a modifier that belongs to the shortcut was released...
     if ((newModifiers & d->modifierKeys) < d->modifierKeys) {
         d->modifierKeys = newModifiers;
-        d->controlModifierlessTimout();
+        d->controlModifierlessTimeout();
         d->updateShortcutDisplay();
     }
 }
