@@ -48,7 +48,7 @@ using KoResourceCacheInterfaceSP = QSharedPointer<KoResourceCacheInterface>;
  * interfaces to store caches/resources outside the preset:
  *
  * 1) KisResourcesInterface is the interface that lets the preset
- *    to fetch dependent resources from the cenralized storage.
+ *    to fetch dependent resources from the centralized storage.
  *    Theoretically, the preset could create dependent resources
  *    from its XML representation internally all the time, but
  *    there are two reasond against that:
