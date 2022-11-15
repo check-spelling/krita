@@ -496,7 +496,7 @@ build_krita () {
 
     print_if_error "Configuration error! ${filename}" "exit"
 
-    # copiling phase
+    # compiling phase
     log_cmd cmake --build . -j${MAKE_THREADS}
     print_if_error "Krita compilation failed! ${filename}" "exit"
 
