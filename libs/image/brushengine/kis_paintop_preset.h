@@ -75,7 +75,7 @@ using KoResourceCacheInterfaceSP = QSharedPointer<KoResourceCacheInterface>;
  *    global storage with the created local snapshot.
  *
  *    Please take it into account that some of the embedded/linked
- *    resources privided by KisResourcesInterface may **change**
+ *    resources provided by KisResourcesInterface may **change**
  *    while cloning. It happens when these resources "bake" the state
  *    of canvas resources into themselves (e.g. gradient may change
  *    the "fg-stop" with real fg color).
