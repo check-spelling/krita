@@ -41,7 +41,7 @@ class QIODevice;
  *
  * The interface definition is enforced by KisDataManager calling all the methods
  * which must also be defined in KisTiledDataManager. It is not allowed to change the interface
- * as other datamangers may also rely on the same interface.
+ * as other datamanagers may also rely on the same interface.
  *
  * * Storing undo/redo data
  * * Offering ordered and unordered iterators over rects of pixels
