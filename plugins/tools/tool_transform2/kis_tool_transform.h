@@ -292,8 +292,8 @@ private:
     // a few extra context click options if free transform is active
     KisAction* mirrorHorizontalAction {0};
     KisAction* mirrorVericalAction {0};
-    KisAction* rotateNinteyCWAction {0};
-    KisAction* rotateNinteyCCWAction {0};
+    KisAction* rotateNinetyCWAction {0};
+    KisAction* rotateNinetyCCWAction {0};
 
 
 
