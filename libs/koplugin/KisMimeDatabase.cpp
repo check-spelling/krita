@@ -350,6 +350,6 @@ void KisMimeDatabase::fillMimeData()
         mimeType.suffixes = QStringList() << "csv";
         s_mimeDatabase << mimeType;
 
-        dbgPlugins << "Filled mimedatabase with" << s_mimeDatabase.count() << "special mimetypes";
+        dbgPlugins << "Filled mime database with" << s_mimeDatabase.count() << "special mimetypes";
     }
 }
