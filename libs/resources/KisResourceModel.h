@@ -145,7 +145,7 @@ public:
     /**
      * @brief addResource adds the given resource to the database and storage. If the resource
      * already exists in the given storage with md5, filename or name, the existing resource
-     * will be updated instead. If the existing resource was inactive, it will be actived
+     * will be updated instead. If the existing resource was inactive, it will be active
      * (undeleted).
      *
      * @param resource the resource itself
