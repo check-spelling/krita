@@ -834,7 +834,7 @@ QRect KisLayer::changeRect(const QRect &rect, PositionToFilthy pos) const
         /**
          * If the projection contains some dirty areas we should also
          * add them to the change rect, because they might have
-         * changed. E.g. when a visibility of the mask has chnaged
+         * changed. E.g. when a visibility of the mask has changed
          * while the parent layer was invinisble.
          */
 
