@@ -43,7 +43,7 @@ public:
         STRIP  /// Shows thumbnails arranged in a single row
     };
 
-    /// Sets a list of resources in the paintop list, when ever user press enter in the linedit of paintop_presets_popup Class
+    /// Sets a list of resources in the paintop list, when ever user press enter in the lineedit of paintop_presets_popup Class
     void setViewMode(ViewMode mode);
     void showButtons(bool show);
 
