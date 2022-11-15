@@ -688,7 +688,7 @@ class bk_max_flow {
       iterator_property_map<std::vector<bool>::iterator, IndexMap> m_in_active_list_map;
 
       std::list<vertex_descriptor> m_orphans;
-      tQueue m_child_orphans; // we use a second queuqe for child orphans, as they are FIFO processed
+      tQueue m_child_orphans; // we use a second queue for child orphans, as they are FIFO processed
 
       std::vector<bool> m_has_parent_vec;
       iterator_property_map<std::vector<bool>::iterator, IndexMap> m_has_parent_map;
