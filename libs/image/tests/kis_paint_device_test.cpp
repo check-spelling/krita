@@ -2321,7 +2321,7 @@ void KisPaintDeviceTest::stressTestMemoryFragmentation()
 #ifdef Q_OS_LINUX
         struct mallinfo info = mallinfo();
         qDebug() << "Allocated on heap:" << (info.arena >> 20) << "MiB";
-        qDebug() << "Mmaped regions:" << info.hblks << (info.hblkhd >> 20) << "MiB";
+        qDebug() << "Mmapped regions:" << info.hblks << (info.hblkhd >> 20) << "MiB";
         qDebug() << "Free fastbin chunks:" << info.smblks << (info.fsmblks >> 10)  << "KiB";
         qDebug() << "Allocated in ordinary blocks" << (info.uordblks >> 20) << "MiB";
         qDebug() << "Free in ordinary blocks" << info.ordblks << (info.fordblks >> 20) << "MiB";
