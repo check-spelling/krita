@@ -242,7 +242,7 @@ int doSomethingElse()
         VertexIndex target_idx = get(boost::vertex_index,graph,tgt);
         EdgeIndex edge_idx = get(boost::edge_index,graph,e);
 
-        capacity[edge_idx] = 255.0f - fabs(pixel_intensity[source_idx]-pixel_intensity[target_idx]); //you should change this to your "gradiant or intensity or something"
+        capacity[edge_idx] = 255.0f - fabs(pixel_intensity[source_idx]-pixel_intensity[target_idx]); //you should change this to your "gradient or intensity or something"
 
         reverse_edges[edge_idx]=edge(tgt,src,graph).first;//ADDED
 */
