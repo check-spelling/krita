@@ -716,7 +716,7 @@ bool KisInputManager::eventFilterImpl(QEvent * event)
                 && !d->touchHasBlockedPressEvents
                 && touchEvent->touchPoints().count() == 1
                 && touchEvent->touchPointStates() != Qt::TouchPointStationary
-                && (qAbs(currentPos.x() - d->previousPos.x()) > 1		// stop wobbiliness which Qt sends us
+                && (qAbs(currentPos.x() - d->previousPos.x()) > 1		// stop wobbliness which Qt sends us
                 ||  qAbs(currentPos.y() - d->previousPos.y()) > 1)))
             {
                 d->previousPos = currentPos;
