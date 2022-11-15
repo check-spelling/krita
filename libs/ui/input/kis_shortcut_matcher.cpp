@@ -445,7 +445,7 @@ bool KisShortcutMatcher::touchUpdateEvent(QTouchEvent *event)
             retval = true;
         }
     } else {
-        // triggerred if a new finger was added, which might result in shortcut not matching the action
+        // triggered if a new finger was added, which might result in shortcut not matching the action
         if ((event->touchPointStates() & Qt::TouchPointReleased) == Qt::TouchPointReleased) {
             // we should end the event as an event with more touchpoints was received
             if (m_d->maxTouchPoints <= touchPointCount) {
