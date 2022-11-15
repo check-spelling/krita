@@ -34,7 +34,7 @@ const QString DlgImageSize::PARAM_IMSIZE_UNIT = DlgImageSize::PARAM_PREFIX + "_i
 const QString DlgImageSize::PARAM_SIZE_UNIT = DlgImageSize::PARAM_PREFIX + "_sizeunit";
 const QString DlgImageSize::PARAM_RES_UNIT = DlgImageSize::PARAM_PREFIX + "_resunit";
 const QString DlgImageSize::PARAM_RATIO_LOCK = DlgImageSize::PARAM_PREFIX + "_ratioLock";
-const QString DlgImageSize::PARAM_PRINT_SIZE_SEPARATE = DlgImageSize::PARAM_PREFIX + "_printSizeSeparatly";
+const QString DlgImageSize::PARAM_PRINT_SIZE_SEPARATE = DlgImageSize::PARAM_PREFIX + "_printSizeSeparately";
 
 static QString pixelsInchStr()
 {
