@@ -36,7 +36,7 @@ ManifestDPIAware false
 !else
 	!define KRITA_INSTALLER_OUTPUT "${KRITA_INSTALLER_OUTPUT_DIR}\${KRITA_INSTALLER_OUTPUT_NAME}"
 !endif
-!define KRTIA_PUBLISHER "Krita Foundation"
+!define KRITA_PUBLISHER "Krita Foundation"
 !ifdef KRITA_INSTALLER_64
 	!define KRITA_PRODUCTNAME "Krita (x64)"
 	!define KRITA_UNINSTALL_REGKEY "Krita_x64"
@@ -46,11 +46,11 @@ ManifestDPIAware false
 !endif
 
 VIProductVersion "${KRITA_VERSION}"
-VIAddVersionKey "CompanyName" "${KRTIA_PUBLISHER}"
+VIAddVersionKey "CompanyName" "${KRITA_PUBLISHER}"
 VIAddVersionKey "FileDescription" "${KRITA_PRODUCTNAME} ${KRITA_VERSION_DISPLAY} Setup"
 VIAddVersionKey "FileVersion" "${KRITA_VERSION}"
 VIAddVersionKey "InternalName" "${KRITA_INSTALLER_OUTPUT_NAME}"
-VIAddVersionKey "LegalCopyright" "${KRTIA_PUBLISHER}"
+VIAddVersionKey "LegalCopyright" "${KRITA_PUBLISHER}"
 VIAddVersionKey "OriginalFileName" "${KRITA_INSTALLER_OUTPUT_NAME}"
 VIAddVersionKey "ProductName" "${KRITA_PRODUCTNAME} ${KRITA_VERSION_DISPLAY} Setup"
 VIAddVersionKey "ProductVersion" "${KRITA_VERSION}"
@@ -197,7 +197,7 @@ Section "-Thing"
 	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${KRITA_UNINSTALL_REGKEY}" \
 	                 "InstallLocation" "$INSTDIR"
 	WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${KRITA_UNINSTALL_REGKEY}" \
-	                 "Publisher" "${KRTIA_PUBLISHER}"
+	                 "Publisher" "${KRITA_PUBLISHER}"
 	#WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${KRITA_UNINSTALL_REGKEY}" \
 	#                   "EstimatedSize" 250000
 	WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${KRITA_UNINSTALL_REGKEY}" \
