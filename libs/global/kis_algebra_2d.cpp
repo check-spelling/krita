@@ -1250,7 +1250,7 @@ QPointF moveElasticPoint(const QPointF &pt,
         status = gsl_multimin_test_size (size, 1e-6);
 
         /**
-         * Sometimes the algorithm may converge to a wrond point,
+         * Sometimes the algorithm may converge to a wrong point,
          * then just try to force it search better or return invalid
          * result.
          */
