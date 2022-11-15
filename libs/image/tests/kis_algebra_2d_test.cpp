@@ -325,7 +325,7 @@ void KisAlgebra2DTest::testNullRectProcessing()
 
     QCOMPARE(QRectF(20, 20, 40, 40) & lineRect, QRectF());
 
-    QEXPECT_FAIL("", "Qt's konjunstion operator doesn't work with line-rects", Continue);
+    QEXPECT_FAIL("", "Qt's rectangle intersection operator doesn't work with line-rects", Continue);
     QCOMPARE(QRectF(10, 10, 40, 40) & lineRect, QRectF(10, 10, 40, 0));
 
     /// QPolygon's bounding rect
