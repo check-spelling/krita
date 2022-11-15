@@ -452,7 +452,7 @@ void ContainerNode::unplugClient(ContainerClient *client)
                                + client->customElements.count()),
                          mergingIt);
 
-    // unplug all actionslists
+    // unplug all actionlists
 
     ActionListMap::ConstIterator alIt = client->actionLists.constBegin();
     ActionListMap::ConstIterator alEnd = client->actionLists.constEnd();
