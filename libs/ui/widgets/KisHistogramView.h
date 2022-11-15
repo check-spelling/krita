@@ -101,7 +101,7 @@ public Q_SLOTS:
     /**
      * @brief Activates the given channels of the given histogram. This allows to
      * change the view between the different histograms and channels passed to
-     * the setup function. This functionactivates multiple channels that will be
+     * the setup function. This function activates multiple channels that will be
      * displayed at once in the widget
      * @see channel
      * @see setChannel
