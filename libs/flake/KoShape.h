@@ -415,7 +415,7 @@ public:
     QSharedPointer<KoShapeBackground> background() const;
 
     /**
-     * @brief setInheritBackground marks a shape as inhiriting the background
+     * @brief setInheritBackground marks a shape as inheriting the background
      * from the parent shape. NOTE: The currently selected background is destroyed.
      * @param value true if the shape should inherit the filling background
      */
@@ -694,7 +694,7 @@ public:
     void setStroke(KoShapeStrokeModelSP stroke);
 
     /**
-     * @brief setInheritStroke marks a shape as inhiriting the stroke
+     * @brief setInheritStroke marks a shape as inheriting the stroke
      * from the parent shape. NOTE: The currently selected stroke is destroyed.
      * @param value true if the shape should inherit the stroke style
      */
