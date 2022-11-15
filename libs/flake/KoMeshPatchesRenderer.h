@@ -72,7 +72,7 @@ public:
         cs->fromQColor(color2, c[2]);
         cs->fromQColor(color3, c[3]);
 
-        bool verticalDiv = patch->isDivisbleVertically();
+        bool verticalDiv = patch->isDivisibleVertically();
         bool horizontalDiv = patch->isDivisibleHorizontally();
         bool colorVariationExists = checkColorVariance(c);
 
