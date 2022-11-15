@@ -13,7 +13,7 @@ class KoColorSpace;
 
 /**
  * This class represents a virtual channel that can have a curve in
- * curves filter. Vitrual channel can be of various types:
+ * curves filter. Virtual channel can be of various types:
  *
  * - REAL --- represents a real color channel of the image,
  *            like R, G, B or A
