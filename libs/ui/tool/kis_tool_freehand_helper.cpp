@@ -514,10 +514,10 @@ void KisToolFreehandHelper::paint(KisPaintInformation &info)
                 if (i < m_d->history.size() - 1) {
                     pressureGrad = nextInfo.pressure() - m_d->history.at(i + 1).pressure();
 
-                    const qreal tailAgressiveness = 40.0 * m_d->smoothingOptions->tailAggressiveness();
+                    const qreal tailAggressiveness = 40.0 * m_d->smoothingOptions->tailAggressiveness();
 
                     if (pressureGrad > 0.0 ) {
-                        pressureGrad *= tailAgressiveness * (1.0 - nextInfo.pressure());
+                        pressureGrad *= tailAggressiveness * (1.0 - nextInfo.pressure());
                         distance += pressureGrad * 3.0 * sigma; // (3 * sigma) --- holds > 90% of the region
                     }
                 }

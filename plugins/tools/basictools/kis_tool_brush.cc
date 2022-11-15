@@ -205,7 +205,7 @@ void KisToolBrush::slotSetSmoothnessDistance(qreal distance)
     emit smoothnessQualityChanged();
 }
 
-void KisToolBrush::slotSetTailAgressiveness(qreal argh_rhhrr)
+void KisToolBrush::slotSetTailAggressiveness(qreal argh_rhhrr)
 {
     smoothingOptions()->setTailAggressiveness(argh_rhhrr);
     emit smoothnessFactorChanged();
@@ -411,7 +411,7 @@ QWidget * KisToolBrush::createOptionWidget()
     m_sliderTailAggressiveness->setRange(0.0, 1.0, 2);
     m_sliderTailAggressiveness->setSingleStep(0.01);
     m_sliderTailAggressiveness->setEnabled(true);
-    connect(m_sliderTailAggressiveness, SIGNAL(valueChanged(qreal)), SLOT(slotSetTailAgressiveness(qreal)));
+    connect(m_sliderTailAggressiveness, SIGNAL(valueChanged(qreal)), SLOT(slotSetTailAggressiveness(qreal)));
     m_sliderTailAggressiveness->setValue(smoothingOptions()->tailAggressiveness());
     addOptionWidgetOption(m_sliderTailAggressiveness, new QLabel(i18n("Stroke Ending:")));
 
