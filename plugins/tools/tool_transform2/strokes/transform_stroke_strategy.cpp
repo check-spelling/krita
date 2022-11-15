@@ -322,7 +322,7 @@ void TransformStrokeStrategy::doStrokeCallback(KisStrokeJobData *data)
         } else if (m_selection) {
 
             /**
-             * We use usual transaction here, because we cannot calsulate
+             * We use usual transaction here, because we cannot calculate
              * transformation for perspective and warp workers.
              */
             KisTransaction transaction(m_selection->pixelSelection());
