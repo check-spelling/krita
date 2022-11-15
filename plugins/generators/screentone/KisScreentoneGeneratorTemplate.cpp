@@ -311,7 +311,7 @@ void KisScreentoneGeneratorTemplate::makeTemplate(const KisScreentoneGeneratorCo
     // macrocell, but also some other areas outside (parts of adjacent
     // macrocells) if, for example, the screen is rotated. To get later a value
     // from the template we only use the pixels inside the macrocell, but the
-    // pixels outside are usefull to perform bilinear interpolation
+    // pixels outside are useful to perform bilinear interpolation
 
     // Get the horizontal and vertical points at cell corners
     QVector<QPointF> horizontalCellPositions;
