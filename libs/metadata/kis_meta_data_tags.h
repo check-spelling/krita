@@ -1114,7 +1114,7 @@ const uint16_t SemanticName = 0xcd2e;
  */
 const uint16_t SemanticInstanceID = 0xcd30;
 /**
- * The illuminant used for an optional thrid set of color calibration tags (ColorMatrix3, CameraCalibration3, ReductionMatrix3). The legal values for this tag
+ * The illuminant used for an optional third set of color calibration tags (ColorMatrix3, CameraCalibration3, ReductionMatrix3). The legal values for this tag
  * are the same as the legal values for the LightSource EXIF tag; CalibrationIlluminant1 and CalibrationIlluminant2 must also be present. If set to 255 (Other),
  * then the IFD must also include a IlluminantData3 tag to specify the x-y chromaticity or spectral power distribution function for this illuminant.
  */
