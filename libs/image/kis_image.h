@@ -1110,7 +1110,7 @@ public Q_SLOTS:
 
     /**
      * @brief removes already installed filter from the stack of updates filers
-     * @param cookie a cookie object returned by addProjectionUpdatesFilter() on intallation
+     * @param cookie a cookie object returned by addProjectionUpdatesFilter() on installation
      * @return the installed filter. If the cookie is invalid, or nesting rule has been
      *         broken, then removeProjectionUpdatesFilter() may safe-assert and return nullptr.
      *
