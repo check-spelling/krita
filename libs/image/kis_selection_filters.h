@@ -153,7 +153,7 @@ public:
 
 private:
     /**
-     * @brief Edges with gradient less than this value will not be antiAliasied
+     * @brief Edges with gradient less than this value will not be antiAliased
      */
     static constexpr qint32 edgeThreshold {4};
     /**
