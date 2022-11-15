@@ -432,7 +432,7 @@ KisCurveOption::ValueComponents KisCurveOption::computeValueComponents(const Kis
                 double min = *std::min_element(sensorValues.begin(), sensorValues.end());
                 components.scaling = max-min;
 
-            } else {                         //multuply - default
+            } else {                         //multiply - default
                 double i;
                 foreach (i, sensorValues) {
                     components.scaling *= i;
