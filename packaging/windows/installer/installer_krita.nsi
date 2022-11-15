@@ -96,7 +96,7 @@ Page Custom func_BeforeInstallPage_Init
 !insertmacro MUI_PAGE_FINISH
 
 # Uninstaller Pages
-!define MUI_PAGE_CUSTOMFUNCTION_PRE un.func_UnintallFirstpage_Init
+!define MUI_PAGE_CUSTOMFUNCTION_PRE un.func_UninstallFirstpage_Init
 !insertmacro MUI_UNPAGE_CONFIRM
 !insertmacro MUI_UNPAGE_INSTFILES
 
@@ -590,7 +590,7 @@ Function un.onInit
 	ReadRegDWORD $UninstallShellExStandalone HKLM "Software\Krita\ShellExtension" "Standalone"
 	${If} ${Silent}
 		# Only check here if running in silent mode. It's otherwise checked in
-		# un.func_UnintallFirstpage_Init in order to display a prompt in the
+		# un.func_UninstallFirstpage_Init in order to display a prompt in the
 		# correct language.
 		${If} ${IsFileinUse} "$INSTDIR\bin\krita.exe"
 			SetErrorLevel 10
@@ -599,7 +599,7 @@ Function un.onInit
 	${EndIf}
 FunctionEnd
 
-Function un.func_UnintallFirstpage_Init
+Function un.func_UninstallFirstpage_Init
 	${If} ${IsFileinUse} "$INSTDIR\bin\krita.exe"
 		${IfNot} ${Silent}
 			MessageBox MB_OK|MB_ICONEXCLAMATION "$(MsgUninstallKritaRunning)"
