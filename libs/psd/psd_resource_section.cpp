@@ -256,7 +256,7 @@ QString PSDImageResourceSection::idToString(PSDImageResourceSection::PSDResource
     case SHEET_DISCLOSURE:
         return "0x0434 - (Photoshop CS3) Sheet Disclosure. 4 bytes (descriptor version = 16), Descriptor (see See Descriptor structure)";
     case CS3_DISPLAY_INFO:
-        return "0x0435 - (Photoshop CS3) DisplayInfo structure to support floating point clors. Also see ID 1007. See Appendix A in Photoshop API Guide.pdf .";
+        return "0x0435 - (Photoshop CS3) DisplayInfo structure to support floating point colors. Also see ID 1007. See Appendix A in Photoshop API Guide.pdf .";
     case ONION_SKINS:
         return "0x0436 - (Photoshop CS3) Onion Skins. 4 bytes (descriptor version = 16), Descriptor (see See Descriptor structure)";
 
