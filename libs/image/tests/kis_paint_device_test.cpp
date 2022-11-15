@@ -676,7 +676,7 @@ void KisPaintDeviceTest::testOpacity()
     QPoint errpoint;
 
     if (!TestUtil::compareQImages(errpoint, checkResult, result, 1)) {
-        checkResult.save("kis_paint_device_test_test_blt_fixed_opactiy_expected.png");
+        checkResult.save("kis_paint_device_test_test_blt_fixed_opacity_expected.png");
         result.save("kis_paint_device_test_test_blt_fixed_opacity_result.png");
         QFAIL(QString("Failed to create identical image, first different pixel: %1,%2 \n").arg(errpoint.x()).arg(errpoint.y()).toLatin1());
     }
