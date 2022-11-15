@@ -983,7 +983,7 @@ void KisTiledDataManagerTest::stressTestExtentsColumn()
     QVERIFY(column.max() < column.min()); // really empty :)
 }
 
-void KisTiledDataManagerTest::benchmaskQRegion()
+void KisTiledDataManagerTest::benchmarkQRegion()
 {
     QVector<QRect> rects;
 
@@ -1013,7 +1013,7 @@ void KisTiledDataManagerTest::benchmaskQRegion()
 }
 
 #include "KisRegion.h"
-void KisTiledDataManagerTest::benchmaskKisRegion()
+void KisTiledDataManagerTest::benchmarkKisRegion()
 {
     QVector<QRect> rects;
 
@@ -1048,7 +1048,7 @@ inline bool findPoint (const QPoint &pt, const QVector<QRect> &rects)
     return false;
 }
 
-void KisTiledDataManagerTest::benchmaskOverlappedKisRegion()
+void KisTiledDataManagerTest::benchmarkOverlappedKisRegion()
 {
     QVector<QRect> rects;
 
