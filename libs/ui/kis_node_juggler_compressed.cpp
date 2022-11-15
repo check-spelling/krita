@@ -130,7 +130,7 @@ public:
 
 private:
 
-    struct NewParentCollistionPolicy {
+    struct NewParentCollisionPolicy {
         static void setSuppressRefresh(MoveNodeStructSP update, bool value) {
             update->suppressNewParentRefresh = value;
         }
@@ -139,7 +139,7 @@ private:
         }
     };
 
-    struct OldParentCollistionPolicy {
+    struct OldParentCollisionPolicy {
         static void setSuppressRefresh(MoveNodeStructSP update, bool value) {
             update->suppressOldParentRefresh = value;
         }
@@ -169,8 +169,8 @@ private:
     }
 
     static void resolveParentCollisions(MovedNodesHash *hash) {
-        resolveParentCollisionsImpl<NewParentCollistionPolicy>(hash);
-        resolveParentCollisionsImpl<OldParentCollistionPolicy>(hash);
+        resolveParentCollisionsImpl<NewParentCollisionPolicy>(hash);
+        resolveParentCollisionsImpl<OldParentCollisionPolicy>(hash);
     }
 
     static void addToHashLazy(MovedNodesHash *hash, MoveNodeStructSP moveStruct) {
