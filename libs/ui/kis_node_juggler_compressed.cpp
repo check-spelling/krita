@@ -368,7 +368,7 @@ struct LowerRaiseLayer : public KisCommandUtils::AggregateCommand {
     }
 
     void populateChildCommands() override {
-        KisNodeList sortedNodes = KisLayerUtils::sortAndFilterAnyMergableNodesSafe(m_nodes, m_image);
+        KisNodeList sortedNodes = KisLayerUtils::sortAndFilterAnyMergeableNodesSafe(m_nodes, m_image);
         KisNodeSP headNode = m_lower ? sortedNodes.first() : sortedNodes.last();
         const NodesType nodesType = getNodesType(sortedNodes);
 
@@ -487,7 +487,7 @@ struct DuplicateLayers : public KisCommandUtils::AggregateCommand {
           m_mode(mode) {}
 
     void populateChildCommands() override {
-        KisNodeList filteredNodes = KisLayerUtils::sortAndFilterAnyMergableNodesSafe(m_nodes, m_image);
+        KisNodeList filteredNodes = KisLayerUtils::sortAndFilterAnyMergeableNodesSafe(m_nodes, m_image);
 
         if (filteredNodes.isEmpty()) return;
 
@@ -644,7 +644,7 @@ struct RemoveLayers : private KisLayerUtils::RemoveNodeHelper, public KisCommand
 
     void populateChildCommands() override {
         KisNodeList filteredNodes = m_nodes;
-        KisLayerUtils::filterMergableNodes(filteredNodes, true);
+        KisLayerUtils::filterMergeableNodes(filteredNodes, true);
         KisLayerUtils::filterUnlockedNodes(filteredNodes);
 
         if (filteredNodes.isEmpty()) return;

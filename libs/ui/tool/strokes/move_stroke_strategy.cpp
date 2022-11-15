@@ -264,7 +264,7 @@ void MoveStrokeStrategy::initStrokeCallback()
         m_nodes = m_requestedNodeSelection.selectNodesToProcess();
 
         if (!m_nodes.isEmpty()) {
-            m_nodes = KisLayerUtils::sortAndFilterMergableInternalNodes(m_nodes, true);
+            m_nodes = KisLayerUtils::sortAndFilterMergeableInternalNodes(m_nodes, true);
         }
 
         KritaUtils::filterContainer<KisNodeList>(m_nodes,

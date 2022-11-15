@@ -637,7 +637,7 @@ KisNodeSP KisLayerManager::addCloneLayer(KisNodeList nodes)
 {
     KisImageWSP image = m_view->image();
 
-    KisNodeList filteredNodes = KisLayerUtils::sortAndFilterMergableInternalNodes(nodes, false);
+    KisNodeList filteredNodes = KisLayerUtils::sortAndFilterMergeableInternalNodes(nodes, false);
     if (filteredNodes.isEmpty()) return KisNodeSP();
 
     KisNodeSP newAbove = filteredNodes.last();

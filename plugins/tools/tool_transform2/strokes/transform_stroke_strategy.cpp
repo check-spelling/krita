@@ -527,7 +527,7 @@ void TransformStrokeStrategy::initStrokeCallback()
     KisBatchNodeUpdateSP sharedData(new KisBatchNodeUpdate());
 
     KritaUtils::addJobBarrier(extraInitJobs, [this, sharedData]() {
-        KisNodeList filteredRoots = KisLayerUtils::sortAndFilterMergableInternalNodes(m_processedNodes, true);
+        KisNodeList filteredRoots = KisLayerUtils::sortAndFilterMergeableInternalNodes(m_processedNodes, true);
         Q_FOREACH (KisNodeSP root, filteredRoots) {
             sharedData->addUpdate(root, root->projectionPlane()->tightUserVisibleBounds());
         }
