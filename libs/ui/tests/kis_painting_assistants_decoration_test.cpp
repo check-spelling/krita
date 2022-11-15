@@ -149,7 +149,7 @@ void KisPaintingAssistantsDecorationTest::testParallelRulerAdjustPosition()
     // Add an assistant
     paintingAssistantsDecoration->addAssistant(assistant);
 
-    // First compute directly via the assisant
+    // First compute directly via the assistant
     adjustedPosition = assistant->adjustPosition(p2, startPosition, true);
     // The position should be adjusted to the horizontal direction
     QVERIFY(adjustedPosition.x() == 90.0);

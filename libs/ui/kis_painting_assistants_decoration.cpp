@@ -153,7 +153,7 @@ QPointF KisPaintingAssistantsDecoration::adjustPosition(const QPointF& point, co
 {
 
     if (assistants().empty()) {
-        // No assisants, so no adjustment
+        // No assistants, so no adjustment
         return point;
     }
 
@@ -186,7 +186,7 @@ QPointF KisPaintingAssistantsDecoration::adjustPosition(const QPointF& point, co
             }
             return newpoint;
         } else {
-            // One assisant, but it is not active, so no adjustment
+            // One assistant, but it is not active, so no adjustment
             return point;
         }
     }
@@ -265,7 +265,7 @@ QPointF KisPaintingAssistantsDecoration::adjustPosition(const QPointF& point, co
 void KisPaintingAssistantsDecoration::adjustLine(QPointF &point, QPointF &strokeBegin)
 {
     if (assistants().empty()) {
-        // No assisants, so no adjustment
+        // No assistants, so no adjustment
         return;
     }
 
