@@ -262,7 +262,7 @@ bool intersectLineConvexPolygon(QLineF &line, const QPolygonF polygon, bool exte
 
     // Cyrus-Beck algorithm: https://en.wikipedia.org/wiki/Cyrus%E2%80%93Beck_algorithm
 
-    // parametric equaltion for the line:
+    // parametric equation for the line:
     // p(t) = t*P1 + (1-t)*P2
 
     // we can't use infinity here, because the points would all end up as (+/- inf, +/- inf)
