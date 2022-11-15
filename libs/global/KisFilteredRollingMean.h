@@ -38,7 +38,7 @@ public:
      *
      * \p windowSize is the size of the samples window
      * \p effectivePortion the portion of the samples window
-     *    that is used for actual mean calclulation. On each
+     *    that is used for actual mean calculation. On each
      *    side of the sorted range (0.5 * (1.0 - effectivePortion) *
      *    windowSize) values are dropped and are not counted for
      *    the mean calculation.
