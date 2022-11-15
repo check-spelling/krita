@@ -257,7 +257,7 @@ bool PSDLayerMaskSection::readPsdImpl(QIODevice &io)
 
         for (int i = 0; i < 4; ++i) {
             if (!psdread(io, globalLayerMaskInfo.colorComponents[i])) {
-                error = QString("Could not read mask info visualizaion color component %1").arg(i);
+                error = QString("Could not read mask info visualization color component %1").arg(i);
                 return false;
             }
         }
@@ -325,7 +325,7 @@ bool PSDLayerMaskSection::readGlobalMask(QIODevice &io)
 
         for (int i = 0; i < 4; ++i) {
             if (!psdread<byteOrder>(io, globalLayerMaskInfo.colorComponents[i])) {
-                error = QString("Could not read mask info visualizaion color component %1").arg(i);
+                error = QString("Could not read mask info visualization color component %1").arg(i);
                 return false;
             }
         }
