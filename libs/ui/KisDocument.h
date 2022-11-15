@@ -430,7 +430,7 @@ public:
     KisImportExportManager *importExportManager() const;
 
     /**
-     * @brief serializeToNativeByteArray daves the document into a .kra file wtitten
+     * @brief serializeToNativeByteArray daves the document into a .kra file written
      * to a memory-based byte-array
      * @return a byte array containing the .kra file
      */
