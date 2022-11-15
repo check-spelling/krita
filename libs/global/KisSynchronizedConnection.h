@@ -130,7 +130,7 @@ public:
     {}
 
     /**
-     * Triggers the delivery of the signal to the destination slot manualy
+     * Triggers the delivery of the signal to the destination slot manually
      */
     void start(const Args &...argsTuple) {
         {
