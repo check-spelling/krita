@@ -573,7 +573,7 @@ const uint16_t PrintImageMatching = 0xc4a5;
  */
 const uint16_t DNGVersion = 0xc612;
 /**
- * This tag specifies the oldest version of the Digital Negative specification for which a file is compatible. Readers shouldnot attempt to read a file if this
+ * This tag specifies the oldest version of the Digital Negative specification for which a file is compatible. Readers should not attempt to read a file if this
  * tag specifies a version number that is higher than the version number of the specification the reader was based on.  In addition to checking the version
  * tags, readers should, for all tags, check the types, counts, and values, to verify it is able to correctly read the file.
  */
