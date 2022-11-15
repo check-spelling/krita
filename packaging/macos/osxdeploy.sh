@@ -412,7 +412,7 @@ strip_python_dmginstall() {
     rm -rf Python.app
 }
 
-# Remove any missing rpath poiting to BUILDROOT
+# Remove any missing rpath pointing to BUILDROOT
 libs_clean_rpath () {
     for libFile in ${@}; do
         rpath=$(otool -l "${libFile}" | grep "path ${BUILDROOT}" | awk '{$1=$1;print $2}')
