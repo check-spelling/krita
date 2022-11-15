@@ -36,7 +36,7 @@ public:
 
     /**
      * @return true if the color space should be shown in a User Interface, or false
-     *         other wise.
+     *         otherwise.
      */
     virtual bool userVisible() const = 0;
 

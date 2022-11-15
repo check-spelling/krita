@@ -79,7 +79,7 @@ QPair<KoColor, KoColor> KRITAIMAGE_EXPORT getDarkestAndWhitestColors(const KisPa
  *        the output midpoint
  * @param blackPoint If this gamma value will be part of a more complex levels
  *                   adjustment, set its black point here. Set it to 0
- *                   otherwhise. Since the gamma correction is applied after
+ *                   otherwise. Since the gamma correction is applied after
  *                   the linear mapping given by the black and white points in a
  *                   levels adjustment, you have to provide those here to get
  *                   the correct gamma
