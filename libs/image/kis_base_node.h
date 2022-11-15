@@ -397,7 +397,7 @@ public:
 
     /**
      * @return true if the node is editable and has a paintDevice()
-     *         which which can be used for accessing pixels. It is an
+     *         which can be used for accessing pixels. It is an
      *         equivalent to (isEditable() && paintDevice())
      */
     bool hasEditablePaintDevice() const;
