@@ -571,7 +571,7 @@ void TransformStrokeStrategy::finishStrokeImpl(bool applyTransform, const ToolTr
      * until there are no jobs left in the stroke's queue).
      *
      * Therefore we should check for double-entry here and
-     * make sure the finilizing jobs are no cancellable.
+     * make sure the finalizing jobs are no cancellable.
      */
 
     if (m_finalizingActionsStarted) return;
