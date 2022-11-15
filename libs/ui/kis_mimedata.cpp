@@ -125,7 +125,7 @@ KisDocument *createDocument(QList<KisNodeSP> nodes, KisImageSP srcImage, const Q
         Q_FOREACH (KisNodeSP node, nodes) {
             KisNodeSP clonedNode = safeCopyNode(node);
             /// HACK ALERT: here we just initialize parent image link
-            ///             and skip initilizing shapeController!
+            ///             and skip initializing shapeController!
             ///             Ideally, we should call initializeExternalNode()
             ///             instead.
             image->addNode(clonedNode);
