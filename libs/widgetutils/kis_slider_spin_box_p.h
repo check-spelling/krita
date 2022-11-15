@@ -270,7 +270,7 @@ public:
         m_q->setDecimals(newNumberOfDecimals);
         m_q->BaseSpinBoxType::setRange(newMinimum, newMaximum);
         if (computeNewFastSliderStep) {
-            // Behavior takem from the old slider. Kind of arbitrary
+            // Behavior taken from the old slider. Kind of arbitrary
             const double rangeSize = m_q->maximum() - m_q->minimum();
             if (rangeSize >= 2.0 || newNumberOfDecimals <= 0) {
                 m_fastSliderStep = 1.0;
