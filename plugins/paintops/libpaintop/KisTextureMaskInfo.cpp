@@ -209,7 +209,7 @@ void KisTextureMaskInfo::recalculateMask()
             }
 
             if (m_cutoffPolicy == 1 && (neutralAdjustedValue < (m_cutoffLeft / 255.0) || neutralAdjustedValue >(m_cutoffRight / 255.0))) {
-                // mask out the dab if it's outside the pattern's cuttoff points
+                // mask out the dab if it's outside the pattern's cutoff points
                 alpha = OPACITY_TRANSPARENT_F;
                 if (!useAlpha) {
                     neutralAdjustedValue = alpha;
