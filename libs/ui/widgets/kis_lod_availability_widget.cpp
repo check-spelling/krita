@@ -197,7 +197,7 @@ void KisLodAvailabilityWidget::setLimitations(const KisPaintopLodLimitations &l)
             !isBlocked && !isBlockedByThreshold &&
             m_d->resourceManager->resource(KoCanvasResource::LodAvailability).toBool();
 
-        m_d->resourceManager->setResource(KoCanvasResource::EffectiveLodAvailablility, lodAvailableForUse);
+        m_d->resourceManager->setResource(KoCanvasResource::EffectiveLodAvailability, lodAvailableForUse);
     }
 
 }
