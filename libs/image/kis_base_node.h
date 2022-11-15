@@ -589,7 +589,7 @@ public:
      * in cases such as animation curves where you might want to ask
      * which channels it supports before allowing the user to add.
      *
-     * @param id querried channel
+     * @param id queried channel
      * @return bool whether it supports said channel or not.
      */
     virtual bool supportsKeyframeChannel(const QString &id);
