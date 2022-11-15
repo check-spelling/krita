@@ -1126,7 +1126,7 @@ SvgMeshGradient* prepareMeshGradientForShape(SvgGradientHelper *gradient,
         resultGradient->setTransform(gradient->transform() * relativeToShape);
     } else {
         // NOTE: Krita's shapes use their own coordinate system. Where origin is at the top left
-        // of the SHAPE. All the mesh patches will be rendered in the global 'user' coorindate system
+        // of the SHAPE. All the mesh patches will be rendered in the global 'user' coordinate system
         // where the origin is at the top left of the LAYER/DOCUMENT.
 
         // Get the user coordinates of the shape
