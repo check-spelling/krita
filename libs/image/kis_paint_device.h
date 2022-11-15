@@ -896,7 +896,7 @@ public:
     friend class PaintDeviceCache;
 
     /**
-     * Caclculates exact bounds of the device. Used internally
+     * Calculates exact bounds of the device. Used internally
      * by a transparent caching system. The solution is very slow
      * because it does a linear scanline search. So the complexity
      * is n*n at worst.
