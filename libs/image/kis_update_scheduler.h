@@ -177,7 +177,7 @@ public:
     /**
      * Sets a callback that is called by the scheduler in the
      * beginning of every stroke that declared the necessity
-     * of the redo state clearence.
+     * of the redo state clearance.
      */
     void setPurgeRedoStateCallback(const std::function<void()> &callback);
 
