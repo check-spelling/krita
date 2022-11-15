@@ -48,7 +48,7 @@ public:
     bool moveNode(KisNodeSP node, KisNodeSP parent, KisNodeSP aboveThis);
 
     /**
-     * Move the givent node at the specified index. If the node already
+     * Move the given node at the specified index. If the node already
      * has a parent, it is removed from the parent's node list.
      *
      * childCount() is a valid index and appends to the end.
