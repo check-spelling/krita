@@ -212,7 +212,7 @@ public:
 
     /// Adds the given resource to the storage. If there is already a resource
     /// with the given filename of the given type, this should return false and
-    /// saveAsnewVersion should be used.
+    /// saveAsNewVersion should be used.
     bool addResource(KoResourceSP resource);
 
     /**
