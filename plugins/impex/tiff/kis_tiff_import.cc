@@ -774,7 +774,7 @@ KisTIFFImport::readImageFromTiff(KisDocument *m_doc,
         }
     }();
 
-    // Initisalize tiffReader
+    // Initialize tiffReader
     QVector<uint16_t> lineSizeCoeffs(nbchannels, 1);
     uint16_t vsubsampling = 1;
     uint16_t hsubsampling = 1;

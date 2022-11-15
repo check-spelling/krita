@@ -124,7 +124,7 @@ KisDocument *createDocument(QList<KisNodeSP> nodes, KisImageSP srcImage, const Q
         KisImageBarrierLockerWithFeedbackAllowNull locker(srcImage);
         Q_FOREACH (KisNodeSP node, nodes) {
             KisNodeSP clonedNode = safeCopyNode(node);
-            /// HACK ALERT: here we just initilize parent image link
+            /// HACK ALERT: here we just initialize parent image link
             ///             and skip initilizing shapeController!
             ///             Ideally, we should call initializeExternalNode()
             ///             instead.
