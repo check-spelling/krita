@@ -708,7 +708,7 @@ postbuild_cleanup() {
     rsync -rlptgoq --ignore-existing "${DEPBUILD_X86_64_DIR}/" "${DEPBUILD_FATBIN_DIR}"
     rm -rf "${KIS_INSTALL_DIR}"
     rsync -aq "${DEPBUILD_FATBIN_DIR}/" "${KIS_INSTALL_DIR}"
-    log "consolitating done! Build installed to ${KIS_INSTALL_DIR}"
+    log "consolidating done! Build installed to ${KIS_INSTALL_DIR}"
 }
 
 universal_plugin_build() {
