@@ -452,7 +452,7 @@ void KisToolFill::slotUpdateFill()
 
     if (m_effectiveFillMode == FillMode_FillContiguousRegion) {
         addFillingOperation(KritaUtils::rasterizePolylineDDA(m_seedPoints));
-        // clear to not re-add the segments, but retain the last point to mantain continuity
+        // clear to not re-add the segments, but retain the last point to maintain continuity
         m_seedPoints = {m_seedPoints.last()};
     } else {
         addFillingOperation(m_seedPoints.last());

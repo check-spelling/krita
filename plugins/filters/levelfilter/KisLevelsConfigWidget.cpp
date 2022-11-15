@@ -642,7 +642,7 @@ void KisLevelsConfigWidget::slot_buttonAutoLevels_clicked()
 void KisLevelsConfigWidget::slot_buttonAutoLevelsAllChannels_clicked()
 {
     // We can not use the copy constructor here since it makes use of implicit
-    // sharing. We mantain a pointer to the active levels info in m_levelsCurves.
+    // sharing. We maintain a pointer to the active levels info in m_levelsCurves.
     // So, if we change an element of m_levelsCurves that would create a new
     // vector and the pointer will be invalidated
     QVector<KisLevelsCurve> previousLevelsCurves;
@@ -675,7 +675,7 @@ void KisLevelsConfigWidget::slot_buttonAutoLevelsAllChannels_clicked()
     connect(autolevelsDialog, &QDialog::rejected,
         [this, previousLevelsCurves]()
         {
-            // We mantain a pointer to the active levels info in m_levelsCurves
+            // We maintain a pointer to the active levels info in m_levelsCurves
             // so we use this loop instead of the assignment operator to avoid
             // invalidation of the pointer
             for (int i = 0; i < m_levelsCurves.size(); ++i) {
