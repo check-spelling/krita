@@ -546,7 +546,7 @@ public Q_SLOTS:
     QImage thumbnail(int w, int h);
 
     /**
-     * @brief layerStyleToAsl retreive the current layer's style in ASL format.
+     * @brief layerStyleToAsl retrieve the current layer's style in ASL format.
      * @return a QString in ASL format representing the layer style.
      */
     QString layerStyleToAsl();
