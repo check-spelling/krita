@@ -423,7 +423,7 @@ libs_clean_rpath () {
     done
 }
 
-# Multhread version
+# Multithreaded version
 # of libs_clean_rpath, but makes assumptions
 delete_install_rpath() {
     xargs -P4 -I FILE install_name_tool -delete_rpath "${BUILDROOT}/i/lib" FILE 2> "${BUILDROOT}/deploy_error.log"
