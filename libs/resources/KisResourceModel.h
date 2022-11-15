@@ -116,7 +116,7 @@ public:
     /**
      * @brief importWillOverwriteResource checks is importing a resource with this filename will overwrite anything
      *
-     * If this funciton returns true, then importResource() is guaranteed to
+     * If this function returns true, then importResource() is guaranteed to
      * fail with 'allowOverwrite' set to false.
      *
      * @param filename file name of the resource if preset. File name may be used

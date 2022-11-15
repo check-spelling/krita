@@ -276,7 +276,7 @@ const KoColorSpace *KisOverlayPaintDeviceWrapper::overlayColorSpace() const
 KisPaintDeviceSP KisOverlayPaintDeviceWrapper::createPreciseCompositionSourceDevice()
 {
     /**
-     * TODO: this funciton has rather vague meaning when forcedOverlayColorSpace
+     * TODO: this function has rather vague meaning when forcedOverlayColorSpace
      *       feature is used
      */
 
