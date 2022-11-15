@@ -111,7 +111,7 @@ void KisRainDropsFilter::processImpl(KisPaintDeviceSP device,
 
     double    r, a;                             // polar coordinates
     double    OldRadius;                        // Radius before processing
-    double    NewfishEyes = (double)fishEyes * 0.01;  // FishEye fishEyesicients
+    double    NewfishEyes = (double)fishEyes * 0.01;  // FishEye Coefficients
     double    s;
     double    R, G, B;
 
