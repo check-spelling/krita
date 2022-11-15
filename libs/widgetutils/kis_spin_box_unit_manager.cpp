@@ -432,9 +432,9 @@ void KisSpinBoxUnitManager::setApparentUnitFromSymbol(QString pSymbol)
             newSymb = "°";
             break;
         }
-        goto default_indentifier; //always do default after handling possible special cases.
+        goto default_identifier; //always do default after handling possible special cases.
 
-default_indentifier:
+default_identifier:
     default:
         QStringList list = getsUnitSymbolList();
         if (list.contains(symbol, Qt::CaseInsensitive)) {
