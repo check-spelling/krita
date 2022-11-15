@@ -535,7 +535,7 @@ bool EXRConverter::Private::checkExtraLayersInfoConsistent(const QDomDocument &d
     bool result = (extraInfoLayers == exrLayerNames);
 
     if (!result) {
-        dbgKrita << "WARINING: Krita EXR extra layers info is inconsistent!";
+        dbgKrita << "WARNING: Krita EXR extra layers info is inconsistent!";
         dbgKrita << ppVar(extraInfoLayers.size()) << ppVar(exrLayerNames.size());
 
         std::set<std::string>::const_iterator it1 = extraInfoLayers.begin();
