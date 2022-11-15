@@ -305,7 +305,7 @@ public:
     virtual bool isValid() const;
 
     /**
-     * Overrides the method in KisPropertiesCofiguration to allow
+     * Overrides the method in KisPropertiesConfiguration to allow
      * onPropertyChanged() callback
      */
     void setProperty(const QString & name, const QVariant & value) override;

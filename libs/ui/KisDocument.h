@@ -578,7 +578,7 @@ public:
 
     bool closePath(bool promptToSave = true);
 
-    bool saveAs(const QString &path, const QByteArray &mimeType, bool showWarnings, KisPropertiesConfigurationSP exportConfigration = 0);
+    bool saveAs(const QString &path, const QByteArray &mimeType, bool showWarnings, KisPropertiesConfigurationSP exportConfiguration = 0);
 
     /**
      * Create a new image that has this document as a parent and
