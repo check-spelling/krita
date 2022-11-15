@@ -386,7 +386,7 @@ const KoColorSpace* KisDisplayColorConverter::paintingColorSpace() const
 void KisDisplayColorConverter::setMonitorProfile(const KoColorProfile *monitorProfile)
 {
     if (m_d->useHDRMode) {
-        // we don't use ICCcolor management in HDR mode
+        // we don't use ICC color management in HDR mode
         monitorProfile = KoColorSpaceRegistry::instance()->p709SRGBProfile();
     }
 
