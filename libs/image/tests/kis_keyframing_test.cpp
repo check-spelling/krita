@@ -415,7 +415,7 @@ void KisKeyframingTest::testRasterUndoRedo()
 
         QVERIFY(channel->keyframeAt(33));
         QVERIFY(channel->keyframeAt(35));
-        //thumnail?
+        //thumbnail?
     }
 
     channel->addKeyframe(66);
