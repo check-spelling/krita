@@ -755,7 +755,7 @@ bool KisShortcutMatcher::tryRunReadyShortcut( Qt::MouseButton button, QEvent* ev
             Private::RecursionGuard guard(this);
             goodCandidate->action()->begin(goodCandidate->shortcutIndex(), event);
 
-            // the tool migh have opened some dialog, which could break our event loop
+            // the tool might have opened some dialog, which could break our event loop
             if (guard.brokenByRecursion()) {
                 goodCandidate->action()->end(event);
                 m_d->runningShortcut = 0;
@@ -922,7 +922,7 @@ bool KisShortcutMatcher::tryRunTouchShortcut( QTouchEvent* event )
         goodCandidate->action()->activate(goodCandidate->shortcutIndex());
         goodCandidate->action()->begin(goodCandidate->shortcutIndex(), event);
 
-        // the tool migh have opened some dialog, which could break our event loop
+        // the tool might have opened some dialog, which could break our event loop
         if (guard.brokenByRecursion()) {
             goodCandidate->action()->end(event);
             m_d->touchShortcut = 0;
@@ -973,7 +973,7 @@ bool KisShortcutMatcher::tryRunNativeGestureShortcut(QNativeGestureEvent* event)
         goodCandidate->action()->activate(goodCandidate->shortcutIndex());
         goodCandidate->action()->begin(goodCandidate->shortcutIndex(), event);
 
-        // the tool migh have opened some dialog, which could break our event loop
+        // the tool might have opened some dialog, which could break our event loop
         if (guard.brokenByRecursion()) {
             goodCandidate->action()->end(event);
             m_d->nativeGestureShortcut = 0;

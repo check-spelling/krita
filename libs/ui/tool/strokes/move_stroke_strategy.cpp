@@ -256,7 +256,7 @@ MoveStrokeStrategy::MoveStrokeStrategy(const MoveStrokeStrategy &rhs, int lod)
 void MoveStrokeStrategy::initStrokeCallback()
 {
     /**
-     * Our LodN moght have already prepared the list of nodes for us,
+     * Our LodN might have already prepared the list of nodes for us,
      * so we should reuse it to avoid different nodes to be moved in
      * LodN and Lod0 modes.
      */
