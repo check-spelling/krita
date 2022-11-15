@@ -676,7 +676,7 @@ void KisLevelsConfigWidget::slot_buttonAutoLevelsAllChannels_clicked()
         [this, previousLevelsCurves]()
         {
             // We mantain a pointer to the active levels info in m_levelsCurves
-            // so we use this loop instead of the asignment operator to avoid
+            // so we use this loop instead of the assignment operator to avoid
             // invalidation of the pointer
             for (int i = 0; i < m_levelsCurves.size(); ++i) {
                 m_levelsCurves[i] = previousLevelsCurves[i];
