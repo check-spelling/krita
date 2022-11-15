@@ -147,7 +147,7 @@ public:
 
     /**
      * Prepare a shallow copy of all the shapes and the jobs to be rendered
-     * asynchronoursly later. The copies are stored in jobs, so that the user
+     * asynchronously later. The copies are stored in jobs, so that the user
      * could later pass these jobs into paintJob() in a separate thread.
      *
      * @param jobs a list of rects that are going to be updated. docUpdateRect
