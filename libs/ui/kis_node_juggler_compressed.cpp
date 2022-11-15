@@ -256,7 +256,7 @@ public:
             /**
              * When doing the first redo() some of the updates might
              * have already been executed by the juggler itself, so we
-             * should process'unhandled' updates only
+             * should process 'unhandled' updates only
              */
             m_updateData->processUnhandledUpdates();
         } else {
