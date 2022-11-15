@@ -56,7 +56,7 @@ void KisShortcutsEditorPrivate::initGUI(KisShortcutsEditor::ActionTypes types,
     ui.searchFilter->searchLine()->setTreeWidget(ui.list); // Plug into search line
     ui.list->header()->setSectionResizeMode(QHeaderView::ResizeToContents);
 
-    // Create the Delegate. It is responsible for the KKeySeqeunceWidgets that
+    // Create the Delegate. It is responsible for the KKeySequenceWidgets that
     // really change the shortcuts.
     delegate = new KisShortcutsEditorDelegate(
         ui.list,
