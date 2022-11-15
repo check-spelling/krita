@@ -362,7 +362,7 @@ struct KRITAPSD_EXPORT psd_layer_gradient_fill {
             angle = cfg->getDouble("end_position_angle", 0.0);
             scale = cfg->getDouble("end_position_distance", 100.0);
         } else {
-            // assume carthesian
+            // assume cartesian
             QPointF end(cfg->getDouble("end_position_x", 1.0), cfg->getDouble("end_position_y", 1.0));
             // calculate angle and scale.
             double width  = start.x() - end.x();
