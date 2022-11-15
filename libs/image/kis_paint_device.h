@@ -742,7 +742,7 @@ public:
      * @return interstroke data that is attached to the paint device.
      *
      * This data is managed by KisTransaction and can be used by brushes
-     * to store some data that can be shared betweet the strokes. For
+     * to store some data that can be shared between the strokes. For
      * example, information about drying of the pigment.
      *
      * The interstroke data is stored in a per-frame manner, that is,
