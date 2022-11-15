@@ -280,7 +280,7 @@ fi
 if [[ ${NOTARIZE} = "true" ]]; then
     print_msg "Signing checks complete, signatures are valid"
 else
-    echo "WARNING: Account information missing, Signtaure will not be performed"
+    echo "WARNING: Account information missing, Signature will not be performed"
     exit
 fi
 
