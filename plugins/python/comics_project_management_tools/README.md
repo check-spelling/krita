@@ -222,6 +222,6 @@ ACBF list:
             2. Support editing them from a right-click "properties" window.
             3. Support getting those values from python.
             4. have acbf_textclass read from the desc.
-    - Jump: proly not gonna support this.
+    - Jump: probably not gonna support this.
     - text url anchors: only used for references.
     - Font embedding: spec is super vague about this. (Not possible with QT)

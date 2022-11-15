@@ -1433,7 +1433,7 @@ QTextFormat KoSvgTextShapeMarkupConverter::formatDifference(QTextFormat test, QT
 {
     //copied from QTextDocument.cpp
     QTextFormat diff = test;
-    //props should proly compare itself to the main text format...
+    //props should probably compare itself to the main text format...
     const QMap<int, QVariant> props = reference.properties();
     for (QMap<int, QVariant>::ConstIterator it = props.begin(), end = props.end();
          it != end; ++it)

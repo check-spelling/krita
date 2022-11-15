@@ -89,7 +89,7 @@ KisToolLazyBrushOptionsWidget::KisToolLazyBrushOptionsWidget(KisCanvasResourcePr
 
     m_d->colorModel = new KisPaletteModel(this);
     m_d->ui->colorView->setPaletteModel(m_d->colorModel);
-    m_d->ui->colorView->setAllowModification(false); //people proly shouldn't be able to edit the colorentries themselves.
+    m_d->ui->colorView->setAllowModification(false); //people probably shouldn't be able to edit the colorentries themselves.
     m_d->ui->colorView->setCrossedKeyword("transparent");
 
     PaletteEventFilter *filter = new PaletteEventFilter(m_d->ui->colorView, this);
