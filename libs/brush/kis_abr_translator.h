@@ -23,8 +23,8 @@ const QString ABR_BRUSH_INTR = "Intr";
 const QString ABR_FLIP_X = "flipX";
 const QString ABR_FLIP_Y = "flipY";
 const QString ABR_USE_TIP_DYNAMICS = "useTipDynamics";
-const QString ABR_TIP_DYNAMICS_MINUMUM_DIAMETER = "minimumDiameter";
-const QString ABR_TIP_DYNAMICS_MINUMUM_ROUNDNESS = "minimumRoundness";
+const QString ABR_TIP_DYNAMICS_MINIMUM_DIAMETER = "minimumDiameter";
+const QString ABR_TIP_DYNAMICS_MINIMUM_ROUNDNESS = "minimumRoundness";
 const QString ABR_TIP_DYNAMICS_TILT_SCALE = "tiltScale";
 const QString ABR_SZVR = "szVr"; // size variance?
 const QString ABR_DYNAMICS_FADE_STEP = "fStp";
@@ -109,8 +109,8 @@ private:
     bool m_useTipDynamics;
     bool m_flipX;
     bool m_flipY;
-    double m_minumumDiameter;
-    double m_minumumRoundness;
+    double m_minimumDiameter;
+    double m_minimumRoundness;
     double m_tiltScale;
 
     AbrGroupProperties m_sizeVarianceProperties;

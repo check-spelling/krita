@@ -81,7 +81,7 @@ private:
     QWidget *m_currentBrushWidget {0};
     QHash<int, QWidget*> m_chooserMap;
     QButtonGroup *m_buttonGroup {0};
-    QSize m_mininmumSize;
+    QSize m_minimumSize;
 
     KisAutoBrushWidget *m_autoBrushWidget {0};
     KisPredefinedBrushChooser *m_predefinedBrushWidget {0};
