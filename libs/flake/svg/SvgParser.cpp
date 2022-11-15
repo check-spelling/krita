@@ -641,7 +641,7 @@ QSharedPointer<KoVectorPatternBackground> SvgParser::parsePattern(const QDomElem
     /**
      * In Krita shapes X,Y coordinates are baked into the shape global transform, but
      * the pattern should be painted in "user" coordinates. Therefore, we should handle
-     * this offfset separately.
+     * this offset separately.
      *
      * TODO: Please also note that this offset is different from extraShapeOffset(),
      * because A.inverted() * B != A * B.inverted(). I'm not sure which variant is
