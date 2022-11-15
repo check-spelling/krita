@@ -781,7 +781,7 @@ boost::optional<QPointF> KRITAGLOBAL_EXPORT findTrianglePointNearest(const QPoin
  * @param pt point in question, tied to points \p base, \p wingA and \p wingB
  *           using springs
  * @param base initial position of the dragged point
- * @param newBase final position of tht dragged point
+ * @param newBase final position of the dragged point
  * @param wingA first anchor point
  * @param wingB second anchor point
  * @return the new position of \p pt

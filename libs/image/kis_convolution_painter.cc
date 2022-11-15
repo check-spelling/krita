@@ -144,7 +144,7 @@ void KisConvolutionPainter::applyMatrix(const KisConvolutionKernelSP kernel, con
         /**
          * We don't use defaultBounds->topLevelWrapRect(), because
          * the main purpose of this wrapping is "getting expected
-         * results when applying to the the layer". If a mask is bigger
+         * results when applying to the layer". If a mask is bigger
          * than the image, then it should be wrapped around the mask
          * instead.
          */
