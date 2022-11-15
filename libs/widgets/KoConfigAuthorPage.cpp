@@ -114,7 +114,7 @@ KoConfigAuthorPage::KoConfigAuthorPage()
             if (!el.isNull()) {
                 aUi->leNickName->setText(el.text());
             }
-            el = root.firstChildElement("givenname");
+            el = root.firstChildElement("givenName");
             if (!el.isNull()) {
                 aUi->leFirstName->setText(el.text());
             }
@@ -361,9 +361,9 @@ void KoConfigAuthorPage::apply()
             QDomElement nickname = doc.createElement("nickname");
             nickname.appendChild(doc.createTextNode(aUi->leNickName->text()));
             root.appendChild(nickname);
-            QDomElement givenname = doc.createElement("givenname");
-            givenname.appendChild(doc.createTextNode(aUi->leFirstName->text()));
-            root.appendChild(givenname);
+            QDomElement givenName = doc.createElement("givenName");
+            givenName.appendChild(doc.createTextNode(aUi->leFirstName->text()));
+            root.appendChild(givenName);
             QDomElement familyname = doc.createElement("familyname");
             familyname.appendChild(doc.createTextNode(aUi->leLastName->text()));
             root.appendChild(familyname);
