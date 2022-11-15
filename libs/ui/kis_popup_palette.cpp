@@ -1360,7 +1360,7 @@ void KisPopupPalette::calculatePresetLayout()
                     firstRowRadius = tempFirstRowRadius;
                     row1to2Distance = tempRow1to2Distance;
                     r1p1 = tempR1p1;
-                    // these are unused after so it's not neccesary to update them
+                    // these are unused after so it's not necessary to update them
                     // row1to3Distance = tempRow1to3Distance;
                     // row1SiblingDistance = tempRow1SiblingDistance;
                     // r1p2 = tempR1p2;
@@ -1403,7 +1403,7 @@ void KisPopupPalette::calculatePresetLayout()
                 ) {
                     secondRowRadius = tempRadius;
                     secondRowPos = tempSecondRowPos;
-                    // these are unused after so it's not neccesary to update them
+                    // these are unused after so it's not necessary to update them
                     // r2p1 = tempR2p1;
                     // row1to2Distance = tempRow1to2Distance;
                     // row2to3Distance = tempRow2to3Distance;
