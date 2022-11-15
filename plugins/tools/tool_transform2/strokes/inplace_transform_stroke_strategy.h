@@ -86,7 +86,7 @@ public:
      * be "temporary", that is, they do not go to the final history, e.g. when
      * clearing a shape layer's projection.
      *
-     * 2) Apply TransoformLod commands to generate preview of the
+     * 2) Apply TransformLod commands to generate preview of the
      * transformation. Some commands may be declared as "temporary", that is,
      * they do not go to the final history, e.g. for the shape layer, for
      * which we just write to the projection device explicitly.

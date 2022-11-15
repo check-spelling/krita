@@ -1883,7 +1883,7 @@ bool KisImage::startIsolatedMode(KisNodeSP node, bool isolateLayer, bool isolate
     if ((isolateLayer || isolateGroup) == false) return false;
 
     /**
-     * Isolation of trnsform masks is not possible, so we should
+     * Isolation of transform masks is not possible, so we should
      * not allow that
      */
     if (!node->projection()) return false;
