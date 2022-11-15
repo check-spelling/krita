@@ -19,7 +19,7 @@ class QIODevice;
 
 /**
  * KisDataManager defines the interface that modules responsible for
- * storing and retrieving data must inmplement. Data modules, like
+ * storing and retrieving data must implement. Data modules, like
  * the tile manager, are responsible for:
  *
  * * Storing undo/redo data
