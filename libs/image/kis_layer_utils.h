@@ -112,7 +112,7 @@ namespace KisLayerUtils
     };
 
     /**
-     * A command to keep correct set of selected/active nodes thoroughout
+     * A command to keep correct set of selected/active nodes throughout
      * the action.
      */
     class KRITAIMAGE_EXPORT KeepNodesSelectedCommand : public KisCommandUtils::FlipFlopCommand
