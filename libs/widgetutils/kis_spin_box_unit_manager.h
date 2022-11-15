@@ -101,7 +101,7 @@ public:
     int getApparentUnitId() const;
 
     //! \brief get a hint of how many decimals the spinbox needs to display.
-    int getApparentUnitRecommandedDecimals() const;
+    int getApparentUnitRecommendedDecimals() const;
 
     virtual QStringList getsUnitSymbolList(bool withName = false) const;
 

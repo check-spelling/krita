@@ -121,7 +121,7 @@ int KisSpinBoxUnitManager::getApparentUnitId() const
     return list.indexOf(d->unitSymbol);
 }
 
-int KisSpinBoxUnitManager::getApparentUnitRecommandedDecimals() const {
+int KisSpinBoxUnitManager::getApparentUnitRecommendedDecimals() const {
 
     switch (d->dim) {
 
