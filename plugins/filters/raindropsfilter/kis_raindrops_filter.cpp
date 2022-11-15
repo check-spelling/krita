@@ -316,7 +316,7 @@ void KisRainDropsFilter::processImpl(KisPaintDeviceSP device,
 /* Function to free a dynamic boolean array
  *
  * lpbArray          => Dynamic boolean array
- * Columns           => The array bidimension value
+ * Columns           => The number of array columns
  *
  * Theory            => An easy to understand 'for' statement
  */
