@@ -124,7 +124,7 @@ KoResourceLoadResult KisPredefinedBrushFactory::createBrush(const QDomElement& b
     }
     else {
         /**
-         * In Krita versions before 4.4 series we used to automatrically select
+         * In Krita versions before 4.4 series we used to automatically select
          * the brush application depending on the presence of the color in the
          * brush, even when there was no "ColorAsMask" field.
          */
