@@ -195,7 +195,7 @@ Q_SIGNALS:
     /// and the document anymore.
     void loadCompleted();
 
-    /// This signal is emitted right after the docker states have been succefully restored from config
+    /// This signal is emitted right after the docker states have been successfully restored from config
     void restoringDone();
 
     /// This signal is emitted when the color theme changes
