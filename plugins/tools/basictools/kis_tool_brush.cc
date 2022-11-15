@@ -480,7 +480,7 @@ QWidget * KisToolBrush::createOptionWidget()
     connect(m_chkSnapEraser, SIGNAL(toggled(bool)), this, SLOT(setSnapEraser(bool)));
     addOptionWidgetOption(m_chkSnapEraser, snapEraserLabel);
 
-    // set the assistant snapping options to hidden by default and toggle their visibility based based off snapping checkbox
+    // set the assistant snapping options to hidden by default and toggle their visibility based off snapping checkbox
     m_sliderMagnetism->setVisible(false);
     m_chkOnlyOneAssistant->setVisible(false);
     m_chkSnapEraser->setVisible(false);
