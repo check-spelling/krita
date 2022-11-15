@@ -34,7 +34,7 @@ typedef QList<KoSubpath *> KoSubpathList;
 /**
  * @brief This is the base for all graphical objects.
  *
- * All graphical objects are based on this object e.g. lines, rectangulars, pies
+ * All graphical objects are based on this object e.g. lines, rectangles, pies
  * and so on.
  *
  * The KoPathShape uses KoPathPoint's to describe the path of the shape.

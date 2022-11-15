@@ -25,7 +25,7 @@ namespace KisPaintingTweaks {
     /**
      * This is a workaround for QPainter::clipRegion() bug. When zoom
      * is about 2000% and rotation is in a range[-5;5] degrees, the
-     * generated region will have about 20k+ regtangles inside. Their
+     * generated region will have about 20k+ rectangles inside. Their
      * processing will be really slow. These functions fworkarounds
      * the issue.
      */
