@@ -332,7 +332,7 @@ protected:
      *      |
      *      | <-- KisLayer::updateProjection() starts composing a layer
      *      |     It calls KisLayer::copyOriginalToProjection() which copies some area
-     *      |     to a temporaty device. The temporary device now stores
+     *      |     to a temporary device. The temporary device now stores
      *      |     R3 = KisLayer::outgoingChangeRect(R2)
      *      |
      * 3. Temporary device / changed rect: R3
