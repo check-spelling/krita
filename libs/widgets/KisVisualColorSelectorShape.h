@@ -22,7 +22,7 @@
 /**
  * @brief The KisVisualColorSelectorShape class
  * A 2d widget can represent at maximum 2 coordinates.
- * So first decide howmany coordinates you need. (onedimensional, or twodimensional)
+ * So first decide how many coordinates you need. (onedimensional, or twodimensional)
  * Then the model, (Channel, HSV, HSL, HSI, YUV). Channel is the raw color channels.
  * When it finds a non-implemented feature it'll return to Channel.
  * Then, select the channels you wish to be affected. This uses the model, so for cmyk
