@@ -349,7 +349,7 @@ QRegion KisRegion::toQRegion() const
     // TODO: ustilize QRegion::setRects to make creation of QRegion much
     //       faster. The only reason why we cannot use it "as is", our m_rects
     //       do not satisfy the second setRects()'s precondition: "All rectangles with
-    //       a given top coordinate must have the same height". We can implement an
+    //       a given top coordinate must have the same height". We can implement a
     //       simple algorithm for cropping m_rects, and it will be much faster than
     //       constructing QRegion iterationally.
 
