@@ -24,7 +24,7 @@
 #include <boost/graph/lookup_edge.hpp>
 #include <boost/concept/assert.hpp>
 
-// The algorithm impelemented here is described in:
+// The algorithm implemented here is described in:
 //
 // Boykov, Y., Kolmogorov, V. "An Experimental Comparison of Min-Cut/Max-Flow
 // Algorithms for Energy Minimization in Vision", In IEEE Transactions on
