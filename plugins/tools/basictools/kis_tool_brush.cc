@@ -356,7 +356,7 @@ QWidget * KisToolBrush::createOptionWidget()
     m_lblSmoothnessDistance = new QLabel();
     updateSmoothnessDistanceLabel();
 
-    // make sure that initializaiotion of the value happens **after** we
+    // make sure that initialization of the value happens **after** we
     // have configured the slider's range in updateSmoothnessDistanceLabel()
     connect(m_sliderSmoothnessDistance, SIGNAL(valueChanged(qreal)), SLOT(slotSetSmoothnessDistance(qreal)));
     m_sliderSmoothnessDistance->setValue(smoothingOptions()->smoothnessDistance());
