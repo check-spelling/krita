@@ -24,9 +24,9 @@
  * So on my own computer, to replace 'APPL' with '*nix' in the header, 
  * I modified the LCMS source file 'cmsio0.c' and recompiled LCMS:
  * #ifdef CMS_IS_WINDOWS_
- * Header.platform= (cmsPlatformSignature) _cmsAdjustEndianess32(cmsSigMicrosoft);
+ * Header.platform= (cmsPlatformSignature) _cmsAdjustEndianness32(cmsSigMicrosoft);
  * #else
- * Header.platform= (cmsPlatformSignature) _cmsAdjustEndianess32(cmsSigUnices);
+ * Header.platform= (cmsPlatformSignature) _cmsAdjustEndianness32(cmsSigUnices);
  * #endif
  * 
  * */
