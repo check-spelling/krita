@@ -69,7 +69,7 @@ KoResourceLoadResult KisPredefinedBrushFactory::createBrush(const QDomElement& b
          *
          * In Krita 5 we should open these brushes in somewhat the same way.
          * The problem is that we cannot convert the numbers precisely, because
-         * after applying a piecewice-linear function twice we get a
+         * after applying a piecewise-linear function twice we get a
          * quadratic function. So we fall-back to a blunt parameters scaling,
          * which gives result that is just "good enough".
          *
