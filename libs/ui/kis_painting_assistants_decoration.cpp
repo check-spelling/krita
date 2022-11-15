@@ -49,7 +49,7 @@ struct KisPaintingAssistantsDecoration::Private {
     int m_handleSize; // size of editor handles on assistants
 
     // move, visibility, delete icons for each assistant. These only display while the assistant tool is active
-    // these icons will be covered by the kis_paintint_assistant_decoration with things like the perspective assistant
+    // these icons will be covered by the kis_painting_assistant_decoration with things like the perspective assistant
 
     AssistantEditorData toolData;
 
