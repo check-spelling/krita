@@ -94,7 +94,7 @@ KisAutoBrush::KisAutoBrush(KisMaskGenerator* as, qreal angle, qreal randomness, 
         setHeight(qMax(1, height));
     }
 
-    // We don't initialize setBrushTipImage(), bacause
+    // We don't initialize setBrushTipImage(), because
     // auto brush doesn't use image pyramid. And generation
     // of a full-scaled QImage may cause a significant delay
     // in the beginning of the stroke

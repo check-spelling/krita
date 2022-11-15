@@ -264,7 +264,7 @@ QList<KoResourceLoadResult> KisTextureProperties::prepareEmbeddedResources(const
 {
     /**
      * We cannot use m_enabled here because it is not initialized at this stage.
-     * fillProperties() is not necessary for this call, becasue it is extremely slow.
+     * fillProperties() is not necessary for this call, because it is extremely slow.
      */
 
     QList<KoResourceLoadResult> patterns;
@@ -283,7 +283,7 @@ QList<KoResourceLoadResult> KisTextureProperties::prepareLinkedResources(const K
 {
     /**
      * We cannot use m_enabled here because it is not initialized at this stage.
-     * fillProperties() is not necessary for this call, becasue it is extremely slow.
+     * fillProperties() is not necessary for this call, because it is extremely slow.
      */
 
     QList<KoResourceLoadResult> patterns;
