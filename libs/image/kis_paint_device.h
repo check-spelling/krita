@@ -739,7 +739,7 @@ public:
     quint32 channelCount() const;
 
     /**
-     * @return interstroke data that is atteched to the paint device.
+     * @return interstroke data that is attached to the paint device.
      *
      * This data is managed by KisTransaction and can be used by brushes
      * to store some data that can be shared betweet the strokes. For
