@@ -551,7 +551,7 @@ private:
 
         /**
          * Default pixel must be updated **after** the color space
-         * of the device has been adjusted in prpareClone(). Otherwise,
+         * of the device has been adjusted in prepareClone(). Otherwise,
          * colorSpace() of the resulting KoColor object will be
          * incorrect.
          */
