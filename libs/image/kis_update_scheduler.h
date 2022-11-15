@@ -72,7 +72,7 @@ public:
      * Waits until all the running jobs are finished.
      *
      * If some other thread adds jobs in parallel, then you may
-     * wait forever. If you you don't want it, consider lock() instead.
+     * wait forever. If you don't want it, consider lock() instead.
      *
      * \see lock()
      */
@@ -83,7 +83,7 @@ public:
      * To unblock processing you should use unlock().
      *
      * If some other thread adds jobs in parallel, then you may
-     * wait forever. If you you don't want it, consider lock() instead.
+     * wait forever. If you don't want it, consider lock() instead.
      *
      * \see unlock(), lock()
      */
