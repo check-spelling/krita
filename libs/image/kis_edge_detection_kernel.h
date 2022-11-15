@@ -92,7 +92,7 @@ public:
                               FilterOutput output = pythagorean,
                               bool writeToAlpha = false);
     /**
-     * @brief converToNormalMap
+     * @brief convertToNormalMap
      * Convert a channel of the device to a normal map. The channel will be interpreted as a heightmap.
      * @param device the device
      * @param rect the rectangle to apply this to.
