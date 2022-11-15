@@ -402,7 +402,7 @@ void KisActionRegistry::Private::loadActionFiles()
             QDomElement actionXml  = categoryTextNode.nextSiblingElement();
 
             if (actionXml.isNull()) {
-                qWarning() << actionDefinition << "does not contain any valid actios! (Or the text element was left empty...)";
+                qWarning() << actionDefinition << "does not contain any valid actions! (Or the text element was left empty...)";
             }
 
             // Loop over individual actions
