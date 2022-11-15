@@ -1569,7 +1569,7 @@ QList<KoShape*> SvgParser::parseSvg(const QDomElement &e, QSizeF *fragmentSize)
     }
 
     /**
-     * In internal SVG coordinate systems pixles are linked to absolute
+     * In internal SVG coordinate systems pixels are linked to absolute
      * values with a fixed ratio.
      *
      * See CSS specification:
