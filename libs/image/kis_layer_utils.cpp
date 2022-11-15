@@ -1742,7 +1742,7 @@ namespace KisLayerUtils {
         /**
          * We have reached the root of the layer hierarchy and didn't manage
          * to find a node that was editable enough for putting our merged
-         * result into it. That whouldn't happen in normal circumstances,
+         * result into it. That wouldn't happen in normal circumstances,
          * unless the user chose to make the root layer visible and lock
          * it manually.
          */
