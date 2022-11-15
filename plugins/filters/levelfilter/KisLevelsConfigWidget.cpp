@@ -435,8 +435,8 @@ void KisLevelsConfigWidget::updateHistogramViewChannels()
 
 void KisLevelsConfigWidget::setButtonsIcons()
 {
-    m_page.buttonLightnessMode->setIcon(KisIconUtils::loadIcon("color-adjustement-mode-lightness"));
-    m_page.buttonAllChannelsMode->setIcon(KisIconUtils::loadIcon("color-adjustement-mode-channels"));
+    m_page.buttonLightnessMode->setIcon(KisIconUtils::loadIcon("color-adjustment-mode-lightness"));
+    m_page.buttonAllChannelsMode->setIcon(KisIconUtils::loadIcon("color-adjustment-mode-channels"));
     m_page.buttonLinearHistogram->setIcon(KisIconUtils::loadIcon("histogram-linear"));
     m_page.buttonLogarithmicHistogram->setIcon(KisIconUtils::loadIcon("histogram-logarithmic"));
     m_page.buttonScaleHistogramToFit->setIcon(KisIconUtils::loadIcon("histogram-show-all"));
@@ -583,10 +583,10 @@ void KisLevelsConfigWidget::slot_buttonAutoLevels_clicked()
 
     m_autoLevelsWidget = new KisAutoLevelsWidget(autolevelsDialog);
     // Lock contrast method
-    m_autoLevelsWidget->setShadowsAndHighlightsAdjustementMethod(
+    m_autoLevelsWidget->setShadowsAndHighlightsAdjustmentMethod(
         KisAutoLevels::ShadowsAndHighlightsAdjustmentMethod_MonochromaticContrast
     );
-    m_autoLevelsWidget->lockShadowsAndHighlightsAdjustementMethod();
+    m_autoLevelsWidget->lockShadowsAndHighlightsAdjustmentMethod();
     // Set some defaultparameters based on the selected channel. These were
     // selected empirically, there is no strong reason why they should be like this
     if (m_page.buttonLightnessMode->isChecked() ||
@@ -653,7 +653,7 @@ void KisLevelsConfigWidget::slot_buttonAutoLevelsAllChannels_clicked()
     KoDialog *autolevelsDialog = new KoDialog(this);
 
     m_autoLevelsWidget = new KisAutoLevelsWidget(autolevelsDialog);
-    m_autoLevelsWidget->setShadowsAndHighlightsAdjustementMethod(
+    m_autoLevelsWidget->setShadowsAndHighlightsAdjustmentMethod(
         KisAutoLevels::ShadowsAndHighlightsAdjustmentMethod_MonochromaticContrast
     );
 
@@ -785,7 +785,7 @@ void KisLevelsConfigWidget::slot_autoLevelsWidgetAllChannels_parametersChanged()
 
     // get levels parameters
     QVector<KisLevelsCurve> levelsCurves;
-    if (m_autoLevelsWidget->shadowsAndHighlightsAdjustementMethod() == KisAutoLevels::ShadowsAndHighlightsAdjustmentMethod_MonochromaticContrast) {
+    if (m_autoLevelsWidget->shadowsAndHighlightsAdjustmentMethod() == KisAutoLevels::ShadowsAndHighlightsAdjustmentMethod_MonochromaticContrast) {
         levelsCurves =
             KisAutoLevels::adjustPerChannelContrast(
                 channelsHistograms,

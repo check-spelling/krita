@@ -140,7 +140,7 @@ protected:
 
 /**
  * @brief This is a simple input levels slider that has no gamma handle. Use it
- * if you want to show a simple mapping or contrast adjustement. The handles
+ * if you want to show a simple mapping or contrast adjustment. The handles
  * are constrained so that the black point handle can not pass the white point
  * handle and viceversa
  */
