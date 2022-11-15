@@ -752,7 +752,7 @@ boykov_kolmogorov_max_flow(Graph& g,
 }
 
 /**
- * non-named-parameter version, given capacity, residucal_capacity,
+ * non-named-parameter version, given capacity, residual_capacity,
  * reverse_edges, and an index map.
  */
 template<class Graph,
