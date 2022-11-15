@@ -87,7 +87,7 @@ public:
                      */
                     if (averageOpacity > opacity) {
                         /**
-                         * This crypty code is basically an optimized version of the following:
+                         * This cryptic code is basically an optimized version of the following:
                          * fullFlowAlpha = averageOpacity *
                          *                     unionShapeOpacity(srcAlpha / averageOpacity,
                          *                                       dstAlpha / averageOpacity);
