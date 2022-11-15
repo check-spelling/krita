@@ -844,7 +844,7 @@ public:
         return true;
     }
 
-    bool widgetRangeToggletMouseReleaseEvent(QMouseEvent *e)
+    bool widgetRangeToggleMouseReleaseEvent(QMouseEvent *e)
     {
         if (!m_q->isEnabled()) {
             return false;
@@ -911,7 +911,7 @@ public:
         } else if (o == m_widgetRangeToggle) {
             switch (e->type()) {
                 case QEvent::Paint : return widgetRangeTogglePaintEvent(static_cast<QPaintEvent*>(e));
-                case QEvent::MouseButtonRelease: return widgetRangeToggletMouseReleaseEvent(static_cast<QMouseEvent*>(e));
+                case QEvent::MouseButtonRelease: return widgetRangeToggleMouseReleaseEvent(static_cast<QMouseEvent*>(e));
                 case QEvent::Enter: return widgetRangeToggleEnterEvent(e);
                 case QEvent::Leave: return widgetRangeToggleLeaveEvent(e);
                 default: break;
