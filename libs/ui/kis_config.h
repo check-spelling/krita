@@ -457,7 +457,7 @@ public:
     void setShowSingleChannelAsColor(bool asColor);
 
     bool hidePopups(bool defaultValue = false) const;
-    void setHidePopups(bool hidepopups);
+    void setHidePopups(bool hidePopups);
 
     int numDefaultLayers(bool defaultValue = false) const;
     void setNumDefaultLayers(int num);
