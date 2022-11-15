@@ -96,9 +96,9 @@ struct KisVideoExportOptionsDialog::Private
         presetWEBP << KoID("picture", i18nc("webp preset option name", "picture"));
         presetWEBP << KoID("text", i18nc("webp preset option name", "text"));
         
-        palettegenStatsMode << KoID("full", i18nc("paletegen status mode option name", "Global/Full"));
-        palettegenStatsMode << KoID("diff", i18nc("paletegen status mode option name", "Difference"));
-        palettegenStatsMode << KoID("single", i18nc("paletegen status mode option name", "Per Single Frame"));
+        palettegenStatsMode << KoID("full", i18nc("palettegen status mode option name", "Global/Full"));
+        palettegenStatsMode << KoID("diff", i18nc("palettegen status mode option name", "Difference"));
+        palettegenStatsMode << KoID("single", i18nc("palettegen status mode option name", "Per Single Frame"));
     
         paletteuseDither << KoID("none", i18nc("paleteuse dither option name", "none"));
         paletteuseDither << KoID("bayer", i18nc("paleteuse dither option name", "bayer"));
