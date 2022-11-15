@@ -45,7 +45,7 @@ KisDynamicSensorTiltDirection::KisDynamicSensorTiltDirection() :
 }
 
 KisDynamicSensorTiltElevation::KisDynamicSensorTiltElevation()
-    : KisDynamicSensor(TILT_ELEVATATION)
+    : KisDynamicSensor(TILT_ELEVATION)
 {
 }
 
