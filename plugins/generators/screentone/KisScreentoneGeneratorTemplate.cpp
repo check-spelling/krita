@@ -439,15 +439,15 @@ void KisScreentoneGeneratorTemplate::makeTemplate(const KisScreentoneGeneratorCo
     // points
     {
         int macrocellPixelIndex = 0;
-        QVector<int> microcellPixelIndides(auxiliaryMicrocells.size());
+        QVector<int> microcellPixelIndices(auxiliaryMicrocells.size());
         while (macrocellPixelIndex < totalNumberOfAuxiliaryPoints) {
             for (int i = 0; i < auxiliaryMicrocells.size(); ++i) {
-                if (microcellPixelIndides[i] == auxiliaryMicrocells[i].auxiliaryPoints.size()) {
+                if (microcellPixelIndices[i] == auxiliaryMicrocells[i].auxiliaryPoints.size()) {
                     continue;
                 }
-                m_templateData[auxiliaryMicrocells[i].auxiliaryPoints[microcellPixelIndides[i]].templatePixelIndex] =
+                m_templateData[auxiliaryMicrocells[i].auxiliaryPoints[microcellPixelIndices[i]].templatePixelIndex] =
                     static_cast<qreal>(macrocellPixelIndex) / static_cast<qreal>(totalNumberOfAuxiliaryPoints - 1);
-                ++microcellPixelIndides[i];
+                ++microcellPixelIndices[i];
                 ++macrocellPixelIndex;
             }
         }
