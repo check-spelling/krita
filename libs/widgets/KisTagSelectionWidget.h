@@ -39,7 +39,7 @@ private:
     QPushButton* m_closeIconLabel {nullptr};
 
     int m_size{18};
-    bool m_editble {false};
+    bool m_editable {false};
     bool m_semiSelected {false};
     KoID m_tag;
 
