@@ -144,10 +144,10 @@ public:
     QString m_customSuffix;
 };
 
-class KisMutatableDabStrategy : public KisNoopDabStrategy
+class KisMutableDabStrategy : public KisNoopDabStrategy
 {
 public:
-    KisMutatableDabStrategy(const QString &name, KisStrokeStrategy *parentStrokeStrategy)
+    KisMutableDabStrategy(const QString &name, KisStrokeStrategy *parentStrokeStrategy)
         : KisNoopDabStrategy(name),
           m_parentStrokeStrategy(parentStrokeStrategy)
     {
@@ -180,7 +180,7 @@ public:
     }
 
     QString debugId() const override {
-        return "KisMutatableDabStrategy";
+        return "KisMutableDabStrategy";
     }
 
 private:
@@ -236,7 +236,7 @@ public:
     }
 
     KisStrokeJobStrategy* createDabStrategy() override {
-        return new KisMutatableDabStrategy(m_prefix + "dab", this);
+        return new KisMutableDabStrategy(m_prefix + "dab", this);
     }
 
     KisStrokeStrategy* createLodClone(int levelOfDetail) override {

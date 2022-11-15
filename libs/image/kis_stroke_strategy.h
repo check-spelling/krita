@@ -126,7 +126,7 @@ public:
 
 protected:
     // testing surrogate class
-    friend class KisMutatableDabStrategy;
+    friend class KisMutableDabStrategy;
 
     /**
      * This function is supposed to be called by internal asynchronous
