@@ -32,7 +32,7 @@
 
 void KisPaintingAssistantsDecorationTest::initTestCase()
 {
-    /* A bit of a heavy handed way to force the plugings to be loaded and get
+    /* A bit of a heavy handed way to force the plugins to be loaded and get
      * access to the paintingAssistantsDecoration but can't find another way
      * at the moment
      */
