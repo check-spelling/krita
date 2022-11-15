@@ -163,7 +163,7 @@ public:
      * Note: if the storage does not support versioning, updating the resource will fail.
      *
      * @param resource
-     * @return true if the resource was succesfull updated,
+     * @return true if the resource was successful updated,
      */
     virtual bool updateResource(KoResourceSP resource) = 0;
 
