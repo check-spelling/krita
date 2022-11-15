@@ -26,7 +26,7 @@
  * to calculate the mean.
  *
  * PS:
- * The actualy implementation does a few optimizations. For
+ * The actually implementation does a few optimizations. For
  * example, it doesn't sort the entire range. But the idea is
  * the same.
  */
