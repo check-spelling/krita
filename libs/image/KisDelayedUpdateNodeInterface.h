@@ -12,7 +12,7 @@
 
 /**
  * @brief The KisDelayedUpdateNodeInterface class is an interface for
- * nodes that dealy their real updates with KisSignalCompressor. Some
+ * nodes that delay their real updates with KisSignalCompressor. Some
  * operations need explicit regeneration before they can proceed.
  */
 class KRITAIMAGE_EXPORT KisDelayedUpdateNodeInterface
