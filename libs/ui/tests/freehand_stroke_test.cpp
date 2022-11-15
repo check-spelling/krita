@@ -152,7 +152,7 @@ void FreehandStrokeTest::testAutoTextured38()
     tester.test();
 }
 
-void FreehandStrokeTest::testMixDullCompositioning()
+void FreehandStrokeTest::testMixDullCompositing()
 {
     FreehandStrokeTester tester("Mix_dull.kpp");
     tester.setFlipLineDirection(true);

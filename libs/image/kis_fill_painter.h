@@ -303,12 +303,12 @@ public:
         return m_opacitySpread;
     }
 
-    bool useCompositioning() const {
-        return m_useCompositioning;
+    bool useCompositing() const {
+        return m_useCompositing;
     }
 
-    void setUseCompositioning(bool useCompositioning) {
-        m_useCompositioning = useCompositioning;
+    void setUseCompositing(bool useCompositing) {
+        m_useCompositing = useCompositing;
     }
 
     /** Sets the width of the paint device */
@@ -439,7 +439,7 @@ private:
     int m_width, m_height;
     QRect m_rect;
     bool m_careForSelection;
-    bool m_useCompositioning;
+    bool m_useCompositing;
     bool m_useSelectionAsBoundary;
     RegionFillingMode m_regionFillingMode;
     KoColor m_regionFillingBoundaryColor;

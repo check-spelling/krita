@@ -372,7 +372,7 @@ struct KoStreamedMath {
             uintptr_t dstAlignment = dstPtrValue & pixelsAlignmentMask;
 
             // Uncomment if facing problems with alignment:
-            // Q_ASSERT_X(!(dstAlignment & 3), "Compositioning",
+            // Q_ASSERT_X(!(dstAlignment & 3), "Compositing",
             //            "Pixel data must be aligned on pixels borders!");
 
             int blockAlign = params.cols;
