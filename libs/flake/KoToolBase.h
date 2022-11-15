@@ -454,7 +454,7 @@ protected:
     /// coordinates (points)
     qreal handleDocRadius() const;
 
-    /// Convencience function to get the current grab sensitivity
+    /// Convenience function to get the current grab sensitivity
     int grabSensitivity() const;
 
     /**
