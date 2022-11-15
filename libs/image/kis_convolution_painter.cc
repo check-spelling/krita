@@ -159,7 +159,7 @@ void KisConvolutionPainter::applyMatrix(const KisConvolutionKernelSP kernel, con
         /**
          * FIXME: Implementation can return empty destination device
          * on faults and has no way to report this. This will cause a crash
-         * on sequential convolutions inside iteratiors.
+         * on sequential convolutions inside iterators.
          *
          * o implementation should do it's work or assert otherwise
          *   (or report the issue somehow)
