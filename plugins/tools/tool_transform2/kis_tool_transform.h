@@ -73,7 +73,7 @@ class KisMeshTransformStrategy;
  *   of the resulting quadrilateral are on screen, the user can manipulate those
  *   as well.
  * - Liquify transform transforms the selection by painting motions, as if the
- *   user were fingerpainting.
+ *   user was finger painting.
  */
 class KisToolTransform : public KisTool
 {
