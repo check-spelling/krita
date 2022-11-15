@@ -1631,7 +1631,7 @@ void KisPaintDeviceTest::testFramesLeaking()
 
     KisPaintDeviceFramesInterface::TestingDataObjects o;
 
-    // Itinial state: one frame, m_data is kept separate
+    // Initial state: one frame, m_data is kept separate
     o = i->testingGetDataObjects();
     QVERIFY(o.m_data);
     QVERIFY(!o.m_lodData);
@@ -1763,7 +1763,7 @@ void KisPaintDeviceTest::testFramesUndoRedo()
 
     KisPaintDeviceFramesInterface::TestingDataObjects o;
 
-    // Itinial state: one frame, m_data shared
+    // Initial state: one frame, m_data shared
     o = i->testingGetDataObjects();
     QVERIFY(o.m_data); // default m_data should always be present
     QVERIFY(!o.m_lodData);
@@ -1869,7 +1869,7 @@ void KisPaintDeviceTest::testFramesUndoRedoWithChannel()
 
     KisPaintDeviceFramesInterface::TestingDataObjects o;
 
-    // Itinial state: one frame, m_data shared
+    // Initial state: one frame, m_data shared
     o = i->testingGetDataObjects();
     QVERIFY(o.m_data); // default m_data should always be present
     QVERIFY(!o.m_lodData);
@@ -2130,7 +2130,7 @@ void KisPaintDeviceTest::testCopyPaintDeviceWithFrames()
 
     KisPaintDeviceFramesInterface::TestingDataObjects o;
 
-    // Itinial state: one frame, m_data shared
+    // Initial state: one frame, m_data shared
     o = i->testingGetDataObjects();
     QVERIFY(o.m_data); // m_data should always be present
     QVERIFY(!o.m_lodData);
