@@ -928,7 +928,7 @@ public:
     bool supportsWraproundMode() const;
 
     void setProjectionDevice(bool value);
-    void tesingFetchLodDevice(KisPaintDeviceSP targetDevice);
+    void testingFetchLodDevice(KisPaintDeviceSP targetDevice);
 
 private:
     KisPaintDevice& operator=(const KisPaintDevice&);

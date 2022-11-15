@@ -429,7 +429,7 @@ public:
 
     void generateLodCloneDevice(KisPaintDeviceSP dst, const QRect &originalRect, int lod);
 
-    void tesingFetchLodDevice(KisPaintDeviceSP targetDevice);
+    void testingFetchLodDevice(KisPaintDeviceSP targetDevice);
 
 
 private:
@@ -932,7 +932,7 @@ void KisPaintDevice::Private::uploadFrameData(DataSP srcData, DataSP dstData)
     dstData->setY(srcData->y());
 }
 
-void KisPaintDevice::Private::tesingFetchLodDevice(KisPaintDeviceSP targetDevice)
+void KisPaintDevice::Private::testingFetchLodDevice(KisPaintDeviceSP targetDevice)
 {
     Data *data = m_lodData.data();
     Q_ASSERT(data);
@@ -2359,7 +2359,7 @@ QList<KisPaintDeviceData*> KisPaintDeviceFramesInterface::testingGetDataObjectsL
     return q->m_d->allDataObjects();
 }
 
-void KisPaintDevice::tesingFetchLodDevice(KisPaintDeviceSP targetDevice)
+void KisPaintDevice::testingFetchLodDevice(KisPaintDeviceSP targetDevice)
 {
-    m_d->tesingFetchLodDevice(targetDevice);
+    m_d->testingFetchLodDevice(targetDevice);
 }
