@@ -198,7 +198,7 @@ inline KisTileData* KisTileHashTableTraits<T>::defaultTileDataImp() const
 template<class T>
 bool KisTileHashTableTraits<T>::tileExists(qint32 col, qint32 row)
 {
-    return this->getExisitngTile(col, row);
+    return this->getExistingTile(col, row);
 }
 
 template<class T>
