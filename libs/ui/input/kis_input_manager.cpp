@@ -398,7 +398,7 @@ bool KisInputManager::eventFilterImpl(QEvent * event)
             retval = d->matcher.autoRepeatedKeyPressed(key);
         }
 
-        // In case we matched ashortcut we should accept the event to
+        // In case we matched a shortcut we should accept the event to
         // notify Qt that it shouldn't try to trigger its partially matched
         // shortcuts.
         if (retval) {
