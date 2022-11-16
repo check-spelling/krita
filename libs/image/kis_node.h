@@ -135,7 +135,7 @@ public:
 
     /**
      * @brief setDirtyDontResetAnimationCache does almost the same thing as usual
-     * setDirty() call, but doesn't reset the animation cache (since onlion skins are
+     * setDirty() call, but doesn't reset the animation cache (since onion skins are
      * not used when rendering animation.
      */
     void setDirtyDontResetAnimationCache(const QVector<QRect> &rects);
