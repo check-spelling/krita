@@ -201,7 +201,7 @@ public:
      * uses caching, so calling to this function without changing
      * the device is quite cheap.
      *
-     * Exactbounds follows these rules:
+     * exactBounds follows these rules:
      *
      * <ul>
      * <li>if default pixel is transparent, then exact bounds
