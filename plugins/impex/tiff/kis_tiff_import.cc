@@ -388,7 +388,7 @@ KisImportExportErrorCode KisTIFFImport::readImageFromPsd(
         POINT_TO_INCH(static_cast<qreal>(basicInfo.xres)),
         POINT_TO_INCH(static_cast<qreal>(
             basicInfo.yres))); // It is the "invert" macro because we convert
-                               // from pointer-per-inchs to points
+                               // from pointer-per-inch to points
 
     // set the correct resolution
     if (resources.contains(KisTiffPsdResourceRecord::RESN_INFO)) {
@@ -697,7 +697,7 @@ KisTIFFImport::readImageFromTiff(KisDocument *m_doc,
             POINT_TO_INCH(static_cast<qreal>(xres)),
             POINT_TO_INCH(static_cast<qreal>(
                 yres))); // It is the "invert" macro because we convert from
-                         // pointer-per-inchs to points
+                         // pointer-per-inch to points
     } else {
         if (m_image->width() < static_cast<qint32>(width)
             || m_image->height() < static_cast<qint32>(height)) {
