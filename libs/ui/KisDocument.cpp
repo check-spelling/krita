@@ -1553,7 +1553,7 @@ bool KisDocument::startExportInBackground(const QString &actionName,
 
     KisImportExportErrorCode initializationStatus(ImportExportCodes::OK);
     d->childSavingFuture =
-            d->importExportManager->exportDocumentAsyc(location,
+            d->importExportManager->exportDocumentAsync(location,
                                                        realLocation,
                                                        mimeType,
                                                        initializationStatus,
