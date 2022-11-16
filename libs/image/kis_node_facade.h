@@ -56,7 +56,7 @@ public:
     bool moveNode(KisNodeSP node, KisNodeSP parent, quint32 index);
     /**
      * Add an already existing node to the image. The node is put on top
-     * of the nodes in the specified nodegroup. If parent is 0, then
+     * of the nodes in the specified node group. If parent is 0, then
      * the root is used as parent.
      *
      * @param node the node to be added
