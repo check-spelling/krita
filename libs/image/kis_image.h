@@ -190,7 +190,7 @@ public:
     bool locked() const;
 
     /**
-     * Sets the mask (it must be a part of the node hierarchy already) to be paited on
+     * Sets the mask (it must be a part of the node hierarchy already) to be painted on
      * the top of all layers. This method does all the locking and syncing for you. It
      * is executed asynchronously.
      */
