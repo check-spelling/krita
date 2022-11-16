@@ -322,7 +322,7 @@ void EXRConverter::Private::unmultiplyAlpha(typename WrapperType::pixel_type *pi
 
         /**
          * Division by a tiny alpha may result in an overflow of half
-         * value. That is why we use safe iterational approach.
+         * value. That is why we use safe iterative approach.
          */
         while (1) {
             dstPixel.setUnmultiplied(srcPixel.pixel, newAlpha);
