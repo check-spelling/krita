@@ -1255,7 +1255,7 @@ void KisPopupPalette::calculatePresetLayout()
     qreal threeRowInnerCount = ceil(qMax(m_presetSlotCount, 2) / 3.0);
     qreal threeRowAngleSlice = 360.0 / threeRowInnerCount;
 
-    // then we decrease the radius until no row is overlapping eachother or itself
+    // then we decrease the radius until no row is overlapping each other or itself
     while (tempRadius >= 0) {
         QPointF r1p1(drawPointOnAngle(threeRowAngleSlice / 2, innerRadius + tempRadius));
         QPointF r1p2(drawPointOnAngle(threeRowAngleSlice / 2 * 3, innerRadius + tempRadius));
