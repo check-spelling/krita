@@ -497,7 +497,7 @@ KisImportExportErrorCode KisPNGConverter::buildImage(QIODevice* iod)
     int color_nb_bits, color_type, interlace_type;
     png_get_IHDR(png_ptr, info_ptr, &width, &height, &color_nb_bits, &color_type, &interlace_type, 0, 0);
     dbgFile << "width = " << width << " height = " << height << " color_nb_bits = " << color_nb_bits << " color_type = " << color_type << " interlace_type = " << interlace_type << endl;
-    // swap byteorder on little endian machines.
+    // swap byte order on little endian machines.
 #ifndef WORDS_BIGENDIAN
     if (color_nb_bits > 8)
         png_set_swap(png_ptr);
