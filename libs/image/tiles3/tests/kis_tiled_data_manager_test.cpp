@@ -1081,7 +1081,7 @@ void KisTiledDataManagerTest::benchmarkOverlappedKisRegion()
     KisRegion::approximateOverlappingRects(rects, 64);
 
     qDebug() << "deoverlapped rects:" << ppVar(originalSize) << "-->" << ppVar(rects.size());
-    qDebug() << "deoverlaping time:" << timer.restart() << "ms";
+    qDebug() << "deoverlapping time:" << timer.restart() << "ms";
 
     KisRegion region(rects);
 
