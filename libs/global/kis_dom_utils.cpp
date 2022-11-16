@@ -279,10 +279,10 @@ bool loadValue(const QDomElement &e, QColor *value)
     return true;
 }
 
-QDomElement findElementByAttibute(QDomNode parent,
-                                  const QString &tag,
-                                  const QString &attribute,
-                                  const QString &key)
+QDomElement findElementByAttribute(QDomNode parent,
+                                   const QString &tag,
+                                   const QString &attribute,
+                                   const QString &key)
 {
     QDomNode node = parent.firstChild();
 

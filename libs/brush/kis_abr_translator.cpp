@@ -59,7 +59,7 @@ void KisAbrTranslator::addEntry(const QString& attributeName, const QString& typ
         m_abrBrushProperties.setupProperty(attributeName, type, value);
         // this is not object name but shape dynamics does not start with objc :/
         // those objects has been merged with shape attributes due to serialization
-        // e.g. minumumDiameter belongs to ABR_SZVR and is ABR_USE_TIP_DYNAMICS object
+        // e.g. minimumDiameter belongs to ABR_SZVR and is ABR_USE_TIP_DYNAMICS object
     }
     else if (m_currentObjectName == ABR_USE_TIP_DYNAMICS ||
                m_currentObjectName == ABR_SZVR ||
@@ -213,8 +213,8 @@ void AbrTipDynamicsProperties::setupProperty(const QString& attributeName, const
     Q_UNUSED(type);
     double valueDbl = 0.0;
     QStringList list;
-    if (attributeName == ABR_TIP_DYNAMICS_MINUMUM_DIAMETER ||
-            attributeName == ABR_TIP_DYNAMICS_MINUMUM_ROUNDNESS ||
+    if (attributeName == ABR_TIP_DYNAMICS_MINIMUM_DIAMETER ||
+            attributeName == ABR_TIP_DYNAMICS_MINIMUM_ROUNDNESS ||
             attributeName == ABR_TIP_DYNAMICS_TILT_SCALE
        ) {
         list = value.split(' ');
@@ -234,11 +234,11 @@ void AbrTipDynamicsProperties::setupProperty(const QString& attributeName, const
         else if (attributeName == ABR_FLIP_Y) {
             m_flipY = value.toInt();
         }
-        else if (attributeName == ABR_TIP_DYNAMICS_MINUMUM_DIAMETER) {
-            m_minumumDiameter = valueDbl;
+        else if (attributeName == ABR_TIP_DYNAMICS_MINIMUM_DIAMETER) {
+            m_minimumDiameter = valueDbl;
         }
-        else if (attributeName == ABR_TIP_DYNAMICS_MINUMUM_ROUNDNESS) {
-            m_minumumRoundness = valueDbl;
+        else if (attributeName == ABR_TIP_DYNAMICS_MINIMUM_ROUNDNESS) {
+            m_minimumRoundness = valueDbl;
         }
         else if (attributeName == ABR_TIP_DYNAMICS_TILT_SCALE) {
             m_tiltScale = valueDbl;
@@ -269,7 +269,7 @@ void AbrTipDynamicsProperties::toXML(QDomDocument& doc, QDomElement& root) const
     root.appendChild(el);
 
     el = doc.createElement("roundnessDynamics");
-    el.setAttribute("minumumRoundness", KisDomUtils::toString(m_minumumRoundness));
+    el.setAttribute("minimumRoundness", KisDomUtils::toString(m_minimumRoundness));
     el.setAttribute("roundnessJitter", KisDomUtils::toString(m_RoundnessProperties.m_sizeJitter));
     el.setAttribute("roundnessController", KisDomUtils::toString(m_RoundnessProperties.m_bVTy));
     el.setAttribute("roundnessFadeStep", KisDomUtils::toString(m_RoundnessProperties.m_fadeStep));
@@ -277,7 +277,7 @@ void AbrTipDynamicsProperties::toXML(QDomDocument& doc, QDomElement& root) const
 
     el = doc.createElement("sizeDynamics");
     el.setAttribute("tiltScale", KisDomUtils::toString(m_tiltScale));
-    el.setAttribute("minumumDiameter", KisDomUtils::toString(m_minumumDiameter));
+    el.setAttribute("minimumDiameter", KisDomUtils::toString(m_minimumDiameter));
     el.setAttribute("roundnessJitter", KisDomUtils::toString(m_RoundnessProperties.m_sizeJitter));
     el.setAttribute("roundnessController", KisDomUtils::toString(m_RoundnessProperties.m_bVTy));
     el.setAttribute("roundnessFadeStep", KisDomUtils::toString(m_RoundnessProperties.m_fadeStep));

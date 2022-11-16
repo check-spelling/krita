@@ -276,7 +276,7 @@ void KoDocumentInfo::updateParameters()
             if (!el.isNull()) {
                 setActiveAuthorInfo("creator", el.text());
             }
-            el = root.firstChildElement("givenname");
+            el = root.firstChildElement("givenName");
             if (!el.isNull()) {
                 setActiveAuthorInfo("creator-first-name", el.text());
             }

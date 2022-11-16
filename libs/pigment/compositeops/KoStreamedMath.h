@@ -310,7 +310,7 @@ struct KoStreamedMath {
     }
 
     /**
-     * Composes src pixels into dst pixles. Is optimized for 32-bit-per-pixel
+     * Composes src pixels into dst pixels. Is optimized for 32-bit-per-pixel
      * colorspaces. Uses \p Compositor strategy parameter for doing actual
      * math of the composition
      */
@@ -372,7 +372,7 @@ struct KoStreamedMath {
             uintptr_t dstAlignment = dstPtrValue & pixelsAlignmentMask;
 
             // Uncomment if facing problems with alignment:
-            // Q_ASSERT_X(!(dstAlignment & 3), "Compositioning",
+            // Q_ASSERT_X(!(dstAlignment & 3), "Compositing",
             //            "Pixel data must be aligned on pixels borders!");
 
             int blockAlign = params.cols;

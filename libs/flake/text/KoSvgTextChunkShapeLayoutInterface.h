@@ -69,7 +69,7 @@ public:
      * Add a rect to the aggregated outline of the shape.
      *
      * The text contained in the chunk shape can be randomly spread on the
-     * canvas during layouting process. The KoSvgTextChunkShape's text can be
+     * canvas during layout process. The KoSvgTextChunkShape's text can be
      * split into multiple "SVG text chunks" or just messed up with
      * unicode-bidi algorithm.
      *
@@ -118,7 +118,7 @@ public:
      *
      * TRICK ALERT: every `SubChunk` represents a single `KoSvgTextChunkShape`.
      * The name is changed because KoSvgTextChunkShape is not the same thing as
-     * "svg text chunk". Later in the layouting code, the "subchunks" will be
+     * "svg text chunk". Later in the layout code, the "subchunks" will be
      * split up into even smaller parts and then joined into proper "svg text
      * chunks".
      */

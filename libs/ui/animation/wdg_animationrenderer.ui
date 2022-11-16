@@ -4,8 +4,8 @@
     SPDX-FileCopyrightText: none
     SPDX-License-Identifier: GPL-3.0-or-later
   </author>
- <class>WdgAnimaterionRenderer</class>
- <widget class="QWidget" name="WdgAnimaterionRenderer">
+ <class>WdgAnimationRenderer</class>
+ <widget class="QWidget" name="WdgAnimationRenderer">
   <property name="geometry">
    <rect>
     <x>0</x>
@@ -203,7 +203,7 @@
         <enum>Qt::LeftToRight</enum>
        </property>
        <property name="text">
-        <string comment="Resize intepolation method list label">Filter:</string>
+        <string comment="Resize interpolation method list label">Filter:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>

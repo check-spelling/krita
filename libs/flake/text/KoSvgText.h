@@ -184,7 +184,7 @@ QDebug KRITAFLAKE_EXPORT operator<<(QDebug dbg, const KoSvgText::CharTransformat
  * interface and handles 'delete' signal to safely shutdown the link.
  *
  * It is used in KoSvgCharChunkFormat to store a backward link to a shape containing this
- * subchunk of text, so that the layouting engine could notify the shape, where its text
+ * subchunk of text, so that the layout engine could notify the shape, where its text
  * is located.
  */
 struct AssociatedShapeWrapper : public KoShape::ShapeChangeListener

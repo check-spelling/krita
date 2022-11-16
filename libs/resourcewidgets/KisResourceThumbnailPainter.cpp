@@ -40,7 +40,7 @@ void KisResourceThumbnailPainter::paint(QPainter *painter, QImage thumbnail, QSt
     painter->save();
 
     if(addMargin) {
-        // margin has empty space...which we want to be the color palette backround
+        // margin has empty space...which we want to be the color palette background
         painter->fillRect(rect, palette.background());
     }
 

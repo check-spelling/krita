@@ -49,7 +49,7 @@ private:
 
     QVector<QPointF> m_particlePos;
     QVector<QPointF> m_particleNextPos;
-    QVector<qreal> m_accelaration;
+    QVector<qreal> m_acceleration;
 
     KisParticleBrushProperties * m_properties;
 };

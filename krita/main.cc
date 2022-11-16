@@ -396,7 +396,7 @@ extern "C" MAIN_EXPORT int MAIN_FN(int argc, char **argv)
             qputenv("GST_PLUGIN_SYSTEM_PATH_1_0", appimageMountDir + QFile::encodeName("/usr/lib/gstreamer-1.0/") + ":" + gstPluginSystemPath);
 
             //Plugin scanner is where gstreamer should expect to find the plugin scanner.
-            //Perhaps invoking the scanenr earlier in the code manually could allow ldd to quickly find all plugin dependencies?
+            //Perhaps invoking the scanner earlier in the code manually could allow ldd to quickly find all plugin dependencies?
             qputenv("GST_PLUGIN_SCANNER", appimageMountDir + QFile::encodeName("/usr/lib/gstreamer-1.0/gst-plugin-scanner"));
         }
     }

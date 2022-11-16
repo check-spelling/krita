@@ -729,7 +729,7 @@ void TestSvgParser::testRenderStrokeColorNonexistentIri()
             "    xmlns=\"http://www.w3.org/2000/svg\" version=\"1.1\">"
 
             "<rect id=\"testRect\" x=\"5\" y=\"5\" width=\"10\" height=\"20\""
-            "    fill=\"cyan\" stroke=\"url(notexists) blue\" stroke-width=\"1\"/>"
+            "    fill=\"cyan\" stroke=\"url(nonexistent) blue\" stroke-width=\"1\"/>"
 
             "</svg>";
 

@@ -496,7 +496,7 @@ KisPaintDeviceSP KisClipboard::clipFromBoardContents(
         Q_CHECK_PTR(clip);
         clip->convertFromQImage(qimage, profile);
 
-        // save the persion's selection to the configuration if the option is checked
+        // save the version's selection to the configuration if the option is checked
         if (saveColorSetting) {
             cfg.setPasteBehaviour(behaviour);
         }
@@ -620,7 +620,7 @@ bool KisClipboard::hasLayers() const
 
 bool KisClipboard::hasLayerStyles() const
 {
-    // NOTE: please don't disable the pacte action based on the
+    // NOTE: please don't disable the paste action based on the
     //       result of this function, because we allow pasting
     //       of the layer styles as 'text/plain'
 

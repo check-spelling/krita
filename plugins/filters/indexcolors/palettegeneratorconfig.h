@@ -14,7 +14,7 @@ struct PaletteGeneratorConfig
     QColor colors[4][4];
     bool   colorsEnabled[4][4];
     int    gradientSteps[3];
-    int    inbetweenRampSteps;
+    int    in betweenRampSteps;
     bool   diagonalGradients;
 
     PaletteGeneratorConfig();

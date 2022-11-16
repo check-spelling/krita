@@ -1151,7 +1151,7 @@ void GradientOverlay::fetchGradientOverlay(psd_layer_effects_gradient_overlay *c
 
 
 /********************************************************************/
-/***** Innner Glow      *********************************************/
+/***** Inner Glow      **********************************************/
 /********************************************************************/
 
 InnerGlow::InnerGlow(Mode mode, KisCanvasResourceProvider *resourceProvider, QWidget *parent)

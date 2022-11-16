@@ -126,7 +126,7 @@ public:
 
 protected:
     // testing surrogate class
-    friend class KisMutatableDabStrategy;
+    friend class KisMutableDabStrategy;
 
     /**
      * This function is supposed to be called by internal asynchronous
@@ -140,7 +140,7 @@ protected:
      *   * the added job is guaranteed to be executed in some time after
      *     the currently executed job, *before* the next SEQUENTIAL or
      *     BARRIER job
-     *   * if the currently executed job is CUNCURRENTthe mutated job *may*
+     *   * if the currently executed job is CONCURRENT, the mutated job *may*
      *     start execution right after adding to the queue without waiting for
      *     its parent to complete. Though this behavior is *not* guaranteed,
      *     because addMutatedJob does not initiate processQueues(), because

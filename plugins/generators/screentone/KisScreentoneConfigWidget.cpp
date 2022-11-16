@@ -356,7 +356,7 @@ void KisScreentoneConfigWidget::setSliderAlignToPixelGridXText()
 {
     // i18n: This is meant to be used in a spinbox so keep the {n} in the text
     //       and it will be substituted by the number. The text before will be
-    //       used as the prefix and the text arfet as the suffix
+    //       used as the prefix and the text after as the suffix
     const QString txt = i18ncp("Horizontal pixel grid alignment prefix/suffix for spinboxes in screentone generator", "Every {n} cell horizontally", "Every {n} cells horizontally", m_ui.sliderAlignToPixelGridX->value());
     const QRegularExpressionMatch match = QRegularExpression("(.*){n}(.*)").match(txt);
     if (match.hasMatch()) {
@@ -372,7 +372,7 @@ void KisScreentoneConfigWidget::setSliderAlignToPixelGridYText()
 {
     // i18n: This is meant to be used in a spinbox so keep the {n} in the text
     //       and it will be substituted by the number. The text before will be
-    //       used as the prefix and the text arfet as the suffix
+    //       used as the prefix and the text after as the suffix
     const QString txt = i18ncp("Vertical pixel grid alignment prefix/suffix for spinboxes in screentone generator", "Every {n} cell vertically", "Every {n} cells vertically", m_ui.sliderAlignToPixelGridY->value());
     const QRegularExpressionMatch match = QRegularExpression("(.*){n}(.*)").match(txt);
     if (match.hasMatch()) {

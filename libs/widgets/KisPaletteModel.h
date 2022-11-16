@@ -52,7 +52,7 @@ public /* overridden methods */: // QAbstractTableModel
      * if the data is a color entry, the internal pointer points to the group
      * the entry belongs to, and the row and column are row number and column
      * number inside the group.
-     * if the data is a group, the row number and group number is Q_INFINIFY,
+     * if the data is a group, the row number and group number is Q_INFINITY,
      * and the internal pointer also points to the group
      */
     QModelIndex index(int row, int column, const QModelIndex& parent = QModelIndex()) const override;

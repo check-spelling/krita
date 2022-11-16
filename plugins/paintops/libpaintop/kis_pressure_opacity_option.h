@@ -28,7 +28,7 @@ public:
      */
     quint8 apply(KisPainter* painter, const KisPaintInformation& info) const;
 
-    qreal  getOpacityf(const KisPaintInformation& info);
+    qreal  getOpacity(const KisPaintInformation& info);
 
     void writeOptionSetting(KisPropertiesConfigurationSP setting) const override;
     void readOptionSetting(const KisPropertiesConfigurationSP setting) override;

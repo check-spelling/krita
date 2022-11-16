@@ -52,7 +52,7 @@ quint8 KisPressureOpacityOption::apply(KisPainter* painter, const KisPaintInform
     return origOpacity;
 }
 
-qreal KisPressureOpacityOption::getOpacityf(const KisPaintInformation& info)
+qreal KisPressureOpacityOption::getOpacity(const KisPaintInformation& info)
 {
     if (!isChecked()) return 1.0;
     return computeSizeLikeValue(info);

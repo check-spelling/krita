@@ -138,7 +138,7 @@ namespace KisToolUtils {
         }
 
         // To prevent deleting same layer multiple times
-        KisLayerUtils::filterMergableNodes(nodes);
+        KisLayerUtils::filterMergeableNodes(nodes);
         nodes.append(masks);
 
         if (nodes.isEmpty()) {

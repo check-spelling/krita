@@ -15,7 +15,7 @@
 
 const QString MYPAINT_DIAMETER = "MyPaint/diameter";
 const QString MYPAINT_HARDNESS = "MyPaint/hardness";
-const QString MYPAINT_OPACITY = "MyPaint/opcity";
+const QString MYPAINT_OPACITY = "MyPaint/opcity" /* sic; s.b. opacity */;
 const QString MYPAINT_JSON = "MyPaint/json";
 const QString MYPAINT_BRUSH = "MyPaint/brush";
 const QString MYPAINT_OFFSET_BY_RANDOM = "MyPaint/Offset";

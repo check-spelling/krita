@@ -577,7 +577,7 @@ bool KisOpenGLImageTextures::setInternalColorManagementActive(bool value)
         recreateImageTextureTiles();
 
         // at this point the value of m_internalColorManagementActive might
-        // have been forcely reverted to 'false' in case of some problems
+        // have been forcefully reverted to 'false' in case of some problems
     }
 
     return needsFinalRegeneration;

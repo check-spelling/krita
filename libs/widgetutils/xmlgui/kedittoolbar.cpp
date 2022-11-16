@@ -904,7 +904,7 @@ void KisKEditToolBarWidget::save()
             continue;
         }
 
-        // let's also skip (non-existent) merged files
+        // let's also skip (nonexistent) merged files
         if ((*it).type() == XmlData::Merged) {
             continue;
         }

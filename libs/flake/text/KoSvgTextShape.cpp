@@ -382,7 +382,7 @@ private:
             }
         }
 
-        KIS_SAFE_ASSERT_RECOVER_NOOP(0 && "pos should be within the bounds of the layouted text");
+        KIS_SAFE_ASSERT_RECOVER_NOOP(0 && "pos should be within the bounds of the laid out text");
 
         return QTextCharFormat();
     }

@@ -30,7 +30,7 @@ if "%SIGNTOOL%" == "" (
 if "!SIGNTOOL_SIGN_FLAGS!" == "" (
     echo ERROR: Please set environment variable SIGNTOOL_SIGN_FLAGS 1>&2
     exit /b 1
-    :: This is what I used for testing:
+    :: This is what I used for testing (you can't use it anymore as the domain is gone):
     :: set "SIGNTOOL_SIGN_FLAGS=/f "C:\Users\Alvin\MySPC.pfx" /t http://timestamp.verisign.com/scripts/timstamp.dll"
 )
 

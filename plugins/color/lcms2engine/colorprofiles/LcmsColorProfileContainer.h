@@ -105,5 +105,5 @@ private:
     Private *const d;
 };
 
-#endif // KOCOLORPROFILE_H
+#endif // _KO_LCMS_COLORPROFILE_H
 

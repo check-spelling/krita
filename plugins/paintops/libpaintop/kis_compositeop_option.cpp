@@ -31,7 +31,7 @@ KisCompositeOpOption::KisCompositeOpOption(bool createConfigWidget)
         ui.setupUi(widget);
         ui.bnEraser->setIcon(KisIconUtils::loadIcon("draw-eraser"));
 
-        m_label    = ui.lbChoosenMode;
+        m_label    = ui.lbChosenMode;
         m_list     = ui.list;
         m_bnEraser = ui.bnEraser;
 
@@ -62,8 +62,8 @@ void KisCompositeOpOption::writeOptionSetting(KisPropertiesConfigurationSP setti
 
 void KisCompositeOpOption::readOptionSetting(const KisPropertiesConfigurationSP setting)
 {
-    QString ompositeOpID = setting->getString("CompositeOp", KoCompositeOpRegistry::instance().getDefaultCompositeOp().id());
-    KoID    compositeOp = KoCompositeOpRegistry::instance().getKoID(ompositeOpID);
+    QString compositeOpID = setting->getString("CompositeOp", KoCompositeOpRegistry::instance().getDefaultCompositeOp().id());
+    KoID    compositeOp = KoCompositeOpRegistry::instance().getKoID(compositeOpID);
     changeCompositeOp(compositeOp);
 
     const bool eraserMode = setting->getBool("EraserMode", false);

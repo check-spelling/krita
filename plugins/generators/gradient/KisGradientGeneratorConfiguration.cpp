@@ -79,8 +79,8 @@ KisGradientGeneratorConfiguration::SpatialUnits KisGradientGeneratorConfiguratio
 
 KisGradientGeneratorConfiguration::CoordinateSystem KisGradientGeneratorConfiguration::endPositionCoordinateSystem() const
 {
-    if (hasProperty("end_positiom_coordinate_system")) {
-        return stringToCoordinateSystem(getString("end_positiom_coordinate_system"), defaultEndPositionCoordinateSystem());
+    if (hasProperty("end_position_coordinate_system")) {
+        return stringToCoordinateSystem(getString("end_position_coordinate_system"), defaultEndPositionCoordinateSystem());
     }
     return stringToCoordinateSystem(getString("end_position_coordinate_system"), defaultEndPositionCoordinateSystem());
 }

@@ -235,7 +235,7 @@ public:
         } else if (shape == KisGradientPainter::GradientShapeConical) {
             return "conical";
         } else if (shape == KisGradientPainter::GradientShapeConicalSymetric) {
-            return "conical_symetric";
+            return "conical_symmetric";
         } else if (shape == KisGradientPainter::GradientShapeSpiral) {
             return "spiral";
         } else if (shape == KisGradientPainter::GradientShapeReverseSpiral) {
@@ -259,7 +259,7 @@ public:
             return KisGradientPainter::GradientShapeSquare;
         } else if (shapeString == "conical") {
             return KisGradientPainter::GradientShapeConical;
-        } else if (shapeString == "conical_symetric") {
+        } else if (shapeString == "conical_symmetric") {
             return KisGradientPainter::GradientShapeConicalSymetric;
         } else if (shapeString == "spiral") {
             return KisGradientPainter::GradientShapeSpiral;

@@ -637,7 +637,7 @@ KisNodeSP KisLayerManager::addCloneLayer(KisNodeList nodes)
 {
     KisImageWSP image = m_view->image();
 
-    KisNodeList filteredNodes = KisLayerUtils::sortAndFilterMergableInternalNodes(nodes, false);
+    KisNodeList filteredNodes = KisLayerUtils::sortAndFilterMergeableInternalNodes(nodes, false);
     if (filteredNodes.isEmpty()) return KisNodeSP();
 
     KisNodeSP newAbove = filteredNodes.last();
@@ -973,12 +973,12 @@ KisNodeSP KisLayerManager::addFileLayer(KisNodeSP activeNode)
     return 0;
 }
 
-void updateLayerStyles(KisLayerSP layer, KisDlgLayerStyle *dlg, KoCanvasResourcesInterfaceSP canvasResroucesInterface)
+void updateLayerStyles(KisLayerSP layer, KisDlgLayerStyle *dlg, KoCanvasResourcesInterfaceSP canvasResourcesInterface)
 {
     KisSetLayerStyleCommand::updateLayerStyle(layer,
                                               dlg->style()->cloneWithResourcesSnapshot(
                                                   KisGlobalResourcesInterface::instance(),
-                                                  canvasResroucesInterface));
+                                                  canvasResourcesInterface));
 }
 
 void KisLayerManager::layerStyle()
@@ -992,7 +992,7 @@ void KisLayerManager::layerStyle()
     if (!m_view->blockUntilOperationsFinished(image)) return;
     if (!m_view->nodeManager()->canModifyLayer(layer)) return;
 
-    KoCanvasResourcesInterfaceSP canvasResroucesInterface = m_view->canvasBase()->resourceManager()->canvasResourcesInterface();
+    KoCanvasResourcesInterfaceSP canvasResourcesInterface = m_view->canvasBase()->resourceManager()->canvasResourcesInterface();
 
     KisPSDLayerStyleSP oldStyle;
     if (layer->layerStyle()) {
@@ -1001,7 +1001,7 @@ void KisLayerManager::layerStyle()
     } else {
         oldStyle = toQShared(new KisPSDLayerStyle("", KisGlobalResourcesInterface::instance()))
                 ->cloneWithResourcesSnapshot(KisGlobalResourcesInterface::instance(),
-                                             canvasResroucesInterface);
+                                             canvasResourcesInterface);
     }
 
     KisPSDLayerStyleSP newStyle = oldStyle->clone().dynamicCast<KisPSDLayerStyle>();
@@ -1009,14 +1009,14 @@ void KisLayerManager::layerStyle()
 
     KisDlgLayerStyle dlg(newStyle, m_view->canvasResourceProvider());
 
-    std::function<void ()> updateCall(std::bind(updateLayerStyles, layer, &dlg, canvasResroucesInterface));
+    std::function<void ()> updateCall(std::bind(updateLayerStyles, layer, &dlg, canvasResourcesInterface));
     SignalToFunctionProxy proxy(updateCall);
     connect(&dlg, SIGNAL(configChanged()), &proxy, SLOT(start()));
 
     if (dlg.exec() == QDialog::Accepted) {
         KisPSDLayerStyleSP newStyle =
             dlg.style()->cloneWithResourcesSnapshot(KisGlobalResourcesInterface::instance(),
-                                                    canvasResroucesInterface);
+                                                    canvasResourcesInterface);
 
         KUndo2CommandSP command = toQShared(
                     new KisSetLayerStyleCommand(layer, oldStyle, newStyle));

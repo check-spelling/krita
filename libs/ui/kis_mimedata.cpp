@@ -124,8 +124,8 @@ KisDocument *createDocument(QList<KisNodeSP> nodes, KisImageSP srcImage, const Q
         KisImageBarrierLockerWithFeedbackAllowNull locker(srcImage);
         Q_FOREACH (KisNodeSP node, nodes) {
             KisNodeSP clonedNode = safeCopyNode(node);
-            /// HACK ALERT: here we just initilize parent image link
-            ///             and skip initilizing shapeController!
+            /// HACK ALERT: here we just initialize parent image link
+            ///             and skip initializing shapeController!
             ///             Ideally, we should call initializeExternalNode()
             ///             instead.
             image->addNode(clonedNode);
@@ -350,7 +350,7 @@ QMimeData* KisMimeData::mimeForLayers(const KisNodeList &nodes, KisImageSP image
 {
     KisNodeList inputNodes = nodes;
     KisNodeList sortedNodes;
-    KisLayerUtils::sortMergableNodes(image->root(), inputNodes, sortedNodes);
+    KisLayerUtils::sortMergeableNodes(image->root(), inputNodes, sortedNodes);
     if (sortedNodes.isEmpty()) return 0;
 
     KisMimeData* data = new KisMimeData(sortedNodes, image, forceCopy);
@@ -361,7 +361,7 @@ QMimeData* KisMimeData::mimeForLayersDeepCopy(const KisNodeList &nodes, KisImage
 {
     KisNodeList inputNodes = nodes;
     KisNodeList sortedNodes;
-    KisLayerUtils::sortMergableNodes(image->root(), inputNodes, sortedNodes);
+    KisLayerUtils::sortMergeableNodes(image->root(), inputNodes, sortedNodes);
     if (sortedNodes.isEmpty()) return 0;
 
     KisMimeData* data = new KisMimeData(sortedNodes, image, forceCopy);

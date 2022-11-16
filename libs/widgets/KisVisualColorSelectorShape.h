@@ -22,7 +22,7 @@
 /**
  * @brief The KisVisualColorSelectorShape class
  * A 2d widget can represent at maximum 2 coordinates.
- * So first decide howmany coordinates you need. (onedimensional, or twodimensional)
+ * So first decide how many coordinates you need. (onedimensional, or twodimensional)
  * Then the model, (Channel, HSV, HSL, HSI, YUV). Channel is the raw color channels.
  * When it finds a non-implemented feature it'll return to Channel.
  * Then, select the channels you wish to be affected. This uses the model, so for cmyk
@@ -161,7 +161,7 @@ protected:
      * @brief convertImageMap
      * convert image data containing raw KoColor data into a QImage
      * @param data must point to memory of size width()*height()*pixelSize
-     * @param size the number of bytes to read from data, must match aforementioned cirteria
+     * @param size the number of bytes to read from data, must match aforementioned criteria
      * @return the converted QImage guaranteed to match the widget size (black content on failure)
      */
     QImage convertImageMap(const quint8 *rawColor, quint32 bufferSize, QSize imgSize) const;

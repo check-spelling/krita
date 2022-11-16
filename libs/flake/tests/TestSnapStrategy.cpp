@@ -380,7 +380,7 @@ void TestSnapStrategy::testLineGuideSnap()
     // QVERIFY(didSnapTwo);
 }
 
-void TestSnapStrategy::testOrhogonalDecoration()
+void TestSnapStrategy::testOrthogonalDecoration()
 {
     //Making sure the decoration is created but is empty
     OrthogonalSnapStrategy toTestTwo;
@@ -635,7 +635,7 @@ void TestSnapStrategy::testScalarProduct()
 
     qreal resultingRealFour = toTestFour.squareDistance(p1_8, p2_8);
     QVERIFY(resultingRealFour == 0);
-    //tests so there is nothing fishy when using origo
+    //tests so there is nothing fishy when using origin
     OrthogonalSnapStrategy toTestFive;
 
     QPointF p1_9(1,1);
@@ -672,7 +672,7 @@ void TestSnapStrategy::testProject()
 
     qreal resultingRealOne = toTestOne.project(lineStart, lineEnd, comparisonPoint);
     QCOMPARE(resultingRealOne, toCompWithOne);
-    //testing for for negative point values
+    //testing for negative point values
     ExtensionSnapStrategy toTestTwo;
     qreal toCompWithTwo = -4;
     QPointF lineStart_2(-2,-2);

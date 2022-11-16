@@ -432,7 +432,7 @@ KisCurveOption::ValueComponents KisCurveOption::computeValueComponents(const Kis
                 double min = *std::min_element(sensorValues.begin(), sensorValues.end());
                 components.scaling = max-min;
 
-            } else {                         //multuply - default
+            } else {                         //multiply - default
                 double i;
                 foreach (i, sensorValues) {
                     components.scaling *= i;
@@ -545,7 +545,7 @@ DynamicSensorType KisCurveOption::id2Type(const KoID &id)
         return TILT_DIRECTION;
     }
     else if (id.id() == TiltElevationId.id()) {
-        return TILT_ELEVATATION;
+        return TILT_ELEVATION;
     }
     else if (id.id() == SpeedId.id()) {
         return SPEED;
@@ -661,7 +661,7 @@ KisDynamicSensorSP KisCurveOption::type2Sensor(DynamicSensorType sensorType, con
         return new KisDynamicSensorYTilt();
     case TILT_DIRECTION:
         return new KisDynamicSensorTiltDirection();
-    case TILT_ELEVATATION:
+    case TILT_ELEVATION:
         return new KisDynamicSensorTiltElevation();
     case PERSPECTIVE:
         return new KisDynamicSensorPerspective();
@@ -683,7 +683,7 @@ QList<DynamicSensorType> KisCurveOption::sensorsTypes()
             << XTILT
             << YTILT
             << TILT_DIRECTION
-            << TILT_ELEVATATION
+            << TILT_ELEVATION
             << SPEED
             << ANGLE
             << ROTATION

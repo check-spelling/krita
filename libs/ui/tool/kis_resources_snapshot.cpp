@@ -87,7 +87,7 @@ KisResourcesSnapshot::KisResourcesSnapshot(KisImageSP image, KisNodeSP currentNo
      */
     if (presetOverride) {
         /// we don't use global resource cache object in this case,
-        /// because the passet preset might be not the global one
+        /// because the passed preset might be not the global one
         m_d->currentPaintOpPreset =
             presetOverride->cloneWithResourcesSnapshot(
                 KisGlobalResourcesInterface::instance(),
@@ -151,7 +151,7 @@ KisResourcesSnapshot::KisResourcesSnapshot(KisImageSP image, KisNodeSP currentNo
     m_d->globalAlphaLock = resourceManager->resource(KoCanvasResource::GlobalAlphaLock).toBool();
     m_d->effectiveZoom = resourceManager->resource(KoCanvasResource::EffectiveZoom).toDouble();
 
-    m_d->presetAllowsLod = resourceManager->resource(KoCanvasResource::EffectiveLodAvailablility).toBool();
+    m_d->presetAllowsLod = resourceManager->resource(KoCanvasResource::EffectiveLodAvailability).toBool();
 }
 
 KisResourcesSnapshot::KisResourcesSnapshot(KisImageSP image, KisNodeSP currentNode, KisDefaultBoundsBaseSP bounds)

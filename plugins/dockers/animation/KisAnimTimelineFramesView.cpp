@@ -436,7 +436,7 @@ void KisAnimTimelineFramesView::setActionManager(KisActionManager *actionManager
         connect(action, SIGNAL(triggered()), SLOT(slotSetEndTimeToCurrentPosition()));
 
         action = m_d->actionMan->createAction("update_playback_range");
-        connect(action, SIGNAL(triggered()), SLOT(slotUpdatePlackbackRange()));
+        connect(action, SIGNAL(triggered()), SLOT(slotUpdatePlaybackRange()));
 
         action = m_d->actionMan->actionByName("pin_to_timeline");
         m_d->pinLayerToTimelineAction = action;
@@ -599,7 +599,7 @@ void KisAnimTimelineFramesView::slotSetEndTimeToCurrentPosition()
     m_d->model->setFullClipRangeEnd(this->currentIndex().column());
 }
 
-void KisAnimTimelineFramesView::slotUpdatePlackbackRange()
+void KisAnimTimelineFramesView::slotUpdatePlaybackRange()
 {
     QSet<int> rows;
     int minColumn = 0;

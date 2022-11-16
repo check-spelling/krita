@@ -705,7 +705,7 @@ QDomDocument KisAslLayerStyleSerializer::formXmlDocument() const
 }
 
 inline QDomNode findNodeByClassId(const QString &classId, QDomNode parent) {
-    return KisDomUtils::findElementByAttibute(parent, "node", "classId", classId);
+    return KisDomUtils::findElementByAttribute(parent, "node", "classId", classId);
 }
 
 void replaceAllChildren(QDomNode src, QDomNode dst)
@@ -935,7 +935,7 @@ void KisAslLayerStyleSerializer::assignPatternObject(const QString &patternUuid,
     KoPatternSP pattern = m_patternsStore[patternUuid];
 
     if (!pattern) {
-        warnKrita << "WARNING: ASL style contains non-existent pattern reference! Searching for uuid: "
+        warnKrita << "WARNING: ASL style contains nonexistent pattern reference! Searching for uuid: "
                   << patternUuid << " (name: " << patternName << ")";
 
         QImage dumbImage(32, 32, QImage::Format_ARGB32);

@@ -189,8 +189,8 @@ void InplaceTransformStrokeStrategy::doStrokeCallback(KisStrokeJobData *data)
 
         doCanvasUpdate(barrierData->forceUpdate);
 
-    } else if (KisAsyncronousStrokeUpdateHelper::UpdateData *updateData =
-               dynamic_cast<KisAsyncronousStrokeUpdateHelper::UpdateData*>(data)) {
+    } else if (KisAsynchronousStrokeUpdateHelper::UpdateData *updateData =
+               dynamic_cast<KisAsynchronousStrokeUpdateHelper::UpdateData*>(data)) {
 
         tryPostUpdateJob(updateData->forceUpdate);
 
@@ -233,7 +233,7 @@ void InplaceTransformStrokeStrategy::doCanvasUpdate(bool forceUpdate)
     KritaUtils::addJobBarrier(jobs, [this, args]() {
         m_d->currentTransformArgs = args;
         m_d->updateTimer.restart();
-        // sanity check that no job has been squeezed inbetween
+        // sanity check that no job has been squeezed in between
         KIS_SAFE_ASSERT_RECOVER_RETURN(!m_d->pendingUpdateArgs);
     });
 
@@ -534,7 +534,7 @@ void InplaceTransformStrokeStrategy::cancelStrokeCallback()
 }
 
 InplaceTransformStrokeStrategy::BarrierUpdateData::BarrierUpdateData(bool _forceUpdate)
-    : KisAsyncronousStrokeUpdateHelper::UpdateData(_forceUpdate, BARRIER, NORMAL)
+    : KisAsynchronousStrokeUpdateHelper::UpdateData(_forceUpdate, BARRIER, NORMAL)
 {
 }
 
@@ -544,7 +544,7 @@ KisStrokeJobData *InplaceTransformStrokeStrategy::BarrierUpdateData::createLodCl
 }
 
 InplaceTransformStrokeStrategy::BarrierUpdateData::BarrierUpdateData(const InplaceTransformStrokeStrategy::BarrierUpdateData &rhs, int levelOfDetail)
-    : KisAsyncronousStrokeUpdateHelper::UpdateData (rhs, levelOfDetail)
+    : KisAsynchronousStrokeUpdateHelper::UpdateData (rhs, levelOfDetail)
 {
 }
 

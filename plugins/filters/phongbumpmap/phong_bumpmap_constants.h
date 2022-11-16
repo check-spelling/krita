@@ -36,9 +36,9 @@ const QString PHONG_ILLUMINANT_INCLINATION[] =
 const QString PHONG_AMBIENT_REFLECTIVITY = "ambientReflectivity";
 const QString PHONG_DIFFUSE_REFLECTIVITY = "diffuseReflectivity";
 const QString PHONG_SPECULAR_REFLECTIVITY = "specularReflectivity";
-const QString PHONG_SHINYNESS_EXPONENT = "shinynessExponent";
+const QString PHONG_SHINYNESS_EXPONENT = "shininessExponent";
 const QString PHONG_DIFFUSE_REFLECTIVITY_IS_ENABLED = "diffuseReflectivityIsEnabled";
 const QString PHONG_SPECULAR_REFLECTIVITY_IS_ENABLED = "specularReflectivityIsEnabled";
-//const QString PHONG_SHINYNESS_EXPONENT_IS_ENABLED = "shinynessExponentIsEnabled";
+//const QString PHONG_SHINYNESS_EXPONENT_IS_ENABLED = "shininessExponentIsEnabled";
 
 #endif

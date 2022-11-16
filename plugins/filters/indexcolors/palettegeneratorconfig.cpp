@@ -24,7 +24,7 @@ PaletteGeneratorConfig::PaletteGeneratorConfig()
     for(int i = 0; i < 3; ++i)
         gradientSteps[i] = 4;
 
-    inbetweenRampSteps = 2;
+    in betweenRampSteps = 2;
     diagonalGradients = false;
 }
 
@@ -49,7 +49,7 @@ QByteArray PaletteGeneratorConfig::toByteArray()
     for(int i = 0; i < 3; ++i)
         stream << gradientSteps[i];
 
-    stream << inbetweenRampSteps;
+    stream << in betweenRampSteps;
     stream << diagonalGradients;
     return retVal;
 }
@@ -75,7 +75,7 @@ void PaletteGeneratorConfig::fromByteArray(const QByteArray& str)
         for(int i = 0; i < 3; ++i)
             stream >> gradientSteps[i];
 
-        stream >> inbetweenRampSteps;
+        stream >> in betweenRampSteps;
         stream >> diagonalGradients;
     }
     else
@@ -98,12 +98,12 @@ IndexColorPalette PaletteGeneratorConfig::generate()
                 pal.insertShades(colors[y][x], colors[y+1][x], gradientSteps[y]);
     }
 
-    if(inbetweenRampSteps)
+    if(in betweenRampSteps)
     {
         for(int y = 0; y < 4; ++y)
             for(int x = 0; x < 3; ++x)
                 if(colorsEnabled[y][x] && colorsEnabled[y][x+1])
-                    pal.insertShades(colors[y][x], colors[y][x+1], inbetweenRampSteps);
+                    pal.insertShades(colors[y][x], colors[y][x+1], in betweenRampSteps);
     }
 
     if(diagonalGradients)

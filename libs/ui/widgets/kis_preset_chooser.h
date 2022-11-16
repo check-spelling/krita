@@ -39,11 +39,11 @@ public:
 
     enum ViewMode{
         THUMBNAIL, /// Shows thumbnails
-        DETAIL,  /// Shows thumbsnails with text next to it
+        DETAIL,  /// Shows thumbnails with text next to it
         STRIP  /// Shows thumbnails arranged in a single row
     };
 
-    /// Sets a list of resources in the paintop list, when ever user press enter in the linedit of paintop_presets_popup Class
+    /// Sets a list of resources in the paintop list, when ever user press enter in the lineedit of paintop_presets_popup Class
     void setViewMode(ViewMode mode);
     void showButtons(bool show);
 
