@@ -181,7 +181,7 @@ public:
     }
 
     /**
-     * A convenience method for seting up input and output connections at
+     * A convenience method for setting up input and output connections at
      * the same time
      */
     template <typename Dptr1, typename C1, typename R1, typename ...MemFnArgs1,
