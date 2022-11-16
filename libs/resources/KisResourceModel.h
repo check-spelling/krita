@@ -157,7 +157,7 @@ public:
     virtual bool addResource(KoResourceSP resource, const QString &storageId = QString("")) = 0;
 
     /**
-     * @brief updateResource creates a new version ofthe resource in the storage and
+     * @brief updateResource creates a new version of the resource in the storage and
      * in the database. This will also set the resource to active if it was inactive.
      *
      * Note: if the storage does not support versioning, updating the resource will fail.
