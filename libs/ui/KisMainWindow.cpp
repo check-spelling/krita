@@ -636,7 +636,7 @@ KisMainWindow::KisMainWindow(QUuid uuid)
     connect(s, SIGNAL(orientationChanged(Qt::ScreenOrientation)), this, SLOT(orientationChanged()));
 
     // When Krita starts, Java side sends an event to set applicationState() to active. But, before
-    // the event could reach KisApplication's platform integration, it is cleared by KisOpenGLModeProber::probeFomat.
+    // the event could reach KisApplication's platform integration, it is cleared by KisOpenGLModeProber::probeFormat.
     // So, we send it manually when MainWindow shows up.
     QAndroidJniObject::callStaticMethod<void>("org/qtproject/qt5/android/QtNative", "setApplicationState", "(I)V", Qt::ApplicationActive);
 #endif
