@@ -42,7 +42,7 @@ findEntitlementsFile() {
     fi
 }
 
-# Attempt to detach previous mouted DMG
+# Attempt to detach previous mounted DMG
 detachKritaDMG() {
     if [[ -d "/Volumes/${DMG_title}" ]]; then
     echo "WARNING: Another Krita DMG is mounted!"
