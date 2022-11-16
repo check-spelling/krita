@@ -147,7 +147,7 @@ QList<qreal> KoPathSegment::Private::extrema() const
     QList<qreal> params;
 
     /*
-     * The basic idea for calculating the extrama for bezier segments
+     * The basic idea for calculating the extrema for bezier segments
      * was found in comp.graphics.algorithms:
      *
      * Both the x coordinate and the y coordinate are polynomial. Newton told
