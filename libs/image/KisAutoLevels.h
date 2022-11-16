@@ -89,7 +89,7 @@ QPair<KoColor, KoColor> KRITAIMAGE_EXPORT getDarkestAndWhitestColors(const KisPa
  * @param outputIntensity This is the intensity value to which the input value
  *                        will be mapped to after the gamma correction. Use 0.5
  *                        to neutralize the midtones
- * @return the gamma value that, when applied after the lineat mapping given by
+ * @return the gamma value that, when applied after the linear mapping given by
  *         the black and white points, will map the input intensity to the
  *         output intensity
  */
