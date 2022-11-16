@@ -1389,7 +1389,7 @@ bool KisMainWindow::saveDocument(KisDocument *document, bool saveas, bool isExpo
             // If exporting, default to all supported file types if user is exporting
             QByteArray default_mime_type = "";
             if (!isExporting) {
-                // otherwise use the document's mimetype, or if that is empty, kra, which is the savest.
+                // otherwise use the document's mimetype, or if that is empty, kra, which is the safest.
                 default_mime_type = document->mimeType().isEmpty() ? nativeFormat : document->mimeType();
             }
             dialog.setMimeTypeFilters(mimeFilter, QString::fromLatin1(default_mime_type));
