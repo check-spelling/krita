@@ -129,7 +129,7 @@ KisToolTransform::KisToolTransform(KoCanvasBase * canvas)
 
     // extra actions for free transform that are in the tool options
     mirrorHorizontalAction = new KisAction(i18n("Mirror Horizontal"));
-    mirrorVericalAction = new KisAction(i18n("Mirror Vertical"));
+    mirrorVerticalAction = new KisAction(i18n("Mirror Vertical"));
     rotateNinetyCWAction = new KisAction(i18n("Rotate 90 degrees Clockwise"));
     rotateNinetyCCWAction = new KisAction(i18n("Rotate 90 degrees CounterClockwise"));
 
@@ -175,7 +175,7 @@ KisToolTransform::~KisToolTransform()
     delete applyTransformation;
     delete resetTransformation;
     delete mirrorHorizontalAction;
-    delete mirrorVericalAction;
+    delete mirrorVerticalAction;
     delete rotateNinetyCWAction;
     delete rotateNinetyCCWAction;
 }
@@ -386,7 +386,7 @@ QMenu* KisToolTransform::popupActionsMenu()
         if (transformMode() == FreeTransformMode) {
             m_contextMenu->addSeparator();
             m_contextMenu->addAction(mirrorHorizontalAction);
-            m_contextMenu->addAction(mirrorVericalAction);
+            m_contextMenu->addAction(mirrorVerticalAction);
             m_contextMenu->addAction(rotateNinetyCWAction);
             m_contextMenu->addAction(rotateNinetyCCWAction);
         }
@@ -1122,7 +1122,7 @@ QWidget* KisToolTransform::createOptionWidget()
 
 
     connect(mirrorHorizontalAction, SIGNAL(triggered(bool)), m_optionsWidget, SLOT(slotFlipX()));
-    connect(mirrorVericalAction, SIGNAL(triggered(bool)), m_optionsWidget, SLOT(slotFlipY()));
+    connect(mirrorVerticalAction, SIGNAL(triggered(bool)), m_optionsWidget, SLOT(slotFlipY()));
     connect(rotateNinetyCWAction, SIGNAL(triggered(bool)), m_optionsWidget, SLOT(slotRotateCW()));
     connect(rotateNinetyCCWAction, SIGNAL(triggered(bool)), m_optionsWidget, SLOT(slotRotateCCW()));
 
