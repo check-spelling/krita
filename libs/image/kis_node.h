@@ -258,7 +258,7 @@ public: // Graph methods
 
     /**
      * @return the graph listener this node belongs to. 0 if the node
-     * does not belong to a grap listener.
+     * does not belong to a graph listener.
      */
     KisNodeGraphListener * graphListener() const;
 
