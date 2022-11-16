@@ -155,7 +155,7 @@ public:
     void loadActionFiles();
     void loadCustomShortcuts(QString filename = QStringLiteral("kritashortcutsrc"));
 
-    // XXX: this adds a default item for the given name to the list of actioninfo objects!
+    // XXX: this adds a default item for the given name to the list of actionInfo objects!
     ActionInfoItem &actionInfo(const QString &name) {
         if (!actionInfoList.contains(name)) {
             dbgAction << "Tried to look up info for unknown action" << name;
