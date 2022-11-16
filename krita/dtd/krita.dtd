@@ -68,8 +68,8 @@
         linked:       Is the layer linked? (yes or no) OBSOLETE
         filename:   The name of the binary file of the layer' data.
         layertype:   The type of layer. paintlayer is assumed if absent.
-        filtername  The name of the filter in case the layer is an adjustmentlayer
-        filterversion The version of the filter in case the layer is an adjustmentlayer
+        filtername  The name of the filter in case the layer is an adjustment layer
+        filterversion The version of the filter in case the layer is an adjustment layer
 -->
 <!ELEMENT layer (LAYERS)?>
 <!ATTLIST layer 
