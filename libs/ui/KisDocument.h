@@ -376,7 +376,7 @@ public:
 
     /**
      * @brief setPaletteList replaces the palettes in the document's local resource storage with the list
-     * of palettes passed to this function. It will then emitsigPaletteListChanged with both the old and
+     * of palettes passed to this function. It will then emit sigPaletteListChanged with both the old and
      * the new list, if emitsignal is true.
      */
     void setPaletteList(const QList<KoColorSetSP> &paletteList, bool emitSignal = false);
