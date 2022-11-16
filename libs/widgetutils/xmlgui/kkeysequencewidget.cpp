@@ -351,7 +351,7 @@ void KisKKeySequenceWidget::applyStealShortcut()
         stealAction->setShortcuts(QList<QKeySequence>());
 
         // The following code will find the action we are about to
-        // steal from and save it's action collection.
+        // steal from and save its action collection.
         KisKActionCollection *parentCollection = 0;
         foreach (KisKActionCollection *collection, d->checkActionCollections) {
             if (collection->actions().contains(stealAction)) {
