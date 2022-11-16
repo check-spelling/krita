@@ -67,7 +67,7 @@ public:
         /// The item is first activated with ActiveRole, then a separate AlternateActiveRole comes
         AlternateActiveRole,
 
-        // When a layer is not (recursively) visible, then it should be gayed out
+        // When a layer is not (recursively) visible, then it should be grayed out
         ShouldGrayOutRole,
 
         // An index of a color label associated with the node
