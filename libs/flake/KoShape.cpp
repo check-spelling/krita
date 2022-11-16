@@ -755,11 +755,11 @@ KoShape::TextRunAroundSide KoShape::textRunAroundSide() const
     return s->textRunAroundSide;
 }
 
-void KoShape::setTextRunAroundSide(TextRunAroundSide side, RunThroughLevel runThrought)
+void KoShape::setTextRunAroundSide(TextRunAroundSide side, RunThroughLevel runThrough)
 {
 
     if (side == RunThrough) {
-        if (runThrought == Background) {
+        if (runThrough == Background) {
             setRunThrough(-1);
         } else {
             setRunThrough(1);
