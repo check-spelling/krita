@@ -69,7 +69,7 @@ public:
     void insert(T* item);
 
     /**
-     * Call this method after decreasing the key of the ith item. The heap
+     * Call this method after decreasing the key of the nth item. The heap
      * properties will no longer be valid if you either forget to call that
      * method, or if you \b increase the key.
      */
