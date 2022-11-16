@@ -499,7 +499,7 @@ bool KoSvgTextShapeMarkupConverter::convertDocumentToSvg(const QTextDocument *do
 
     QXmlStreamWriter svgWriter(&svgBuffer);
 
-    // disable auto-formatting to avoid axtra spaces appearing here and there
+    // disable auto-formatting to avoid extra spaces appearing here and there
     svgWriter.setAutoFormatting(false);
 
 
