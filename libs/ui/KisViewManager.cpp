@@ -798,7 +798,7 @@ void KisViewManager::createActions()
 void KisViewManager::setupManagers()
 {
     // Create the managers for filters, selections, layers etc.
-    // XXX: When the currentlayer changes, call updateGUI on all
+    // XXX: When the current layer changes, call updateGUI on all
     // managers
 
     d->filterManager.setup(actionCollection(), actionManager());
