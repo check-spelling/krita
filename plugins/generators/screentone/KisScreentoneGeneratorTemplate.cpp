@@ -160,7 +160,7 @@ void KisScreentoneGeneratorTemplate::makeTemplate(const KisScreentoneGeneratorCo
     // corner of the macrocell. v1 is the aligned version
     // u2 is the unaligned vector that goes from the origin to the bottom-left
     // corner of the macrocell. v2 is the aligned version.
-    // At this point we asume the macrocell will have a minimum size given by
+    // At this point we assume the macrocell will have a minimum size given by
     // the alignment
     const QPointF u1 = screenToImage.map(QPointF(static_cast<qreal>(alignX), 0.0));
     const QPointF u2 = screenToImage.map(QPointF(0.0, static_cast<qreal>(alignY)));
