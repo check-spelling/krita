@@ -104,7 +104,7 @@ public:
     ~KisTagSelectionWidget() override;
 
     void setTagList(bool editable, QList<KoID> &selected, QList<KoID> &notSelected);
-    void setTagList(bool editable, QList<KoID> &selected, QList<KoID> &notSelected, QList<KoID> &semitSelected);
+    void setTagList(bool editable, QList<KoID> &selected, QList<KoID> &notSelected, QList<KoID> &semiSelected);
 
 
 Q_SIGNALS:
