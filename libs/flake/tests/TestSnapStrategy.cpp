@@ -635,7 +635,7 @@ void TestSnapStrategy::testScalarProduct()
 
     qreal resultingRealFour = toTestFour.squareDistance(p1_8, p2_8);
     QVERIFY(resultingRealFour == 0);
-    //tests so there is nothing fishy when using origo
+    //tests so there is nothing fishy when using origin
     OrthogonalSnapStrategy toTestFive;
 
     QPointF p1_9(1,1);
