@@ -31,7 +31,7 @@
 #     This uses oTool iterative to find all unique libraries, then it searches each
 #     library fond in <kritadmg> folder, and if not found attempts to copy contents
 #     to the appropriate folder, either Frameworks (if frameworks is in namefile, or
-#         library has plugin isnot in path), or plugin if otherwise.
+#         library has plugin is not in path), or plugin if otherwise.
 
 # - Builds DMG
 #     Building DMG creates a new dmg with the contents of <kritadmg>
