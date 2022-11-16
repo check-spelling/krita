@@ -201,7 +201,7 @@ protected:
      * apply a convolution filter with kernel 4x4 (changeRect is
      * (2+2*3)x(2+2*3)=8x8) to that area. The rect that should be updated
      * on the layer will be exactly 8x8. More than that the needRect for
-     * that update will be 14x14. See \ref needeRect.
+     * that update will be 14x14. See \ref needRect.
      */
     virtual QRect changeRect(const QRect &rect, PositionToFilthy pos = N_FILTHY) const;
 
