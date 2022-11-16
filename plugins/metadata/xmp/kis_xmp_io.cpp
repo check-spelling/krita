@@ -112,7 +112,7 @@ bool KisXMPIO::saveTo(KisMetaData::Store *store, QIODevice *ioDevice, HeaderType
                     // Cannot happen
                     ;
                 }
-                xmpData_.add(key, &tv); // set the arrya type
+                xmpData_.add(key, &tv); // set the array type
                 const KisMetaData::TypeInfo *stuctureTypeInfo = typeInfo->embeddedPropertyType();
                 const KisMetaData::Schema *structureSchema = 0;
                 if (stuctureTypeInfo) {
