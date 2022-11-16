@@ -747,7 +747,7 @@ void ConicalGradientPaintPolicy::setup(const QPointF& gradientVectorStart,
 
 const quint8 *ConicalGradientPaintPolicy::colorAt(qreal x, qreal y) const
 {
-    // Compute the distance from the center of the gradient to thecurrent pixel
+    // Compute the distance from the center of the gradient to the current pixel
     qreal dx = x - m_gradientVectorStart.x();
     qreal dy = y - m_gradientVectorStart.y();
     qreal distanceInPixels = sqrt(dx * dx + dy * dy);
