@@ -719,7 +719,7 @@ QWidget* KisToolFill::createOptionWidget()
     connect(m_checkBoxSelectionAsBoundary, SIGNAL(toggled(bool)), SLOT(slot_checkBoxSelectionAsBoundary_toggled(bool)));
     connect(m_checkBoxAntiAlias, SIGNAL(toggled(bool)), SLOT(slot_checkBoxAntiAlias_toggled(bool)));
     connect(m_sliderGrow, SIGNAL(valueChanged(int)), SLOT(slot_sliderGrow_valueChanged(int)));
-    connect(m_buttonStopGrowingAtDarkestPixel, SIGNAL(toggled(bool)), SLOT(slot_buttonStopGrowingAtDarkestPixel_toogled(bool)));
+    connect(m_buttonStopGrowingAtDarkestPixel, SIGNAL(toggled(bool)), SLOT(slot_buttonStopGrowingAtDarkestPixel_toggled(bool)));
     connect(m_sliderFeather, SIGNAL(valueChanged(int)), SLOT(slot_sliderFeather_valueChanged(int)));
     connect(optionButtonStripReference,
             SIGNAL(buttonToggled(KoGroupButton *, bool)),
@@ -1007,7 +1007,7 @@ void KisToolFill::slot_sliderGrow_valueChanged(int value)
     m_configGroup.writeEntry("growSelection", value);
 }
 
-void KisToolFill::slot_buttonStopGrowingAtDarkestPixel_toogled(bool enabled)
+void KisToolFill::slot_buttonStopGrowingAtDarkestPixel_toggled(bool enabled)
 {
     if (enabled == m_stopGrowingAtDarkestPixel) {
         return;
