@@ -68,7 +68,7 @@ void KisKeyframingTest::testChannelSignals()
 
     int updateSignalCount = spyUpdated.count();
 
-    {   // Adding a keyframe..
+    {   // Adding a keyframe.
         int originalSignalCount = spyAdded.count();
         channel->addKeyframe(7);
 
