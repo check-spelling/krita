@@ -233,7 +233,7 @@ void InplaceTransformStrokeStrategy::doCanvasUpdate(bool forceUpdate)
     KritaUtils::addJobBarrier(jobs, [this, args]() {
         m_d->currentTransformArgs = args;
         m_d->updateTimer.restart();
-        // sanity check that no job has been squeezed inbetween
+        // sanity check that no job has been squeezed in between
         KIS_SAFE_ASSERT_RECOVER_RETURN(!m_d->pendingUpdateArgs);
     });
 

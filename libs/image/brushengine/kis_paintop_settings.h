@@ -167,7 +167,7 @@ public:
     virtual bool useSpacingUpdates() const;
 
     /**
-     * Indicates if the tool should call paintOp->doAsynchronousUpdate() inbetween
+     * Indicates if the tool should call paintOp->doAsynchronousUpdate() in between
      * paintAt() calls to do the asynchronous rendering
      */
     virtual bool needsAsynchronousUpdates() const;

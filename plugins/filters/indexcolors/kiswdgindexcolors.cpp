@@ -21,7 +21,7 @@ KisWdgIndexColors::KisWdgIndexColors(QWidget* parent, Qt::WindowFlags f, int del
     ui->setupUi(this);
 
     connect(ui->diagCheck,  SIGNAL(toggled(bool)), SIGNAL(sigConfigurationItemChanged()));
-    connect(ui->inbetweenSpinBox, SIGNAL(valueChanged(int)), SIGNAL(sigConfigurationItemChanged()));
+    connect(ui->in betweenSpinBox, SIGNAL(valueChanged(int)), SIGNAL(sigConfigurationItemChanged()));
     connect(ui->alphaStepsSpinBox, SIGNAL(valueChanged(int)), SIGNAL(sigConfigurationItemChanged()));
 
     connect(ui->colorLimit, SIGNAL(valueChanged(int)), SLOT(slotColorLimitChanged(int)));
@@ -126,7 +126,7 @@ KisPropertiesConfigurationSP KisWdgIndexColors::configuration() const
         palCfg.gradientSteps[y] = m_stepSpinners[y]->value();
 
     palCfg.diagonalGradients = ui->diagCheck->isChecked();
-    palCfg.inbetweenRampSteps = ui->inbetweenSpinBox->value();
+    palCfg.in betweenRampSteps = ui->in betweenSpinBox->value();
     
     IndexColorPalette pal = palCfg.generate();
     ui->colorCount->setText(QString::number(pal.numColors()));
@@ -157,7 +157,7 @@ void KisWdgIndexColors::setConfiguration(const KisPropertiesConfigurationSP conf
     ui->colorLimit->setEnabled(config->getBool("reduceColorsEnabled"));
     ui->colorLimit->setValue(config->getInt("colorLimit"));
     ui->diagCheck->setChecked(palCfg.diagonalGradients);
-    ui->inbetweenSpinBox->setValue(palCfg.inbetweenRampSteps);
+    ui->in betweenSpinBox->setValue(palCfg.in betweenRampSteps);
 
     for(int y = 0; y < 4; ++y)
         for(int x = 0; x < 4; ++x)

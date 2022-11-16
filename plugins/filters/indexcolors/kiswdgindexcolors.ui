@@ -109,7 +109,7 @@
        </widget>
       </item>
       <item column="1" row="0">
-       <widget class="KisIntParseSpinBox" name="inbetweenSpinBox">
+       <widget class="KisIntParseSpinBox" name="in betweenSpinBox">
         <property name="minimum">
          <number>0</number>
         </property>
