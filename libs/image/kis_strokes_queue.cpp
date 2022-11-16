@@ -839,7 +839,7 @@ bool KisStrokesQueue::checkStrokeState(bool hasStrokeJobsRunning,
 
         /**
          * If the Lod0 stroke has been cancelled without even being
-         * strated, it means that the GUI still has LodN tiles active,
+         * started, it means that the GUI still has LodN tiles active,
          * so we should reread the data from the image to switch GUI
          * tiles into Lod0 mode.
          */
