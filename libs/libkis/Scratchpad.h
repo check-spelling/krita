@@ -72,7 +72,7 @@ public Q_SLOTS:
 
     /**
      * @brief Take what is on the scratchpad area and grab image
-     * @return the image data from the scratchpage
+     * @return the image data from the scratchpad
      */
     QImage copyScratchpadImageData();
 
