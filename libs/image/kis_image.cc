@@ -405,7 +405,7 @@ void KisImage::copyFromImageImpl(const KisImage &rhs, int policy)
     KIS_ASSERT_RECOVER_RETURN(bool(policy & REPLACE) != bool(policy & CONSTRUCT));
 
     /**
-     * We should replace the root before amitting any signals, because some of the layers
+     * We should replace the root before emitting any signals, because some of the layers
      * may be subscribed to sigSizeChanged() signal (e.g. KisSelectionBasedLayer). So the
      * old layers should be fully detached before we actually emit this signal.
      *
