@@ -417,7 +417,7 @@ void KisTiledDataManagerTest::testPurgeHistory()
     dm.purgeHistory(memento1);
 
     /**
-     * Nothing nas changed in the visible state of the data manager
+     * Nothing has changed in the visible state of the data manager
      */
 
     tile00 = dm.getTile(0, 0, false);
