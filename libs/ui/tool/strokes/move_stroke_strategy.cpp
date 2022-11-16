@@ -407,7 +407,7 @@ void MoveStrokeStrategy::cancelStrokeCallback()
                 m_dirtyRects[node] |= dirtyRect;
 
                 /// emit updates not looking onto the
-                /// epdatesEnabled switch, since that is
+                /// updatesEnabled switch, since that is
                 /// the end of the stroke
                 m_updatesFacade->refreshGraphAsync(node, dirtyRect);
             }
