@@ -524,4 +524,4 @@ private:
     Q_DECLARE_PRIVATE(KoToolBase)
 };
 
-#endif /* KOTOOL_H */
+#endif /* KOTOOLBASE_H */
