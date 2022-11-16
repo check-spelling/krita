@@ -180,7 +180,7 @@ void TestKoColor::testExistingSerializations()
 
 
     // The following is the known sRGB color that the test value matches with.
-    // Let's make sure that all the labvalues roughly convert to this sRGB value.
+    // Let's make sure that all the lab values roughly convert to this sRGB value.
     KoColor purpleCompare = KoColor(QColor("#442de9"), sRGB.colorSpace());
 
     LABcolorU8.convertTo(sRGB.colorSpace());
