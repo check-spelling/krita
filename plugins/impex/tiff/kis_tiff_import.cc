@@ -680,7 +680,7 @@ KisTIFFImport::readImageFromTiff(KisDocument *m_doc,
     // Get the planar configuration
     uint16_t planarconfig = PLANARCONFIG_CONTIG;
     if (TIFFGetField(image, TIFFTAG_PLANARCONFIG, &planarconfig) == 0) {
-        dbgFile << "Plannar configuration is not defined";
+        dbgFile << "Planar configuration is not defined";
         return ImportExportCodes::FileFormatIncorrect;
     }
     // Creating the KisImageSP
