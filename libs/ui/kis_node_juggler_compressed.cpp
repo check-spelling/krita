@@ -106,7 +106,7 @@ typedef QHash<KisNodeSP, MoveNodeStructSP> MovedNodesHash;
 
 
 /**
- * All the commands executed bythe stroke system are running in the
+ * All the commands executed by the stroke system are running in the
  * background asynchronously. But, at the same time, they emit updates
  * in parallel to the ones emitted by the juggler. Therefore, the
  * juggler and all its commands should share some data: which updates
