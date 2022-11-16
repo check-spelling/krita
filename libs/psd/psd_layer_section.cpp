@@ -155,7 +155,7 @@ bool PSDLayerMaskSection::readLayerInfoImpl(QIODevice &io)
                 // read the rle row lengths;
                 if (channelInfo->compressionType == psd_compression_type::RLE) {
                     for (qint64 row = 0; row < channelRect.height(); ++row) {
-                        // dbgFile << "Reading the RLE bytecount position of row" << row << "at pos" << io.pos();
+                        // dbgFile << "Reading the RLE byte count position of row" << row << "at pos" << io.pos();
 
                         quint32 byteCount;
                         if (m_header.version == 1) {
