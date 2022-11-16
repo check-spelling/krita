@@ -587,7 +587,7 @@ void KisLevelsConfigWidget::slot_buttonAutoLevels_clicked()
         KisAutoLevels::ShadowsAndHighlightsAdjustmentMethod_MonochromaticContrast
     );
     m_autoLevelsWidget->lockShadowsAndHighlightsAdjustmentMethod();
-    // Set some defaultparameters based on the selected channel. These were
+    // Set some default parameters based on the selected channel. These were
     // selected empirically, there is no strong reason why they should be like this
     if (m_page.buttonLightnessMode->isChecked() ||
         m_virtualChannels[m_activeChannel].type() == VirtualChannelInfo::LIGHTNESS ||
