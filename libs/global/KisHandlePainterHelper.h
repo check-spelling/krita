@@ -155,7 +155,7 @@ private:
     QTransform m_originalPainterTransform;
     QTransform m_painterTransform;
     qreal m_handleRadius;
-    KisAlgebra2D::DecomposedMatix m_decomposedMatrix;
+    KisAlgebra2D::DecomposedMatrix m_decomposedMatrix;
     QTransform m_handleTransform;
     QPolygonF m_handlePolygon;
     KisHandleStyle m_handleStyle;

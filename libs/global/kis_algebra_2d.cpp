@@ -784,14 +784,14 @@ inline Eigen::Matrix3d fromQTransformStraight(const QTransform &t)
 }
 
 /********************************************************/
-/*             DecomposedMatix                          */
+/*             DecomposedMatrix                         */
 /********************************************************/
 
-DecomposedMatix::DecomposedMatix()
+DecomposedMatrix::DecomposedMatrix()
 {
 }
 
-DecomposedMatix::DecomposedMatix(const QTransform &t0)
+DecomposedMatrix::DecomposedMatrix(const QTransform &t0)
 {
     QTransform t(t0);
 
@@ -907,7 +907,7 @@ DecomposedMatix::DecomposedMatix(const QTransform &t0)
 
 std::pair<QPointF, QTransform> transformEllipse(const QPointF &axes, const QTransform &fullLocalToGlobal)
 {
-    KisAlgebra2D::DecomposedMatix decomposed(fullLocalToGlobal);
+    KisAlgebra2D::DecomposedMatrix decomposed(fullLocalToGlobal);
     const QTransform localToGlobal =
             decomposed.scaleTransform() *
             decomposed.shearTransform() *

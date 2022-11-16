@@ -664,10 +664,10 @@ bool fuzzyCompareRects(const Rect &r1, const Rect &r2, Difference tolerance) {
     return maxError < tolerance;
 }
 
-struct KRITAGLOBAL_EXPORT DecomposedMatix {
-    DecomposedMatix();
+struct KRITAGLOBAL_EXPORT DecomposedMatrix {
+    DecomposedMatrix();
 
-    DecomposedMatix(const QTransform &t0);
+    DecomposedMatrix(const QTransform &t0);
 
     inline QTransform scaleTransform() const
     {

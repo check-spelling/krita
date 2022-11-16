@@ -160,7 +160,7 @@ QRectF calculateSelectionBounds(KoSelection *selection,
          * fetch their scale using the transform.
          */
 
-        KisAlgebra2D::DecomposedMatix matrix(shape->transformation());
+        KisAlgebra2D::DecomposedMatrix matrix(shape->transformation());
         resultRect = matrix.scaleTransform().mapRect(resultRect);
     }
 
