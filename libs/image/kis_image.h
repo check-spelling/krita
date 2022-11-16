@@ -998,7 +998,7 @@ public Q_SLOTS:
 
     /**
      * Wait for all the internal image jobs to complete and return without locking
-     * the image. This function is handly for tests or other synchronous actions,
+     * the image. This function is handy for tests or other synchronous actions,
      * when one needs to wait for the result of his actions.
      */
     void waitForDone();
