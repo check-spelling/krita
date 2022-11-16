@@ -154,7 +154,7 @@ public:
      * @brief addGroup
      * Adds a new group.
      * @param groupName the name of the new group. When not specified, this will fail.
-     * @return whether thegroup was made.
+     * @return whether the group was made.
      */
     bool addGroup(const QString &groupName);
 
