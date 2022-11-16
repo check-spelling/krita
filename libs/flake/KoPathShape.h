@@ -492,7 +492,7 @@ protected:
      * @param sweepAngle the length of the angle
      * TODO add param to have angle of the ellipse
      * @param offset to the first point in the arc
-     * @param curvePoints an array which take the curve points, pass a 'QPointF curvePoins[12]';
+     * @param curvePoints an array which take the curve points, pass a 'QPointF curvePoints[12]';
      *
      * @return number of points created by the curve
      */
