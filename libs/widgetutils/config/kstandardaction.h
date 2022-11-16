@@ -582,4 +582,4 @@ KRITAWIDGETUTILS_EXPORT QAction *aboutApp(const QObject *recvr, const char *slot
 KRITAWIDGETUTILS_EXPORT QAction *aboutKDE(const QObject *recvr, const char *slot, QObject *parent);
 }
 
-#endif // KSTDACTION_H
+#endif // KSTANDARDACTION_H
