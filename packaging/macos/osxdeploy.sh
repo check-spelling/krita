@@ -248,7 +248,7 @@ else
 
             if [[ ${?} -ne 0 ]]; then
                 NOTARIZE="false"
-                echo "No password given for notarization or AC_PASSWORD missig in keychain"
+                echo "No password given for notarization or AC_PASSWORD missing in keychain"
             fi
         else
             NOTARYTOOL="long"
