@@ -74,7 +74,7 @@ public:
      * @param device the device to apply to.
      * @param rect the affected rect.
      * @param xRadius the radius of the horizontal sampling, radius of 0 is effectively disabling it.
-     * @param yRadius the radius of the vertical sampling, refius of 0 is effectively disabling it.
+     * @param yRadius the radius of the vertical sampling, radius of 0 is effectively disabling it.
      * @param type the type can be prewitt, sobel or simple, each of which
      * have a different sampling for the eventual edge detection.
      * @param channelFlags the affected channels.
