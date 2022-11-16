@@ -51,7 +51,7 @@ using KoResourceCacheInterfaceSP = QSharedPointer<KoResourceCacheInterface>;
  *    to fetch dependent resources from the centralized storage.
  *    Theoretically, the preset could create dependent resources
  *    from its XML representation internally all the time, but
- *    there are two reasond against that:
+ *    there are two reasons against that:
  *
  *       1) That is inefficient to load the brushes and/or textures
  *          for every stroke. It can create significant delay in the
