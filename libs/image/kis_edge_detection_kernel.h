@@ -22,7 +22,7 @@ public:
 
     enum FilterType {
         Simple, //A weird simple method used in our old sobel filter
-        Prewit, //The simpler prewitt detection, which doesn't smooth.
+        Prewitt, //The simpler prewitt detection, which doesn't smooth.
         SobelVector //Sobel does smooth. The creation of bigger kernels is based on an approach regarding vectors.
     };
 

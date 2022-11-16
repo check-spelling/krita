@@ -35,7 +35,7 @@ Eigen::Matrix<qreal, Eigen::Dynamic, Eigen::Dynamic> KisEdgeDetectionKernel::cre
     KIS_ASSERT_RECOVER_NOOP(kernelSize & 0x1);
     const int center = kernelSize / 2;
 
-    if (type==Prewit) {
+    if (type==Prewitt) {
         for (int x = 0; x < kernelSize; x++) {
             for (int y=0; y<kernelSize; y++) {
                 qreal xDistance;
@@ -94,7 +94,7 @@ Eigen::Matrix<qreal, Eigen::Dynamic, Eigen::Dynamic> KisEdgeDetectionKernel::cre
     KIS_ASSERT_RECOVER_NOOP(kernelSize & 0x1);
     const int center = kernelSize / 2;
 
-    if (type==Prewit) {
+    if (type==Prewitt) {
         for (int y = 0; y < kernelSize; y++) {
             for (int x=0; x<kernelSize; x++) {
                 qreal yDistance;
