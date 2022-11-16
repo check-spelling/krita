@@ -241,4 +241,4 @@ private:
 
 Q_DECLARE_OPERATORS_FOR_FLAGS(KisShortcutsEditor::ActionTypes)
 
-#endif // KISSHORTCUTSEDITOR_H
+#endif // KISSHORTCUTSEDITOR_P
