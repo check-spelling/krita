@@ -190,7 +190,7 @@ acbf_none
 : Sets the page transition value to "none" explicitly.
 
 acbf_fade
-: Sets the page transitio to fade. Viewers that support it will fade to black into this page.
+: Sets the page transition to fade. Viewers that support it will fade to black into this page.
 
 acbf_blend
 : Sets the page transition to blend. Viewers that support it will fade the previous page to this one.
