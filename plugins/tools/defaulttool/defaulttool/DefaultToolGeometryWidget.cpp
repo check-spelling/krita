@@ -77,7 +77,7 @@ DefaultToolGeometryWidget::DefaultToolGeometryWidget(KoInteractionTool *tool, QW
 
 
     /**
-     * A huge block of self-blocking acycled connections
+     * A huge block of self-blocking acyclic connections
      */
     KisAcyclicSignalConnector *acyclicConnector = new KisAcyclicSignalConnector(this);
     acyclicConnector->connectForwardVoid(m_sizeAspectLocker.data(), SIGNAL(aspectButtonChanged()), this, SLOT(slotAspectButtonToggled()));
