@@ -539,7 +539,7 @@ QRectF cutOffRect(const QRectF &rc, const KisAlgebra2D::RightHalfPlane &p);
  *
  * \p x1, \p x2 --- the found solution. The variables are filled with
  *                  data iff the corresponding solution is found. That
- *                  is: 0 solutions --- variabled are not touched, 1
+ *                  is: 0 solutions --- variables are not touched, 1
  *                  solution --- x1 is filled with the result, 2
  *                  solutions --- x1 and x2 are filled.
  */
